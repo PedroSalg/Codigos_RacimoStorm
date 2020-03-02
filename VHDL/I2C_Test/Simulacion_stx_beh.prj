@@ -1,0 +1,4 @@
+vhdl isim_temp "debounce.vhd"
+vhdl isim_temp "I2C_slave.vhd"
+vhdl isim_temp "I2C_Prueba.vhd"
+vhdl isim_temp "Simulacion.vhd"

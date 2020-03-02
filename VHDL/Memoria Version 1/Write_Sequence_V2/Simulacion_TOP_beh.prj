@@ -1,0 +1,4 @@
+vhdl work "SM.vhd"
+vhdl work "Div_Fre_Var.vhd"
+vhdl work "TOP.vhd"
+vhdl work "Simulacion_TOP.vhd"

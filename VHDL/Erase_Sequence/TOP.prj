@@ -1,0 +1,4 @@
+vhdl work "SM.vhd"
+vhdl work "Div_Fre_Var.vhd"
+vhdl work "CNT_101.vhd"
+vhdl work "TOP.vhd"

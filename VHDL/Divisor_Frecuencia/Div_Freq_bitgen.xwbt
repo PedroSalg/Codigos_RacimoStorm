@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/pedro/Documents/ISE/Divisor_Frecuencia/Div_Freq.ncd
+OUTFILE=/home/pedro/Documents/ISE/Divisor_Frecuencia/Div_Freq.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=/home/pedro/Documents/ISE/Divisor_Frecuencia
+LICENSE=WebPack
+USER_INFO=211202850_0_0_779

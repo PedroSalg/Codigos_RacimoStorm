@@ -1,0 +1,54 @@
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Div_Fre_Variable/PWM_SIGNAL.xst" -ofn "/home/pedro/Documents/ISE/Div_Fre_Variable/PWM_SIGNAL.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Div_Fre_Variable/PWM_SIGNAL.xst" -ofn "/home/pedro/Documents/ISE/Div_Fre_Variable/PWM_SIGNAL.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Div_Fre_Variable/PWM_SIGNAL.xst" -ofn "/home/pedro/Documents/ISE/Div_Fre_Variable/PWM_SIGNAL.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Div_Fre_Variable/PWM_SIGNAL.xst" -ofn "/home/pedro/Documents/ISE/Div_Fre_Variable/PWM_SIGNAL.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Div_Fre_Variable/PWM_SIGNAL.xst" -ofn "/home/pedro/Documents/ISE/Div_Fre_Variable/PWM_SIGNAL.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Div_Fre_Variable/PWM_SIGNAL.xst" -ofn "/home/pedro/Documents/ISE/Div_Fre_Variable/PWM_SIGNAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA.ucf -p xc6slx9-tqg144-2 PWM_SIGNAL.ngc PWM_SIGNAL.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA.ucf -p xc6slx9-tqg144-2 PWM_SIGNAL.ngc PWM_SIGNAL.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PWM_SIGNAL_map.ncd PWM_SIGNAL.ngd PWM_SIGNAL.pcf 
+par -w -intstyle ise -ol high -mt off PWM_SIGNAL_map.ncd PWM_SIGNAL.ncd PWM_SIGNAL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PWM_SIGNAL.twx PWM_SIGNAL.ncd -o PWM_SIGNAL.twr PWM_SIGNAL.pcf -ucf FPGA.ucf 
+bitgen -intstyle ise -f PWM_SIGNAL.ut PWM_SIGNAL.ncd 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Div_Fre_Variable/PWM_SIGNAL.xst" -ofn "/home/pedro/Documents/ISE/Div_Fre_Variable/PWM_SIGNAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA.ucf -p xc6slx9-tqg144-2 PWM_SIGNAL.ngc PWM_SIGNAL.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PWM_SIGNAL_map.ncd PWM_SIGNAL.ngd PWM_SIGNAL.pcf 
+par -w -intstyle ise -ol high -mt off PWM_SIGNAL_map.ncd PWM_SIGNAL.ncd PWM_SIGNAL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PWM_SIGNAL.twx PWM_SIGNAL.ncd -o PWM_SIGNAL.twr PWM_SIGNAL.pcf -ucf FPGA.ucf 
+bitgen -intstyle ise -f PWM_SIGNAL.ut PWM_SIGNAL.ncd 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Div_Fre_Variable/PWM_SIGNAL.xst" -ofn "/home/pedro/Documents/ISE/Div_Fre_Variable/PWM_SIGNAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA.ucf -p xc6slx9-tqg144-2 PWM_SIGNAL.ngc PWM_SIGNAL.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PWM_SIGNAL_map.ncd PWM_SIGNAL.ngd PWM_SIGNAL.pcf 
+par -w -intstyle ise -ol high -mt off PWM_SIGNAL_map.ncd PWM_SIGNAL.ncd PWM_SIGNAL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PWM_SIGNAL.twx PWM_SIGNAL.ncd -o PWM_SIGNAL.twr PWM_SIGNAL.pcf -ucf FPGA.ucf 
+bitgen -intstyle ise -f PWM_SIGNAL.ut PWM_SIGNAL.ncd 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Div_Fre_Variable/PWM_SIGNAL.xst" -ofn "/home/pedro/Documents/ISE/Div_Fre_Variable/PWM_SIGNAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA.ucf -p xc6slx9-tqg144-2 PWM_SIGNAL.ngc PWM_SIGNAL.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PWM_SIGNAL_map.ncd PWM_SIGNAL.ngd PWM_SIGNAL.pcf 
+par -w -intstyle ise -ol high -mt off PWM_SIGNAL_map.ncd PWM_SIGNAL.ncd PWM_SIGNAL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PWM_SIGNAL.twx PWM_SIGNAL.ncd -o PWM_SIGNAL.twr PWM_SIGNAL.pcf -ucf FPGA.ucf 
+bitgen -intstyle ise -f PWM_SIGNAL.ut PWM_SIGNAL.ncd 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Div_Fre_Variable/PWM_SIGNAL.xst" -ofn "/home/pedro/Documents/ISE/Div_Fre_Variable/PWM_SIGNAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA.ucf -p xc6slx9-tqg144-2 PWM_SIGNAL.ngc PWM_SIGNAL.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PWM_SIGNAL_map.ncd PWM_SIGNAL.ngd PWM_SIGNAL.pcf 
+par -w -intstyle ise -ol high -mt off PWM_SIGNAL_map.ncd PWM_SIGNAL.ncd PWM_SIGNAL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PWM_SIGNAL.twx PWM_SIGNAL.ncd -o PWM_SIGNAL.twr PWM_SIGNAL.pcf -ucf FPGA.ucf 
+bitgen -intstyle ise -f PWM_SIGNAL.ut PWM_SIGNAL.ncd 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Div_Fre_Variable/PWM_SIGNAL.xst" -ofn "/home/pedro/Documents/ISE/Div_Fre_Variable/PWM_SIGNAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA.ucf -p xc6slx9-tqg144-2 PWM_SIGNAL.ngc PWM_SIGNAL.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PWM_SIGNAL_map.ncd PWM_SIGNAL.ngd PWM_SIGNAL.pcf 
+par -w -intstyle ise -ol high -mt off PWM_SIGNAL_map.ncd PWM_SIGNAL.ncd PWM_SIGNAL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PWM_SIGNAL.twx PWM_SIGNAL.ncd -o PWM_SIGNAL.twr PWM_SIGNAL.pcf -ucf FPGA.ucf 
+bitgen -intstyle ise -f PWM_SIGNAL.ut PWM_SIGNAL.ncd 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Div_Fre_Variable/PWM_SIGNAL.xst" -ofn "/home/pedro/Documents/ISE/Div_Fre_Variable/PWM_SIGNAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA.ucf -p xc6slx9-tqg144-2 PWM_SIGNAL.ngc PWM_SIGNAL.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PWM_SIGNAL_map.ncd PWM_SIGNAL.ngd PWM_SIGNAL.pcf 
+par -w -intstyle ise -ol high -mt off PWM_SIGNAL_map.ncd PWM_SIGNAL.ncd PWM_SIGNAL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PWM_SIGNAL.twx PWM_SIGNAL.ncd -o PWM_SIGNAL.twr PWM_SIGNAL.pcf -ucf FPGA.ucf 
+bitgen -intstyle ise -f PWM_SIGNAL.ut PWM_SIGNAL.ncd 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Div_Fre_Variable/PWM_SIGNAL.xst" -ofn "/home/pedro/Documents/ISE/Div_Fre_Variable/PWM_SIGNAL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA.ucf -p xc6slx9-tqg144-2 PWM_SIGNAL.ngc PWM_SIGNAL.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PWM_SIGNAL_map.ncd PWM_SIGNAL.ngd PWM_SIGNAL.pcf 
+par -w -intstyle ise -ol high -mt off PWM_SIGNAL_map.ncd PWM_SIGNAL.ncd PWM_SIGNAL.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PWM_SIGNAL.twx PWM_SIGNAL.ncd -o PWM_SIGNAL.twr PWM_SIGNAL.pcf -ucf FPGA.ucf 
+bitgen -intstyle ise -f PWM_SIGNAL.ut PWM_SIGNAL.ncd 

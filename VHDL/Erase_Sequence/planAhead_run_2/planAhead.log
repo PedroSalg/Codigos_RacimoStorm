@@ -1,0 +1,73 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Thu Feb  6 18:30:33 2020
+# Process ID: 5099
+# Log file: /home/pedro/Documents/ISE/Erase_Sequence/planAhead_run_2/planAhead.log
+# Journal file: /home/pedro/Documents/ISE/Erase_Sequence/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -798 day(s)
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source /home/pedro/Documents/ISE/Erase_Sequence/pa.fromNetlist.tcl
+# create_project -name Erase_Sequence -dir "/home/pedro/Documents/ISE/Erase_Sequence/planAhead_run_3" -part xc6slx9tqg144-2
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2633.047 ; gain = 29.172
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "/home/pedro/Documents/ISE/Erase_Sequence/TOP.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {/home/pedro/Documents/ISE/Erase_Sequence} }
+# set_property target_constrs_file "FPGA.ucf" [current_fileset -constrset]
+Adding file '/home/pedro/Documents/ISE/Erase_Sequence/FPGA.ucf' to fileset 'constrs_1'
+# add_files [list {FPGA.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc6slx9tqg144-2
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design TOP.ngc ...
+WARNING:NetListWriters:298 - No output is written to TOP.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus _n0015<24 : 4> on block TOP is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file TOP.edif ...
+ngc2edif: Total memory usage is 103744 kilobytes
+
+Parsing EDIF File [./planAhead_run_3/Erase_Sequence.data/cache/TOP_ngc_6831c54c.edif]
+Finished Parsing EDIF File [./planAhead_run_3/Erase_Sequence.data/cache/TOP_ngc_6831c54c.edif]
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [/home/pedro/Documents/ISE/Erase_Sequence/FPGA.ucf]
+Finished Parsing UCF File [/home/pedro/Documents/ISE/Erase_Sequence/FPGA.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGP => BUFGP (IBUF, BUFG): 1 instances
+
+Phase 0 | Netlist Checksum: 18c62345
+link_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:34 . Memory (MB): peak = 2800.180 ; gain = 158.121
+exit
+ERROR: [#UNDEF] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See /home/pedro/Documents/ISE/Erase_Sequence/planAhead_pid5099.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Thu Feb  6 20:10:21 2020...
+INFO: [Common 17-83] Releasing license: PlanAhead

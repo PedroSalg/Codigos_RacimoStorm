@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/pedro/Documents/ISE/Div_Fre_Variable/PWM_SIGNAL.ncd
+OUTFILE=/home/pedro/Documents/ISE/Div_Fre_Variable/PWM_SIGNAL.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=/home/pedro/Documents/ISE/Div_Fre_Variable
+LICENSE=WebPack
+USER_INFO=211202850_0_0_779

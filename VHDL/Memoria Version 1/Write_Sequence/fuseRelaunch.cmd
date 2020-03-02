@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/pedro/Documents/ISE/Write_Sequence/Simulacion_Div_Freq_isim_beh.exe" -prj "/home/pedro/Documents/ISE/Write_Sequence/Simulacion_Div_Freq_beh.prj" "work.Simulacion_Div_Freq" 

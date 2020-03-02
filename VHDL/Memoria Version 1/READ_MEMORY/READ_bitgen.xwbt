@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/pedro/Documents/ISE/READ_MEMORY/READ.ncd
+OUTFILE=/home/pedro/Documents/ISE/READ_MEMORY/READ.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=/home/pedro/Documents/ISE/READ_MEMORY
+LICENSE=WebPack
+USER_INFO=211202850_0_0_779

@@ -1,0 +1,31 @@
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Divisor_Frecuencia/Div_Freq.xst" -ofn "/home/pedro/Documents/ISE/Divisor_Frecuencia/Div_Freq.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Divisor_Frecuencia/Div_Freq.xst" -ofn "/home/pedro/Documents/ISE/Divisor_Frecuencia/Div_Freq.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 Div_Freq.ngc Div_Freq.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Div_Freq_map.ncd Div_Freq.ngd Div_Freq.pcf 
+par -w -intstyle ise -ol high -mt off Div_Freq_map.ncd Div_Freq.ncd Div_Freq.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Div_Freq.twx Div_Freq.ncd -o Div_Freq.twr Div_Freq.pcf 
+bitgen -intstyle ise -f Div_Freq.ut Div_Freq.ncd 
+bitgen -intstyle ise -f Div_Freq.ut Div_Freq.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA.ucf -p xc6slx9-tqg144-2 Div_Freq.ngc Div_Freq.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Div_Freq_map.ncd Div_Freq.ngd Div_Freq.pcf 
+par -w -intstyle ise -ol high -mt off Div_Freq_map.ncd Div_Freq.ncd Div_Freq.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Div_Freq.twx Div_Freq.ncd -o Div_Freq.twr Div_Freq.pcf -ucf FPGA.ucf 
+bitgen -intstyle ise -f Div_Freq.ut Div_Freq.ncd 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Divisor_Frecuencia/Div_Freq.xst" -ofn "/home/pedro/Documents/ISE/Divisor_Frecuencia/Div_Freq.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA.ucf -p xc6slx9-tqg144-2 Div_Freq.ngc Div_Freq.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Div_Freq_map.ncd Div_Freq.ngd Div_Freq.pcf 
+par -w -intstyle ise -ol high -mt off Div_Freq_map.ncd Div_Freq.ncd Div_Freq.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Div_Freq.twx Div_Freq.ncd -o Div_Freq.twr Div_Freq.pcf -ucf FPGA.ucf 
+bitgen -intstyle ise -f Div_Freq.ut Div_Freq.ncd 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Divisor_Frecuencia/Div_Freq.xst" -ofn "/home/pedro/Documents/ISE/Divisor_Frecuencia/Div_Freq.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA.ucf -p xc6slx9-tqg144-2 Div_Freq.ngc Div_Freq.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Div_Freq_map.ncd Div_Freq.ngd Div_Freq.pcf 
+par -w -intstyle ise -ol high -mt off Div_Freq_map.ncd Div_Freq.ncd Div_Freq.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Div_Freq.twx Div_Freq.ncd -o Div_Freq.twr Div_Freq.pcf -ucf FPGA.ucf 
+bitgen -intstyle ise -f Div_Freq.ut Div_Freq.ncd 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Divisor_Frecuencia/Div_Freq.xst" -ofn "/home/pedro/Documents/ISE/Divisor_Frecuencia/Div_Freq.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA.ucf -p xc6slx9-tqg144-2 Div_Freq.ngc Div_Freq.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Div_Freq_map.ncd Div_Freq.ngd Div_Freq.pcf 
+par -w -intstyle ise -ol high -mt off Div_Freq_map.ncd Div_Freq.ncd Div_Freq.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Div_Freq.twx Div_Freq.ncd -o Div_Freq.twr Div_Freq.pcf -ucf FPGA.ucf 
+bitgen -intstyle ise -f Div_Freq.ut Div_Freq.ncd 

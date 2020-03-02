@@ -1,0 +1,547 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> 
+Reading design: I2C_Prueba.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "I2C_Prueba.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "I2C_Prueba"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : I2C_Prueba
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/pedro/Documents/ISE/I2C_Test/debounce.vhd" into library work
+Parsing entity <debounce>.
+Parsing architecture <arch> of entity <debounce>.
+Parsing VHDL file "/home/pedro/Documents/ISE/I2C_Test/I2C_slave.vhd" into library work
+Parsing entity <I2C_slave>.
+Parsing architecture <arch> of entity <i2c_slave>.
+Parsing VHDL file "/home/pedro/Documents/ISE/I2C_Test/I2C_Prueba.vhd" into library work
+Parsing entity <I2C_Prueba>.
+Parsing architecture <Behavioral> of entity <i2c_prueba>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <I2C_Prueba> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <I2C_slave> (architecture <arch>) with generics from library <work>.
+WARNING:HDLCompiler:871 - "/home/pedro/Documents/ISE/I2C_Test/I2C_slave.vhd" Line 64: Using initial value '0' for scl_wen_reg since it is never assigned
+WARNING:HDLCompiler:871 - "/home/pedro/Documents/ISE/I2C_Test/I2C_slave.vhd" Line 65: Using initial value '0' for scl_o_reg since it is never assigned
+
+Elaborating entity <debounce> (architecture <arch>) with generics from library <work>.
+INFO:HDLCompiler:679 - "/home/pedro/Documents/ISE/I2C_Test/I2C_slave.vhd" Line 264. Case statement is complete. others clause is never selected
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <I2C_Prueba>.
+    Related source file is "/home/pedro/Documents/ISE/I2C_Test/I2C_Prueba.vhd".
+INFO:Xst:3210 - "/home/pedro/Documents/ISE/I2C_Test/I2C_Prueba.vhd" line 38: Output port <read_req> of the instance <i2cSlave> is unconnected or connected to loadless signal.
+    Found 8-bit register for signal <data_to_master>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <I2C_Prueba> synthesized.
+
+Synthesizing Unit <I2C_slave>.
+    Related source file is "/home/pedro/Documents/ISE/I2C_Test/I2C_slave.vhd".
+        SLAVE_ADDR = "0001000"
+Always blocking tristate driving signal <scl> is removed.
+    Found 1-bit register for signal <sda_reg>.
+    Found 1-bit register for signal <scl_prev_reg>.
+    Found 1-bit register for signal <sda_prev_reg>.
+    Found 1-bit register for signal <scl_rising_reg>.
+    Found 1-bit register for signal <scl_falling_reg>.
+    Found 1-bit register for signal <start_reg>.
+    Found 1-bit register for signal <stop_reg>.
+    Found 1-bit register for signal <sda_o_reg>.
+    Found 1-bit register for signal <sda_wen_reg>.
+    Found 1-bit register for signal <data_valid_reg>.
+    Found 1-bit register for signal <read_req_reg>.
+    Found 3-bit register for signal <state_reg>.
+    Found 4-bit register for signal <bits_processed_reg>.
+    Found 7-bit register for signal <addr_reg>.
+    Found 1-bit register for signal <cmd_reg>.
+    Found 8-bit register for signal <data_to_master_reg>.
+    Found 7-bit register for signal <data_reg>.
+    Found 8-bit register for signal <data_from_master_reg>.
+    Found 1-bit register for signal <continue_reg>.
+    Found 1-bit register for signal <scl_reg>.
+    Found finite state machine <FSM_0> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 38                                             |
+    | Inputs             | 10                                             |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit adder for signal <bits_processed_reg[3]_GND_6_o_add_38_OUT> created at line 224.
+    Found 3-bit subtractor for signal <GND_6_o_GND_6_o_sub_5_OUT<2:0>> created at line 160.
+    Found 3-bit subtractor for signal <GND_6_o_GND_6_o_sub_36_OUT<2:0>> created at line 221.
+    Found 1-bit 8-to-1 multiplexer for signal <GND_6_o_data_to_master_reg[7]_Mux_36_o> created at line 221.
+    Found 1-bit tristate buffer for signal <sda> created at line 293
+    Found 4-bit comparator greater for signal <bits_processed_reg[3]_GND_6_o_LessThan_25_o> created at line 203
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  48 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  29 Multiplexer(s).
+	inferred   1 Tristate(s).
+	inferred   1 Finite State Machine(s).
+Unit <I2C_slave> synthesized.
+
+Synthesizing Unit <debounce>.
+    Related source file is "/home/pedro/Documents/ISE/I2C_Test/debounce.vhd".
+        WAIT_CYCLES = 4
+    Found 1-bit register for signal <state_reg>.
+    Found 2-bit register for signal <counter>.
+    Found 1-bit register for signal <out_reg>.
+    Found 1-bit register for signal <signal_in_reg>.
+    Found 2-bit subtractor for signal <GND_7_o_GND_7_o_sub_3_OUT<1:0>> created at line 54.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   5 D-type flip-flop(s).
+Unit <debounce> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 5
+ 2-bit subtractor                                      : 2
+ 3-bit subtractor                                      : 2
+ 4-bit adder                                           : 1
+# Registers                                            : 28
+ 1-bit register                                        : 20
+ 2-bit register                                        : 2
+ 4-bit register                                        : 1
+ 7-bit register                                        : 2
+ 8-bit register                                        : 3
+# Comparators                                          : 1
+ 4-bit comparator greater                              : 1
+# Multiplexers                                         : 29
+ 1-bit 2-to-1 multiplexer                              : 22
+ 1-bit 8-to-1 multiplexer                              : 1
+ 4-bit 2-to-1 multiplexer                              : 6
+# Tristates                                            : 1
+ 1-bit tristate buffer                                 : 1
+# FSMs                                                 : 1
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1426 - The value init of the FF/Latch data_to_master_1 hinder the constant cleaning in the block I2C_Prueba.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch data_to_master_3 hinder the constant cleaning in the block I2C_Prueba.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch data_to_master_4 hinder the constant cleaning in the block I2C_Prueba.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1426 - The value init of the FF/Latch data_to_master_6 hinder the constant cleaning in the block I2C_Prueba.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1293 - FF/Latch <data_to_master_reg_5> has a constant value of 0 in block <i2cSlave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <data_to_master_reg_7> has a constant value of 0 in block <i2cSlave>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_to_master_5> has a constant value of 0 in block <I2C_Prueba>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_to_master_7> has a constant value of 0 in block <I2C_Prueba>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <debounce>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <debounce> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 3-bit subtractor                                      : 2
+ 4-bit adder                                           : 1
+# Counters                                             : 2
+ 2-bit down counter                                    : 2
+# Registers                                            : 62
+ Flip-Flops                                            : 62
+# Comparators                                          : 1
+ 4-bit comparator greater                              : 1
+# Multiplexers                                         : 29
+ 1-bit 2-to-1 multiplexer                              : 22
+ 1-bit 8-to-1 multiplexer                              : 1
+ 4-bit 2-to-1 multiplexer                              : 6
+# FSMs                                                 : 1
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch data_to_master_6 hinder the constant cleaning in the block I2C_Prueba.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1426 - The value init of the FF/Latch data_to_master_4 hinder the constant cleaning in the block I2C_Prueba.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1426 - The value init of the FF/Latch data_to_master_3 hinder the constant cleaning in the block I2C_Prueba.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch data_to_master_1 hinder the constant cleaning in the block I2C_Prueba.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <data_to_master_5> has a constant value of 0 in block <I2C_Prueba>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <data_to_master_7> has a constant value of 0 in block <I2C_Prueba>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <data_to_master_1> in Unit <I2C_Prueba> is equivalent to the following FF/Latch, which will be removed : <data_to_master_3> 
+INFO:Xst:2261 - The FF/Latch <data_to_master_4> in Unit <I2C_Prueba> is equivalent to the following FF/Latch, which will be removed : <data_to_master_6> 
+INFO:Xst:2261 - The FF/Latch <data_to_master_0> in Unit <I2C_Prueba> is equivalent to the following FF/Latch, which will be removed : <data_to_master_2> 
+INFO:Xst:2261 - The FF/Latch <data_to_master_reg_0> in Unit <I2C_slave> is equivalent to the following FF/Latch, which will be removed : <data_to_master_reg_2> 
+INFO:Xst:2261 - The FF/Latch <data_to_master_reg_1> in Unit <I2C_slave> is equivalent to the following FF/Latch, which will be removed : <data_to_master_reg_3> 
+INFO:Xst:2261 - The FF/Latch <data_to_master_reg_4> in Unit <I2C_slave> is equivalent to the following FF/Latch, which will be removed : <data_to_master_reg_6> 
+INFO:Xst:2261 - The FF/Latch <data_to_master_reg_5> in Unit <I2C_slave> is equivalent to the following FF/Latch, which will be removed : <data_to_master_reg_7> 
+WARNING:Xst:1293 - FF/Latch <data_to_master_reg_5> has a constant value of 0 in block <I2C_slave>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <i2cSlave/FSM_0> on signal <state_reg[1:3]> with user encoding.
+---------------------------------
+ State               | Encoding
+---------------------------------
+ idle                | 000
+ get_address_and_cmd | 001
+ answer_ack_start    | 010
+ write               | 011
+ read                | 100
+ read_ack_start      | 101
+ read_ack_got_rising | 110
+ read_stop           | 111
+---------------------------------
+WARNING:Xst:2677 - Node <i2cSlave/read_req_reg> of sequential type is unconnected in block <I2C_Prueba>.
+
+Optimizing unit <I2C_Prueba> ...
+
+Optimizing unit <debounce> ...
+INFO:Xst:3203 - The FF/Latch <data_to_master_1> in Unit <I2C_Prueba> is the opposite to the following FF/Latch, which will be removed : <data_to_master_4> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+WARNING:Xst:1426 - The value init of the FF/Latch data_to_master_1 hinder the constant cleaning in the block I2C_Prueba.
+   You should achieve better results by setting this init to 1.
+Found area constraint ratio of 100 (+ 5) on block I2C_Prueba, actual ratio is 1.
+FlipFlop i2cSlave/SDA_debounce/out_reg has been replicated 1 time(s)
+FlipFlop i2cSlave/bits_processed_reg_0 has been replicated 1 time(s)
+FlipFlop i2cSlave/bits_processed_reg_1 has been replicated 1 time(s)
+FlipFlop i2cSlave/bits_processed_reg_2 has been replicated 1 time(s)
+FlipFlop i2cSlave/bits_processed_reg_3 has been replicated 1 time(s)
+FlipFlop i2cSlave/state_reg_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop i2cSlave/state_reg_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop i2cSlave/state_reg_FSM_FFd3 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 65
+ Flip-Flops                                            : 65
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : I2C_Prueba.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 84
+#      INV                         : 2
+#      LUT2                        : 6
+#      LUT3                        : 10
+#      LUT4                        : 11
+#      LUT5                        : 10
+#      LUT6                        : 42
+#      MUXF7                       : 2
+#      VCC                         : 1
+# FlipFlops/Latches                : 65
+#      FD                          : 23
+#      FDE                         : 27
+#      FDR                         : 7
+#      FDRE                        : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 3
+#      IBUF                        : 2
+#      IOBUF                       : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              65  out of  11440     0%  
+ Number of Slice LUTs:                   81  out of   5720     1%  
+    Number used as Logic:                81  out of   5720     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     92
+   Number with an unused Flip Flop:      27  out of     92    29%  
+   Number with an unused LUT:            11  out of     92    11%  
+   Number of fully used LUT-FF pairs:    54  out of     92    58%  
+   Number of unique control sets:        10
+
+IO Utilization: 
+ Number of IOs:                           4
+ Number of bonded IOBs:                   4  out of    102     3%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 65    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 4.416ns (Maximum Frequency: 226.449MHz)
+   Minimum input arrival time before clock: 3.607ns
+   Maximum output required time after clock: 5.054ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.416ns (frequency: 226.449MHz)
+  Total number of paths / destination ports: 783 / 108
+-------------------------------------------------------------------------
+Delay:               4.416ns (Levels of Logic = 3)
+  Source:            i2cSlave/bits_processed_reg_1 (FF)
+  Destination:       i2cSlave/state_reg_FSM_FFd3 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: i2cSlave/bits_processed_reg_1 to i2cSlave/state_reg_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            19   0.525   1.369  i2cSlave/bits_processed_reg_1 (i2cSlave/bits_processed_reg_1)
+     LUT3:I1->O           10   0.250   1.008  i2cSlave/Mmux_state_reg[2]_bits_processed_reg[3]_wide_mux_53_OUT411 (i2cSlave/Mmux_state_reg[2]_bits_processed_reg[3]_wide_mux_53_OUT41)
+     LUT6:I5->O            1   0.254   0.682  i2cSlave/state_reg_FSM_FFd3-In13 (i2cSlave/state_reg_FSM_FFd3-In14)
+     LUT6:I5->O            2   0.254   0.000  i2cSlave/state_reg_FSM_FFd3-In14 (i2cSlave/state_reg_FSM_FFd3-In1)
+     FDR:D                     0.074          i2cSlave/state_reg_FSM_FFd3
+    ----------------------------------------
+    Total                      4.416ns (1.357ns logic, 3.059ns route)
+                                       (30.7% logic, 69.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              3.607ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       i2cSlave/state_reg_FSM_FFd3 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to i2cSlave/state_reg_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.328   0.841  rst_IBUF (rst_IBUF)
+     LUT2:I1->O            2   0.254   0.725  i2cSlave/stop_reg11 (i2cSlave/stop_reg_0)
+     FDR:R                     0.459          i2cSlave/state_reg_FSM_FFd3
+    ----------------------------------------
+    Total                      3.607ns (2.041ns logic, 1.566ns route)
+                                       (56.6% logic, 43.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              5.054ns (Levels of Logic = 2)
+  Source:            i2cSlave/sda_wen_reg (FF)
+  Destination:       SDA (PAD)
+  Source Clock:      clk rising
+
+  Data Path: i2cSlave/sda_wen_reg to SDA
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.525   0.681  i2cSlave/sda_wen_reg (i2cSlave/sda_wen_reg)
+     INV:I->O              1   0.255   0.681  i2cSlave/sda_wen_reg_inv1_INV_0 (i2cSlave/sda_wen_reg_inv)
+     IOBUF:T->IO               2.912          SDA_IOBUF (SDA)
+    ----------------------------------------
+    Total                      5.054ns (3.692ns logic, 1.362ns route)
+                                       (73.1% logic, 26.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.416|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 31.00 secs
+Total CPU time to Xst completion: 24.36 secs
+ 
+--> 
+
+
+Total memory usage is 407520 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   19 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+

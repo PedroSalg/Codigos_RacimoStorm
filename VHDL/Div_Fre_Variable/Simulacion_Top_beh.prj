@@ -1,0 +1,4 @@
+vhdl work "PWM.vhd"
+vhdl work "Div_Fre_Var.vhd"
+vhdl work "PWM_SIGNAL.vhd"
+vhdl work "Simulacion_Top.vhd"

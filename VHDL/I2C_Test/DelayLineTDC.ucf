@@ -1,0 +1,72 @@
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
+# This file is a .ucf for Mimas (http://www.numato.com)                                               #
+# To use it in your project :                                                                         #
+# * Remove or comment the lines corresponding to unused pins in the project.                          #
+# * Rename the used signals according to the your project.                                            #
+# * For more detail refer to the User Guide available at http://numato.com/products/fpga-boards/      #
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
+
+#**************************************************************************************************************************************************#
+#                                            UCF for Mimas                                                                                         #
+#**************************************************************************************************************************************************#
+
+
+NET "CLK" LOC = "P126";
+#TIMESPEC TS_CLK = PERIOD "CLK" 100 MHz HIGH 50%;
+
+###################################################################################################################################################
+#                                                 LEDs                                                                                            #
+################################################################################################################################################### 
+
+#NET "FFOut<0>" 			  LOC = P119	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+#NET "FFOut<1>" 			  LOC = P118	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+#NET "FFOut<2>" 			  LOC = P117	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+#NET "FFOut<3>" 			  LOC = P116	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+#NET "FFOut<4>" 			  LOC = P115	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+
+#NET "Qout<5>" 			  LOC = P114	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+#NET "Qout<6>" 			  LOC = P112	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+#NET "Qout<7>" 			  LOC = P111	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+
+NET "SDA" 			  LOC = P33	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLDOWN;
+NET "SCL" 			  LOC = P35	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLDOWN;
+NET "rst" 			  LOC = P23	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLDOWN;
+
+
+#NET "Sig" 				LOC = P30	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+#NET "Sig2" 				LOC = P27	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+
+
+#NET "Qout<0>" 			  LOC = P6	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+#NET "Qout<1>" 			  LOC = P8	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+#NET "Qout<2>" 			  LOC = P10	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+#NET "Qout<3>" 			  LOC = P12	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+#NET "Qout<4>" 			  LOC = P15	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+#NET "Qout<5>" 			  LOC = P17	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+#NET "Qout<6>" 			  LOC = P22	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+#NET "Qout<7>" 			  LOC = P24	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+
+#NET "Cout<0>" 			  LOC = P27	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+#NET "Cout<1>" 			  LOC = P30	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+
+###################################################################################################################################################
+#                                                Push Button Switches                                                                             #
+################################################################################################################################################### 
+
+# Switches
+
+#NET "Start" 			  LOC = P124	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP;
+#NET "Stop" 			  	  LOC = P123	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP;
+
+# Signals
+
+#NET "Start" 			  	LOC = P131	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLDOWN;
+#NET "Fine" 			  	   LOC = P137	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLDOWN;
+#NET "Stop" 			  		LOC = P133	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLDOWN;
+#NET "PPS" 				  	LOC = P48	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLDOWN;
+#NET "Busy"	 			  	LOC = P141	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLDOWN;
+#NET "Trigger" 				LOC = P56	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+#NET "clk_ext" 				LOC = P51	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+#NET "NIM" 					LOC = P139	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+
+#NET "Reset" 			  LOC = P120	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP;

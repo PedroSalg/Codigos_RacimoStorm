@@ -1,0 +1,1 @@
+vhdtdtfi -prj Write_Sequence_V2 -o /home/pedro/Documents/ISE/Write_Sequence_V2/Div_Fre_Var.vhi -module Div_Fre_Var -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Div_Fre_Var.vhd 

@@ -1,0 +1,29 @@
+Command line:
+   Simulacion_Div_Freq_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  59407
+
+Tue Feb  4 16:02:52 2020
+
+
+ Elaboration Time: 0.04 sec
+
+ Current Memory Usage: 195.985 Meg
+
+ Total Signals          : 11
+ Total Nets             : 86
+ Total Signal Drivers   : 8
+ Total Blocks           : 6
+ Total Primitive Blocks : 5
+ Total Processes        : 8
+ Total Traceable Variables  : 16
+ Total Scalar Nets and Variables : 588
+Total Line Count : 19
+
+ Total Simulation Time: 0.05 sec
+
+ Current Memory Usage: 271.487 Meg
+
+Tue Feb  4 16:04:47 2020
+

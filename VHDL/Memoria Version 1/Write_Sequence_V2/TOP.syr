@@ -1,0 +1,465 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> 
+Reading design: TOP.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TOP.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TOP"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : TOP
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/pedro/Documents/ISE/Write_Sequence_V2/SM.vhd" into library work
+Parsing entity <SM>.
+Parsing architecture <Behavioral> of entity <sm>.
+Parsing VHDL file "/home/pedro/Documents/ISE/Write_Sequence_V2/Div_Fre_Var.vhd" into library work
+Parsing entity <Div_Fre_Var>.
+Parsing architecture <Behavioral> of entity <div_fre_var>.
+Parsing VHDL file "/home/pedro/Documents/ISE/Write_Sequence_V2/TOP.vhd" into library work
+Parsing entity <TOP>.
+Parsing architecture <Behavioral> of entity <top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <TOP> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Div_Fre_Var> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <SM> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "/home/pedro/Documents/ISE/Write_Sequence_V2/SM.vhd" Line 77. Case statement is complete. others clause is never selected
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <TOP>.
+    Related source file is "/home/pedro/Documents/ISE/Write_Sequence_V2/TOP.vhd".
+    Summary:
+	no macro.
+Unit <TOP> synthesized.
+
+Synthesizing Unit <Div_Fre_Var>.
+    Related source file is "/home/pedro/Documents/ISE/Write_Sequence_V2/Div_Fre_Var.vhd".
+    Found 27-bit register for signal <Q_Bus>.
+    Found 27-bit adder for signal <Q_Bus[26]_GND_7_o_add_4_OUT> created at line 43.
+    Found 27-bit comparator greater for signal <Bus_Sel_INV_1_o> created at line 40
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  27 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <Div_Fre_Var> synthesized.
+
+Synthesizing Unit <SM>.
+    Related source file is "/home/pedro/Documents/ISE/Write_Sequence_V2/SM.vhd".
+    Found 4-bit register for signal <q_bus>.
+    Found finite state machine <FSM_0> for signal <q_bus>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 22                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 26                                             |
+    | Clock              | CLK (rising_edge)                              |
+    | Power Up State     | s0                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <SM> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 27-bit adder                                          : 1
+# Registers                                            : 1
+ 27-bit register                                       : 1
+# Comparators                                          : 1
+ 27-bit comparator greater                             : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Div_Fre_Var>.
+The following registers are absorbed into counter <Q_Bus>: 1 register on signal <Q_Bus>.
+Unit <Div_Fre_Var> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 27-bit up counter                                     : 1
+# Comparators                                          : 1
+ 27-bit comparator greater                             : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <q_bus[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ s0    | 0000
+ s1    | 0001
+ s2    | 0010
+ s3    | 0011
+ s4    | 0100
+ s5    | 0101
+ s6    | 0110
+ s7    | 0111
+ s8    | 1000
+ s9    | 1001
+-------------------
+
+Optimizing unit <TOP> ...
+WARNING:Xst:1293 - FF/Latch <Inst_Div_Fre_Var/Q_Bus_26> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Div_Fre_Var/Q_Bus_25> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Div_Fre_Var/Q_Bus_24> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Div_Fre_Var/Q_Bus_23> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Div_Fre_Var/Q_Bus_22> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Div_Fre_Var/Q_Bus_21> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Div_Fre_Var/Q_Bus_20> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Div_Fre_Var/Q_Bus_19> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Div_Fre_Var/Q_Bus_18> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Div_Fre_Var/Q_Bus_17> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Div_Fre_Var/Q_Bus_16> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Div_Fre_Var/Q_Bus_15> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Div_Fre_Var/Q_Bus_14> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Div_Fre_Var/Q_Bus_13> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Div_Fre_Var/Q_Bus_12> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Div_Fre_Var/Q_Bus_11> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Div_Fre_Var/Q_Bus_10> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Div_Fre_Var/Q_Bus_9> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Div_Fre_Var/Q_Bus_8> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Div_Fre_Var/Q_Bus_7> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Div_Fre_Var/Q_Bus_6> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block TOP, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 10
+ Flip-Flops                                            : 10
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : TOP.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 39
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 5
+#      LUT2                        : 1
+#      LUT3                        : 4
+#      LUT4                        : 5
+#      LUT5                        : 2
+#      LUT6                        : 2
+#      MUXCY                       : 11
+#      VCC                         : 1
+#      XORCY                       : 6
+# FlipFlops/Latches                : 10
+#      FD                          : 4
+#      FDR                         : 6
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 32
+#      IBUF                        : 1
+#      OBUF                        : 31
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              10  out of  11440     0%  
+ Number of Slice LUTs:                   20  out of   5720     0%  
+    Number used as Logic:                20  out of   5720     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     20
+   Number with an unused Flip Flop:      10  out of     20    50%  
+   Number with an unused LUT:             0  out of     20     0%  
+   Number of fully used LUT-FF pairs:    10  out of     20    50%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          33
+ Number of bonded IOBs:                  33  out of    102    32%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 10    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 3.971ns (Maximum Frequency: 251.810MHz)
+   Minimum input arrival time before clock: 2.837ns
+   Maximum output required time after clock: 5.848ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 3.971ns (frequency: 251.810MHz)
+  Total number of paths / destination ports: 126 / 16
+-------------------------------------------------------------------------
+Delay:               3.971ns (Levels of Logic = 7)
+  Source:            Inst_Div_Fre_Var/Q_Bus_1 (FF)
+  Destination:       Inst_Div_Fre_Var/Q_Bus_0 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: Inst_Div_Fre_Var/Q_Bus_1 to Inst_Div_Fre_Var/Q_Bus_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.525   1.156  Inst_Div_Fre_Var/Q_Bus_1 (Inst_Div_Fre_Var/Q_Bus_1)
+     LUT5:I0->O            1   0.254   0.000  Inst_Div_Fre_Var/Mcompar_Bus_Sel_INV_1_o_lut<0> (Inst_Div_Fre_Var/Mcompar_Bus_Sel_INV_1_o_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  Inst_Div_Fre_Var/Mcompar_Bus_Sel_INV_1_o_cy<0> (Inst_Div_Fre_Var/Mcompar_Bus_Sel_INV_1_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Div_Fre_Var/Mcompar_Bus_Sel_INV_1_o_cy<1> (Inst_Div_Fre_Var/Mcompar_Bus_Sel_INV_1_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Div_Fre_Var/Mcompar_Bus_Sel_INV_1_o_cy<2> (Inst_Div_Fre_Var/Mcompar_Bus_Sel_INV_1_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Div_Fre_Var/Mcompar_Bus_Sel_INV_1_o_cy<3> (Inst_Div_Fre_Var/Mcompar_Bus_Sel_INV_1_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Div_Fre_Var/Mcompar_Bus_Sel_INV_1_o_cy<4> (Inst_Div_Fre_Var/Mcompar_Bus_Sel_INV_1_o_cy<4>)
+     MUXCY:CI->O          10   0.262   1.007  Inst_Div_Fre_Var/Mcompar_Bus_Sel_INV_1_o_cy<5> (Inst_Div_Fre_Var/Bus_Sel_INV_1_o_inv)
+     FDR:R                     0.459          Inst_Div_Fre_Var/Q_Bus_0
+    ----------------------------------------
+    Total                      3.971ns (1.808ns logic, 2.163ns route)
+                                       (45.5% logic, 54.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              2.837ns (Levels of Logic = 2)
+  Source:            SW0 (PAD)
+  Destination:       Inst_SM/q_bus_FSM_FFd4 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: SW0 to Inst_SM/q_bus_FSM_FFd4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.328   1.181  SW0_IBUF (SW0_IBUF)
+     LUT6:I0->O            1   0.254   0.000  Inst_SM/q_bus_FSM_FFd3-In1 (Inst_SM/q_bus_FSM_FFd3-In)
+     FD:D                      0.074          Inst_SM/q_bus_FSM_FFd3
+    ----------------------------------------
+    Total                      2.837ns (1.656ns logic, 1.181ns route)
+                                       (58.4% logic, 41.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 75 / 25
+-------------------------------------------------------------------------
+Offset:              5.848ns (Levels of Logic = 2)
+  Source:            Inst_SM/q_bus_FSM_FFd4 (FF)
+  Destination:       A<13> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: Inst_SM/q_bus_FSM_FFd4 to A<13>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              11   0.525   1.267  Inst_SM/q_bus_FSM_FFd4 (Inst_SM/q_bus_FSM_FFd4)
+     LUT3:I0->O            7   0.235   0.909  A<9>1 (A_9_OBUF)
+     OBUF:I->O                 2.912          A_13_OBUF (A<13>)
+    ----------------------------------------
+    Total                      5.848ns (3.672ns logic, 2.176ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    3.971|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 31.00 secs
+Total CPU time to Xst completion: 23.73 secs
+ 
+--> 
+
+
+Total memory usage is 394172 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   21 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

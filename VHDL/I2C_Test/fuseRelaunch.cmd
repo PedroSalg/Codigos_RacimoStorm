@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/pedro/Documents/ISE/I2C_Test/Simulacion_isim_beh.exe" -prj "/home/pedro/Documents/ISE/I2C_Test/Simulacion_beh.prj" "work.Simulacion" 

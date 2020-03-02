@@ -1,0 +1,4 @@
+vhdl isim_temp "PWM.vhd"
+vhdl isim_temp "Div_Fre_Var.vhd"
+vhdl isim_temp "PWM_SIGNAL.vhd"
+vhdl isim_temp "Simulacion_Top.vhd"

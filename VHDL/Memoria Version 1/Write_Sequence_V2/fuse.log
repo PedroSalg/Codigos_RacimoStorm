@@ -1,0 +1,29 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/pedro/Documents/ISE/Write_Sequence_V2/Simulacion_TOP_isim_beh.exe -prj /home/pedro/Documents/ISE/Write_Sequence_V2/Simulacion_TOP_beh.prj work.Simulacion_TOP 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/pedro/Documents/ISE/Write_Sequence_V2/SM.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Write_Sequence_V2/Div_Fre_Var.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Write_Sequence_V2/TOP.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Write_Sequence_V2/Simulacion_TOP.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 98124 KB
+Fuse CPU Usage: 1950 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity Div_Fre_Var [div_fre_var_default]
+Compiling architecture behavioral of entity SM [sm_default]
+Compiling architecture behavioral of entity TOP [top_default]
+Compiling architecture behavior of entity simulacion_top
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 12 VHDL Units
+Built simulation executable /home/pedro/Documents/ISE/Write_Sequence_V2/Simulacion_TOP_isim_beh.exe
+Fuse Memory Usage: 411952 KB
+Fuse CPU Usage: 2360 ms
+GCC CPU Usage: 970 ms

@@ -1,0 +1,10 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Dec 11 09:17:59 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Out_Pin" LOCATE = SITE "P23" LEVEL 1;
+COMP "CLK" LOCATE = SITE "P126" LEVEL 1;
+COMP "FREQ" LOCATE = SITE "P21" LEVEL 1;
+SCHEMATIC END;
+

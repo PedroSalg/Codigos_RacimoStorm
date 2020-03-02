@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Contador_Ascendente/Contador_Ascendente.xst" -ofn "/home/pedro/Documents/ISE/Contador_Ascendente/Contador_Ascendente.syr" 

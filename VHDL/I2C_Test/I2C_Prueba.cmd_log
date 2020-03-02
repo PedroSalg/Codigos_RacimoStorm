@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/I2C_Test/I2C_Prueba.xst" -ofn "/home/pedro/Documents/ISE/I2C_Test/I2C_Prueba.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/I2C_Test/I2C_Prueba.xst" -ofn "/home/pedro/Documents/ISE/I2C_Test/I2C_Prueba.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/I2C_Test/I2C_Prueba.xst" -ofn "/home/pedro/Documents/ISE/I2C_Test/I2C_Prueba.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DelayLineTDC.ucf -p xc6slx9-tqg144-2 I2C_Prueba.ngc I2C_Prueba.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DelayLineTDC.ucf -p xc6slx9-tqg144-2 I2C_Prueba.ngc I2C_Prueba.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o I2C_Prueba_map.ncd I2C_Prueba.ngd I2C_Prueba.pcf 
+par -w -intstyle ise -ol high -mt off I2C_Prueba_map.ncd I2C_Prueba.ncd I2C_Prueba.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml I2C_Prueba.twx I2C_Prueba.ncd -o I2C_Prueba.twr I2C_Prueba.pcf -ucf DelayLineTDC.ucf 
+bitgen -intstyle ise -f I2C_Prueba.ut I2C_Prueba.ncd 
