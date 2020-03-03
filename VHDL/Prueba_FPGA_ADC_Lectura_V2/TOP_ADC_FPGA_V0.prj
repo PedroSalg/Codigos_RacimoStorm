@@ -1,0 +1,6 @@
+vhdl work "PWM.vhd"
+vhdl work "Div_Fre_Var.vhd"
+vhdl work "debounce.vhd"
+vhdl work "PWM_SIGNAL.vhd"
+vhdl work "I2C_slave.vhd"
+vhdl work "TOP_ADC_FPGA_V0.vhd"

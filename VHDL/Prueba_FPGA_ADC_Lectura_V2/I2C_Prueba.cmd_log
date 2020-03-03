@@ -1,0 +1,1 @@
+vhdtdtfi -prj Prueba_FPGA_ADC_Lectura_v0 -o /home/pedro/Documents/ISE/Prueba_FPGA_ADC_Lectura_v0/I2C_Prueba.vhi -module I2C_Prueba -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work debounce.vhd -lib work I2C_slave.vhd -lib work I2C_Prueba.vhd 

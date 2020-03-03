@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"/home/pedro/Documents/ISE/Prueba_FPGA_ADC_Lectura_V2/I2C_slave.vhd" Line 64: Using initial value <arg fmt="%s" index="1">&apos;0&apos;</arg> for <arg fmt="%s" index="2">scl_wen_reg</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"/home/pedro/Documents/ISE/Prueba_FPGA_ADC_Lectura_V2/I2C_slave.vhd" Line 65: Using initial value <arg fmt="%s" index="1">&apos;0&apos;</arg> for <arg fmt="%s" index="2">scl_o_reg</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/pedro/Documents/ISE/Prueba_FPGA_ADC_Lectura_V2/TOP_ADC_FPGA_V0.vhd" Line 129: <arg fmt="%s" index="1">d</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"/home/pedro/Documents/ISE/Prueba_FPGA_ADC_Lectura_V2/TOP_ADC_FPGA_V0.vhd" Line 131: <arg fmt="%s" index="1">muestras_adc_reg</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/pedro/Documents/ISE/Prueba_FPGA_ADC_Lectura_V2/TOP_ADC_FPGA_V0.vhd</arg>&quot; line <arg fmt="%s" index="2">98</arg>: Output port &lt;<arg fmt="%s" index="3">read_req</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">i2cSlave</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_10_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_10_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_10_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_10_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_9_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_9_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_9_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_9_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_8_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_8_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_8_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_8_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_7_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_7_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_7_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_7_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_6_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_6_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_6_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_6_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_5_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_5_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_5_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_5_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_4_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_4_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_4_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_4_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_3_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_3_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_3_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_3_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_2_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_2_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_2_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_2_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_10_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_10_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_10_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_10_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_9_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_9_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_9_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_9_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_8_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_8_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_8_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_8_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_7_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_7_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_7_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_7_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_6_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_6_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_6_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_6_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_5_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_5_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_5_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_5_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_4_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_4_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_4_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_4_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_3_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_3_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_3_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_3_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_2_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_2_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_2_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">muestras_adc_reg_2_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">i2cSlave/read_req_reg</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">TOP_ADC_FPGA_V0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">Inst_PWM_SIGNAL/Inst_Div_Fre_Var/Q_Bus_26</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TOP_ADC_FPGA_V0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_PWM_SIGNAL/Inst_Div_Fre_Var/Q_Bus_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TOP_ADC_FPGA_V0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_PWM_SIGNAL/Inst_Div_Fre_Var/Q_Bus_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TOP_ADC_FPGA_V0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_PWM_SIGNAL/Inst_Div_Fre_Var/Q_Bus_23</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TOP_ADC_FPGA_V0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_PWM_SIGNAL/Inst_Div_Fre_Var/Q_Bus_22</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TOP_ADC_FPGA_V0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_PWM_SIGNAL/Inst_Div_Fre_Var/Q_Bus_21</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TOP_ADC_FPGA_V0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_PWM_SIGNAL/Inst_Div_Fre_Var/Q_Bus_20</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TOP_ADC_FPGA_V0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_PWM_SIGNAL/Inst_Div_Fre_Var/Q_Bus_19</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TOP_ADC_FPGA_V0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_PWM_SIGNAL/Inst_Div_Fre_Var/Q_Bus_18</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TOP_ADC_FPGA_V0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_PWM_SIGNAL/Inst_Div_Fre_Var/Q_Bus_17</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TOP_ADC_FPGA_V0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_PWM_SIGNAL/Inst_Div_Fre_Var/Q_Bus_16</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TOP_ADC_FPGA_V0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_PWM_SIGNAL/Inst_Div_Fre_Var/Q_Bus_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TOP_ADC_FPGA_V0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_PWM_SIGNAL/Inst_Div_Fre_Var/Q_Bus_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TOP_ADC_FPGA_V0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_PWM_SIGNAL/Inst_Div_Fre_Var/Q_Bus_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TOP_ADC_FPGA_V0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_PWM_SIGNAL/Inst_Div_Fre_Var/Q_Bus_12</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TOP_ADC_FPGA_V0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_PWM_SIGNAL/Inst_Div_Fre_Var/Q_Bus_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TOP_ADC_FPGA_V0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_PWM_SIGNAL/Inst_Div_Fre_Var/Q_Bus_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TOP_ADC_FPGA_V0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_PWM_SIGNAL/Inst_Div_Fre_Var/Q_Bus_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TOP_ADC_FPGA_V0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_PWM_SIGNAL/Inst_Div_Fre_Var/Q_Bus_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TOP_ADC_FPGA_V0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_PWM_SIGNAL/Inst_Div_Fre_Var/Q_Bus_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TOP_ADC_FPGA_V0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_PWM_SIGNAL/Inst_Div_Fre_Var/Q_Bus_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TOP_ADC_FPGA_V0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Inst_PWM_SIGNAL/Inst_Div_Fre_Var/Q_Bus_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">TOP_ADC_FPGA_V0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+</messages>
+
