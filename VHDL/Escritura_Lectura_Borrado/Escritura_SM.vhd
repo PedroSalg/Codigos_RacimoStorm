@@ -86,12 +86,12 @@ end process;
 with q_bus select
 	Salidas <= "0011" when s0,
 				  "1010" when s1,
-				  "0011" when s2,
-				  "0010" when s3,
-				  "0011" when s4,
-				  "0010" when s5,
-				  "0011" when s6,
-				  "0010" when s7,
+				  "1011" when s2,
+				  "1010" when s3,
+				  "1011" when s4,
+				  "1010" when s5,
+				  "1011" when s6,
+				  "1010" when s7,
 				  "0011" when s8,
 				  "0011" when others;
 				  

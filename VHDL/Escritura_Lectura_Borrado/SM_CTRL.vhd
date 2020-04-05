@@ -7,6 +7,8 @@ entity SM_CTRL is
            sw2 : in  STD_LOGIC;
            clk : in  STD_LOGIC;
 			  band_esc : in  STD_LOGIC;			  
+			  band_lec : in  STD_LOGIC;
+			  band_bor : in  STD_LOGIC;
 			  rst_sm_ctrl : in  STD_LOGIC;
 			  en_sm_ctrl : in STD_LOGIC;
            escribir : out  STD_LOGIC;
@@ -18,7 +20,7 @@ end SM_CTRL;
 
 architecture Behavioral of SM_CTRL is
 
-type Estados is (s0,s1,s2,s3,s4,s5,s6,s7);
+type Estados is (s0,s1,s2,s3,s4,s5,s6,s7,esp_esc,esp_lec,esp_bor);
 signal d_bus, q_bus : Estados;
 signal Salidas : STD_LOGIC_VECTOR(3 downto 0);
 
@@ -39,7 +41,7 @@ end process;
  
 ----- LOGICA DEL ESTADO SIGUIENTE 
 
-process (d_bus, q_bus, sw0, sw1, sw2, band_esc)
+process (d_bus, q_bus, sw0, sw1, sw2, band_esc, band_lec, band_bor)
 begin
 	case (q_bus) is 
 		when s0 => 
@@ -62,7 +64,7 @@ begin
 			
 		when s2 =>
 			if (band_esc = '1') then 
-				d_bus <= s7;
+				d_bus <= esp_esc;
 			else 
 				d_bus <= s2;
 			end if;
@@ -75,7 +77,11 @@ begin
 			end if;
 			
 		when s4 =>
-			d_bus <= s7;
+			if (band_lec = '1') then
+				d_bus <= esp_lec;
+			else 
+				d_bus <= s4;
+			end if;
 			
 		when s5 =>
 			if (sw2 = '1') then 
@@ -85,7 +91,32 @@ begin
 			end if;
 			
 		when s6 =>
-			d_bus <= s7;
+			if (band_bor = '1') then 
+				d_bus <= esp_bor;
+			else
+				d_bus <= s6;
+			end if;
+			
+		when esp_esc =>
+			if (band_esc = '0') then 
+				d_bus <= s7;
+			else 
+				d_bus <= esp_esc;
+			end if;
+			
+		when esp_lec =>
+			if (band_lec = '0') then 
+				d_bus <= s7;
+			else
+				d_bus <= esp_lec;
+			end if;
+		
+		when esp_bor =>
+			if (band_bor = '0') then 
+				d_bus <= s7;
+			else 
+				d_bus <= esp_bor;
+			end if;
 			
 		when s7 =>
 			d_bus <= s0;
@@ -107,6 +138,9 @@ with q_bus select
 					"10" when s5,
 					"10" when s6,
 					"00" when s7,
+					"01" when esp_esc,
+					"11" when esp_lec,
+					"10" when esp_bor,
 					"00" when others;
  
 with q_bus select
@@ -118,6 +152,9 @@ with q_bus select
 				  "0000" when s5,
 				  "0100" when s6,
 				  "0000" when s7,
+				  "1000" when esp_esc,
+				  "0001" when esp_lec,
+				  "0100" when esp_bor,
 				  "0000" when others;
 
 escribir <= Salidas(3);

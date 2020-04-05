@@ -107,7 +107,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1586040491" xil_pn:in_ck="-6172590098285031204" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1586040491">
+    <transform xil_pn:end_ts="1586101085" xil_pn:in_ck="-6172590098285031204" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1586101085">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -136,7 +136,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1586040491" xil_pn:in_ck="-6172590098285031204" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1586040491">
+    <transform xil_pn:end_ts="1586101085" xil_pn:in_ck="-6172590098285031204" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1586101085">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -154,7 +154,7 @@
       <outfile xil_pn:name="Simulacion_TOP.vhd"/>
       <outfile xil_pn:name="TOP.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1586040501" xil_pn:in_ck="-6172590098285031204" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="528089876582265304" xil_pn:start_ts="1586040491">
+    <transform xil_pn:end_ts="1586101093" xil_pn:in_ck="-6172590098285031204" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="528089876582265304" xil_pn:start_ts="1586101085">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -169,7 +169,7 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1586040501" xil_pn:in_ck="-8298099176715270241" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8547474501422882533" xil_pn:start_ts="1586040501">
+    <transform xil_pn:end_ts="1586101093" xil_pn:in_ck="-8298099176715270241" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8547474501422882533" xil_pn:start_ts="1586101093">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
@@ -207,8 +207,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1586099272" xil_pn:in_ck="-2680296405669906629" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-2622618685593354692" xil_pn:start_ts="1586099233">
+    <transform xil_pn:end_ts="1586115364" xil_pn:in_ck="-2680296405669906629" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-2622618685593354692" xil_pn:start_ts="1586115323">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Borrado.ngr"/>
       <outfile xil_pn:name="CNT2S.ngr"/>

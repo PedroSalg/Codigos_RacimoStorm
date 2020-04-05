@@ -19,146 +19,7 @@ This is a Lite version of ISim.
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-ISim P.20131013 (signature 0xfbc00daa)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
 # run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-ISim P.20131013 (signature 0xfbc00daa)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-ISim P.20131013 (signature 0xfbc00daa)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-ISim P.20131013 (signature 0xfbc00daa)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-ISim P.20131013 (signature 0xfbc00daa)
-WARNING: A WEBPACK license was found.
-WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
-WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
-This is a Lite version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
 ISim P.20131013 (signature 0xfbc00daa)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -182,6 +43,8 @@ This is a Lite version of ISim.
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
+# run 1.00us
+# run 1.00us
 # run 1.00us
 # run 1.00us
 # run 1.00us
@@ -214,6 +77,29 @@ Finished circuit initialization process.
 # run 1.00us
 # run 1.00us
 # run 1.00us
+ISim P.20131013 (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
 # run 1.00us
 # run 1.00us
 # run 1.00us
@@ -236,7 +122,6 @@ Finished circuit initialization process.
 # run 1.00us
 # run 1.00us
 # run 1.00us
-# run 1.00us
 ISim P.20131013 (signature 0xfbc00daa)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -245,11 +130,164 @@ This is a Lite version of ISim.
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
-# run 1.00us
+# step
+Stopped at time : 1005 ns : File "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/Simulacion_TOP.vhd" Line 101
+# step
+Stopped at time : 1005 ns : File "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/Simulacion_TOP.vhd" Line 102
+# run 10.00us
+ISim P.20131013 (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 10.00us
+# run 5.00us
+ISim P.20131013 (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 5.00us
+# run 5.00us
+# run 5.00us
+ISim P.20131013 (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 5.00us
+# run 5.00us
+# run 5.00us
+ISim P.20131013 (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 5.00us
+# run 5.00us
+# run 5.00us
+ISim P.20131013 (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 5.00us
+# run 5.00us
+# run 5.00us
+ISim P.20131013 (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 5.00us
+# run 5.00us
+# run 5.00us
+# run 5.00us
+# run 2s
+Stopped at time : 745793460 ns : File "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/Simulacion_TOP.vhd" Line 99
+ISim P.20131013 (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 100ms
+# run 410ms
+# run 10ms
+ISim P.20131013 (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 10ms
+ISim P.20131013 (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 1ms
+# run 1ms
+# run 1ms
+# run 1ms
+# run 1ms
+# run 1ms
+# run 1ms
+ISim P.20131013 (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 1000us
+# run 1000us
+# run 1000us
+# run 1000us
+# run 1000us
+# run 1000us
+ISim P.20131013 (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 1000us
+# run 1000us
+# run 1000us
+# run 1000us
+# run 1000us
+# run 1000us
+ISim P.20131013 (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 1000us
+# run 1000us
+# run 1000us
+# run 1000us
+# run 1000us
+# run 1000us
+# run 1000us
+# run 1000us
 # exit 0

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/Simulacion_TOP_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="simulacion_top" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="22" />
+   <wvobject fp_name="/simulacion_top/sw0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw0</obj_property>
+      <obj_property name="ObjectShortName">sw0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_top/sw1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw1</obj_property>
+      <obj_property name="ObjectShortName">sw1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_top/sw2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw2</obj_property>
+      <obj_property name="ObjectShortName">sw2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_top/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_top/uut/Inst_DIV_FREQ/freq_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">freq_out</obj_property>
+      <obj_property name="ObjectShortName">freq_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_top/dq_bidir" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dq_bidir[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dq_bidir[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_top/a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">a[19:0]</obj_property>
+      <obj_property name="ObjectShortName">a[19:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_top/ce" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_top/oe" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">oe</obj_property>
+      <obj_property name="ObjectShortName">oe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_top/we" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_top/led" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">led[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_top/rst_mem" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst_mem</obj_property>
+      <obj_property name="ObjectShortName">rst_mem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_top/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_top/uut/Inst_Escritura_SM/q_bus" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">q_bus</obj_property>
+      <obj_property name="ObjectShortName">q_bus</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_top/uut/Inst_Escritura_SM/band_esc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">band_esc</obj_property>
+      <obj_property name="ObjectShortName">band_esc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_top/uut/Inst_Escritura_SM/ce_esc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ce_esc</obj_property>
+      <obj_property name="ObjectShortName">ce_esc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_top/uut/Inst_Escritura_SM/oe_esc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">oe_esc</obj_property>
+      <obj_property name="ObjectShortName">oe_esc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_top/uut/Inst_SM_CTRL/band_esc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">band_esc</obj_property>
+      <obj_property name="ObjectShortName">band_esc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_top/uut/Inst_Escritura_SM/we_esc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">we_esc</obj_property>
+      <obj_property name="ObjectShortName">we_esc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_top/uut/Inst_SM_CTRL/q_bus" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">q_bus</obj_property>
+      <obj_property name="ObjectShortName">q_bus</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_top/uut/Inst_SM_CTRL/escribir" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">escribir</obj_property>
+      <obj_property name="ObjectShortName">escribir</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_top/uut/Inst_SM_CTRL/selector" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">selector[1:0]</obj_property>
+      <obj_property name="ObjectShortName">selector[1:0]</obj_property>
+   </wvobject>
+</wave_config>

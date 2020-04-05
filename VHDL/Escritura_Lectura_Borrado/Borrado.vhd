@@ -12,6 +12,7 @@ entity Borrado is
            ce_bor : out  STD_LOGIC;
            oe_bor : out  STD_LOGIC;
            we_bor : out  STD_LOGIC;
+			  band_bor : out  STD_LOGIC;
            led_bor : out  STD_LOGIC_VECTOR (7 downto 0));
 end Borrado;
 
@@ -19,7 +20,7 @@ architecture Behavioral of Borrado is
 
 type Estados is (s0,s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12);
 signal d_bus, q_bus : Estados;
-signal Salidas : STD_LOGIC_VECTOR(2 downto 0);
+signal Salidas : STD_LOGIC_VECTOR(3 downto 0);
 
 begin
 
@@ -94,20 +95,20 @@ end process;
 --- LOGICA DE SALIDA
 
 with q_bus select
-	Salidas <= "011" when s0,
-				  "010" when s1,
-				  "011" when s2,
-				  "010" when s3,
-				  "011" when s4,
-				  "010" when s5,
-				  "011" when s6,
-				  "010" when s7,
-				  "011" when s8,
-				  "010" when s9,
-				  "011" when s10,
-				  "010" when s11,
-				  "011" when s12,
-				  "011" when others;
+	Salidas <= "0011" when s0,
+				  "1010" when s1,
+				  "1011" when s2,
+				  "1010" when s3,
+				  "1011" when s4,
+				  "1010" when s5,
+				  "1011" when s6,
+				  "1010" when s7,
+				  "1011" when s8,
+				  "1010" when s9,
+				  "1011" when s10,
+				  "1010" when s11,
+				  "0011" when s12,
+				  "0011" when others;
 				  
 
 with q_bus select
@@ -139,7 +140,8 @@ with q_bus select
 				  "11000000" when s7,
 				  "11000000" when s8,
 				  "11000000" when others;
-				 
+				
+band_bor <= Salidas(3);
 ce_bor <= Salidas(2);
 oe_bor <= Salidas(1);
 we_bor <= Salidas(0);

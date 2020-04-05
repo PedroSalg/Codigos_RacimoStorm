@@ -14,6 +14,7 @@ entity Lectura is
            oe_lec : out  STD_LOGIC;
            ce_lec : out  STD_LOGIC;
            we_lec : out  STD_LOGIC;
+			  band_lec : out  STD_LOGIC;
            led_lec : out  STD_LOGIC_VECTOR (7 downto 0);
            en_cnt_2s : out  STD_LOGIC);
 end Lectura;
@@ -22,7 +23,7 @@ architecture Behavioral of Lectura is
 
 type Estados is (s0,s1,s2,s3);
 signal d_bus, q_bus : Estados;
-signal Salidas : STD_LOGIC_VECTOR(3 downto 0);
+signal Salidas : STD_LOGIC_VECTOR(4 downto 0);
 
 begin
 
@@ -75,11 +76,11 @@ end process;
 --- LOGICA DE SALIDA
 
 with q_bus select
-	Salidas <= "0000" when s0,
-				  "0001" when s1,
-				  "0011" when s2,
-				  "0000" when s3,
-				  "0000" when others;
+	Salidas <= "00000" when s0,
+				  "10001" when s1,
+				  "10011" when s2,
+				  "00000" when s3,
+				  "00000" when others;
 				  
 
 a_lec <= "00000000000000000111";
@@ -91,7 +92,8 @@ with q_Bus select
 			     dq_in when S2,
 			     "00000001" when S3,
 			     "00000001" when others;
-				 
+
+band_lec <= Salidas(4);			 
 ce_lec <= Salidas(3);
 oe_lec <= Salidas(2);
 we_lec <= Salidas(1);

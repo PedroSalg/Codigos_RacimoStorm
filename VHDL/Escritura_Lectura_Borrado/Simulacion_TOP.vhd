@@ -107,7 +107,7 @@ BEGIN
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
-      --wait for 100 ns;	
+      	
 		SW0 <= '1';
 		SW1 <= '1';
 		SW2 <= '1';
@@ -117,7 +117,22 @@ BEGIN
 		wait for CLK_period*100;
 		
 		SW0 <= '1';
-		wait for CLK_period*10;
+		wait for 8 us;
+		
+		SW1 <= '0';
+		wait for CLK_period*100;
+		
+		SW1 <= '1';
+		wait for 5200 us;
+		
+		SW2 <= '0';
+		wait for CLK_period*100;
+		
+		SW2 <= '1';
+		wait for 8 us;
+		
+		
+		
 		
 		
 

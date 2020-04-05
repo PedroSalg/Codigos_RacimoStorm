@@ -5,3 +5,4 @@ xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escr
 xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/TOP.xst" -ofn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/TOP.syr" 
 xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/TOP.xst" -ofn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/TOP.syr" 
 xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/TOP.xst" -ofn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/TOP.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/TOP.xst" -ofn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/TOP.syr" 

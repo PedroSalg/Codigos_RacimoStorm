@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-04-05T09:52:12</DateModified>
+  <DateModified>2020-04-05T10:42:29</DateModified>
   <ModuleName>TOP</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2020-04-05T10:07:52</SummaryTimeStamp>
   <SavedFilePath>/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/iseconfig/TOP.xreport</SavedFilePath>
   <ImplementationReportsDirectory>/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura</ImplementationReportsDirectory>
   <DateInitialized>2020-04-05T09:52:12</DateInitialized>

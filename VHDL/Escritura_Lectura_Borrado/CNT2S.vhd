@@ -21,7 +21,7 @@ signal Bus_Sel, R : STD_LOGIC:='0';
 begin
 
 
-M <= conv_std_logic_Vector(200000000,28);    -- 10M ; Frecuencia de 10 Hz
+M <= conv_std_logic_Vector(10000,28);    -- 10M ; Frecuencia de 10 Hz
 --M <= conv_std_logic_Vector(9,27);    -- 10M ; Frecuencia de 10 Hz
 
 ------ REGISTRO 

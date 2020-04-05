@@ -26,6 +26,8 @@ architecture Behavioral of TOP is
 		sw2 : IN std_logic;
 		clk : IN std_logic;
 		band_esc : in  STD_LOGIC;	
+		band_lec : in  STD_LOGIC;
+		band_bor : in  STD_LOGIC;
 		rst_sm_ctrl : IN std_logic;
 		en_sm_ctrl : IN std_logic;          
 		escribir : OUT std_logic;
@@ -72,6 +74,7 @@ architecture Behavioral of TOP is
 		ce_bor : OUT std_logic;
 		oe_bor : OUT std_logic;
 		we_bor : OUT std_logic;
+		band_bor : OUT std_logic;
 		led_bor : OUT std_logic_vector(7 downto 0)
 		);
 	END COMPONENT;
@@ -88,6 +91,7 @@ architecture Behavioral of TOP is
 		oe_lec : OUT std_logic;
 		ce_lec : OUT std_logic;
 		we_lec : OUT std_logic;
+		band_lec : OUT std_logic;
 		led_lec : OUT std_logic_vector(7 downto 0);
 		en_cnt_2s : OUT std_logic
 		);
@@ -117,7 +121,7 @@ signal bus_ce_bor, bus_oe_bor, bus_we_bor : std_logic;
 signal bus_disp, bus_en_cnt_2s : std_logic; 
 signal BUS_DQ_BIDIR : std_logic_vector(7 downto 0);
 signal bus_oe_lec, bus_ce_lec, bus_we_lec : std_logic; 
-signal bus_band_esc : std_logic;
+signal bus_band_esc, bus_band_lec, bus_band_bor : std_logic;
 
 
 begin
@@ -132,6 +136,8 @@ with bus_leer select
 		sw2 => SW2,
 		clk => clk,
 		band_esc => bus_band_esc,
+		band_lec => bus_band_lec,
+		band_bor => bus_band_bor,
 		rst_sm_ctrl => '0',
 		en_sm_ctrl => bus_freq_out,
 		escribir => bus_escribir,
@@ -172,6 +178,7 @@ with bus_leer select
 		ce_bor => bus_ce_bor,
 		oe_bor => bus_oe_bor,
 		we_bor => bus_we_bor,
+		band_bor => bus_band_bor,
 		led_bor => bus_led_bor
 	);
 	
@@ -180,12 +187,13 @@ with bus_leer select
 		dq_in => DQ_BIDIR,
 		leer => bus_leer,
 		clk => clk,
-		en_lec => '1',
+		en_lec => bus_freq_out,
 		rst_lec => '0',
 		a_lec => bus_a_lec,
 		oe_lec => bus_oe_lec,
 		ce_lec => bus_ce_lec,
 		we_lec => bus_we_lec,
+		band_lec => bus_band_lec,
 		led_lec => bus_led_lec,
 		en_cnt_2s => bus_en_cnt_2s
 	);
