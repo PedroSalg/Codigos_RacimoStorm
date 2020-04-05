@@ -6,6 +6,7 @@ entity TOP is
     Port ( SW0 : in  STD_LOGIC;
            SW1 : in  STD_LOGIC;
            SW2 : in  STD_LOGIC;
+			  boton_reset : IN std_logic;
            DQ_BIDIR : inout  STD_LOGIC_VECTOR (7 downto 0);
            CLK : in  STD_LOGIC;
            A : out  STD_LOGIC_VECTOR (19 downto 0);
@@ -138,7 +139,7 @@ with bus_leer select
 		band_esc => bus_band_esc,
 		band_lec => bus_band_lec,
 		band_bor => bus_band_bor,
-		rst_sm_ctrl => '0',
+		rst_sm_ctrl => not(boton_reset),
 		en_sm_ctrl => bus_freq_out,
 		escribir => bus_escribir,
 		borrado => bus_borrado,

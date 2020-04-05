@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> 
 Reading design: TOP.prj
@@ -129,6 +129,7 @@ Parsing architecture <Behavioral> of entity <borrado>.
 Parsing VHDL file "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/TOP.vhd" into library work
 Parsing entity <TOP>.
 Parsing architecture <Behavioral> of entity <top>.
+WARNING:HDLCompiler:946 - "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/TOP.vhd" Line 142: Actual for formal port rst_sm_ctrl is neither a static name nor a globally static expression
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -158,20 +159,20 @@ Elaborating entity <CNT2S> (architecture <Behavioral>) from library <work>.
 
 Synthesizing Unit <TOP>.
     Related source file is "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/TOP.vhd".
-    Found 8-bit 4-to-1 multiplexer for signal <BUS_DQ_BIDIR> created at line 213.
-    Found 20-bit 4-to-1 multiplexer for signal <A> created at line 219.
-    Found 1-bit 4-to-1 multiplexer for signal <CE> created at line 225.
-    Found 1-bit 4-to-1 multiplexer for signal <OE> created at line 231.
-    Found 1-bit 4-to-1 multiplexer for signal <WE> created at line 237.
-    Found 8-bit 4-to-1 multiplexer for signal <LED> created at line 243.
-    Found 1-bit tristate buffer for signal <DQ_BIDIR<7>> created at line 130
-    Found 1-bit tristate buffer for signal <DQ_BIDIR<6>> created at line 130
-    Found 1-bit tristate buffer for signal <DQ_BIDIR<5>> created at line 130
-    Found 1-bit tristate buffer for signal <DQ_BIDIR<4>> created at line 130
-    Found 1-bit tristate buffer for signal <DQ_BIDIR<3>> created at line 130
-    Found 1-bit tristate buffer for signal <DQ_BIDIR<2>> created at line 130
-    Found 1-bit tristate buffer for signal <DQ_BIDIR<1>> created at line 130
-    Found 1-bit tristate buffer for signal <DQ_BIDIR<0>> created at line 130
+    Found 8-bit 4-to-1 multiplexer for signal <BUS_DQ_BIDIR> created at line 214.
+    Found 20-bit 4-to-1 multiplexer for signal <A> created at line 220.
+    Found 1-bit 4-to-1 multiplexer for signal <CE> created at line 226.
+    Found 1-bit 4-to-1 multiplexer for signal <OE> created at line 232.
+    Found 1-bit 4-to-1 multiplexer for signal <WE> created at line 238.
+    Found 8-bit 4-to-1 multiplexer for signal <LED> created at line 244.
+    Found 1-bit tristate buffer for signal <DQ_BIDIR<7>> created at line 131
+    Found 1-bit tristate buffer for signal <DQ_BIDIR<6>> created at line 131
+    Found 1-bit tristate buffer for signal <DQ_BIDIR<5>> created at line 131
+    Found 1-bit tristate buffer for signal <DQ_BIDIR<4>> created at line 131
+    Found 1-bit tristate buffer for signal <DQ_BIDIR<3>> created at line 131
+    Found 1-bit tristate buffer for signal <DQ_BIDIR<2>> created at line 131
+    Found 1-bit tristate buffer for signal <DQ_BIDIR<1>> created at line 131
+    Found 1-bit tristate buffer for signal <DQ_BIDIR<0>> created at line 131
     Summary:
 	inferred   6 Multiplexer(s).
 	inferred   8 Tristate(s).
@@ -187,6 +188,9 @@ Synthesizing Unit <SM_CTRL>.
     | Inputs             | 7                                              |
     | Outputs            | 6                                              |
     | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_sm_ctrl (positive)                         |
+    | Reset type         | synchronous                                    |
+    | Reset State        | s0                                             |
     | Power Up State     | s0                                             |
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
@@ -198,8 +202,8 @@ Unit <SM_CTRL> synthesized.
 Synthesizing Unit <DIV_FREQ>.
     Related source file is "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/DIV_FREQ.vhd".
     Found 6-bit register for signal <q_bus>.
-    Found 6-bit adder for signal <q_bus[5]_GND_17_o_add_4_OUT> created at line 45.
-    Found 6-bit comparator greater for signal <bus_sel_INV_17_o> created at line 42
+    Found 6-bit adder for signal <q_bus[5]_GND_16_o_add_4_OUT> created at line 45.
+    Found 6-bit comparator greater for signal <bus_sel_INV_18_o> created at line 42
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   6 D-type flip-flop(s).
@@ -264,8 +268,8 @@ Unit <Lectura> synthesized.
 Synthesizing Unit <CNT2S>.
     Related source file is "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/CNT2S.vhd".
     Found 28-bit register for signal <Q_Bus>.
-    Found 28-bit adder for signal <Q_Bus[27]_GND_25_o_add_5_OUT> created at line 46.
-    Found 28-bit comparator greater for signal <Bus_Sel_INV_18_o> created at line 43
+    Found 28-bit adder for signal <Q_Bus[27]_GND_24_o_add_5_OUT> created at line 46.
+    Found 28-bit comparator greater for signal <Bus_Sel_INV_19_o> created at line 43
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  28 D-type flip-flop(s).
@@ -396,27 +400,10 @@ Optimizing FSM <FSM_1> on signal <q_bus[1:4]> with user encoding.
 -------------------
 
 Optimizing unit <TOP> ...
-WARNING:Xst:1293 - FF/Latch <Inst_CNT2S/Q_Bus_14> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_CNT2S/Q_Bus_15> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_CNT2S/Q_Bus_16> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_CNT2S/Q_Bus_17> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_CNT2S/Q_Bus_18> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_CNT2S/Q_Bus_19> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_CNT2S/Q_Bus_20> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_CNT2S/Q_Bus_21> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_CNT2S/Q_Bus_22> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_CNT2S/Q_Bus_23> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_CNT2S/Q_Bus_24> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_CNT2S/Q_Bus_25> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_CNT2S/Q_Bus_26> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_CNT2S/Q_Bus_27> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block TOP, actual ratio is 2.
-FlipFlop Inst_SM_CTRL/q_bus_FSM_FFd1 has been replicated 1 time(s)
-FlipFlop Inst_SM_CTRL/q_bus_FSM_FFd2 has been replicated 1 time(s)
-FlipFlop Inst_SM_CTRL/q_bus_FSM_FFd4 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -424,8 +411,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 46
- Flip-Flops                                            : 46
+# Registers                                            : 57
+ Flip-Flops                                            : 57
 
 =========================================================================
 
@@ -448,26 +435,25 @@ Top Level Output File Name         : TOP.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 128
+# BELS                             : 227
 #      GND                         : 1
-#      INV                         : 1
-#      LUT2                        : 20
-#      LUT3                        : 20
-#      LUT4                        : 9
-#      LUT5                        : 12
-#      LUT6                        : 30
-#      MUXCY                       : 19
-#      MUXF7                       : 1
+#      INV                         : 2
+#      LUT2                        : 33
+#      LUT3                        : 47
+#      LUT4                        : 10
+#      LUT5                        : 14
+#      LUT6                        : 64
+#      MUXCY                       : 27
 #      VCC                         : 1
-#      XORCY                       : 14
-# FlipFlops/Latches                : 46
-#      FD                          : 26
-#      FDR                         : 6
-#      FDRE                        : 14
+#      XORCY                       : 28
+# FlipFlops/Latches                : 57
+#      FD                          : 19
+#      FDR                         : 10
+#      FDRE                        : 28
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 43
-#      IBUF                        : 3
+# IO Buffers                       : 44
+#      IBUF                        : 4
 #      IOBUF                       : 8
 #      OBUF                        : 32
 
@@ -478,20 +464,20 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              46  out of  11440     0%  
- Number of Slice LUTs:                   92  out of   5720     1%  
-    Number used as Logic:                92  out of   5720     1%  
+ Number of Slice Registers:              57  out of  11440     0%  
+ Number of Slice LUTs:                  170  out of   5720     2%  
+    Number used as Logic:               170  out of   5720     2%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     95
-   Number with an unused Flip Flop:      49  out of     95    51%  
-   Number with an unused LUT:             3  out of     95     3%  
-   Number of fully used LUT-FF pairs:    43  out of     95    45%  
-   Number of unique control sets:         3
+ Number of LUT Flip Flop pairs used:    170
+   Number with an unused Flip Flop:     113  out of    170    66%  
+   Number with an unused LUT:             0  out of    170     0%  
+   Number of fully used LUT-FF pairs:    57  out of    170    33%  
+   Number of unique control sets:         4
 
 IO Utilization: 
- Number of IOs:                          44
- Number of bonded IOBs:                  44  out of    102    43%  
+ Number of IOs:                          45
+ Number of bonded IOBs:                  45  out of    102    44%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -517,7 +503,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-CLK                                | BUFGP                  | 46    |
+CLK                                | BUFGP                  | 57    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -528,9 +514,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 4.493ns (Maximum Frequency: 222.568MHz)
-   Minimum input arrival time before clock: 4.958ns
-   Maximum output required time after clock: 8.313ns
+   Minimum period: 4.842ns (Maximum Frequency: 206.547MHz)
+   Minimum input arrival time before clock: 4.903ns
+   Maximum output required time after clock: 8.363ns
    Maximum combinational path delay: 6.287ns
 
 Timing Details:
@@ -539,27 +525,22 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 4.493ns (frequency: 222.568MHz)
-  Total number of paths / destination ports: 2547 / 80
+  Clock period: 4.842ns (frequency: 206.547MHz)
+  Total number of paths / destination ports: 11156 / 119
 -------------------------------------------------------------------------
-Delay:               4.493ns (Levels of Logic = 21)
-  Source:            Inst_CNT2S/Q_Bus_8 (FF)
-  Destination:       Inst_CNT2S/Q_Bus_13 (FF)
+Delay:               4.842ns (Levels of Logic = 30)
+  Source:            Inst_CNT2S/Q_Bus_24 (FF)
+  Destination:       Inst_CNT2S/Q_Bus_27 (FF)
   Source Clock:      CLK rising
   Destination Clock: CLK rising
 
-  Data Path: Inst_CNT2S/Q_Bus_8 to Inst_CNT2S/Q_Bus_13
+  Data Path: Inst_CNT2S/Q_Bus_24 to Inst_CNT2S/Q_Bus_27
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             3   0.525   1.196  Inst_CNT2S/Q_Bus_8 (Inst_CNT2S/Q_Bus_8)
-     LUT5:I0->O            1   0.254   0.000  Inst_CNT2S/Mcompar_Bus_Sel_INV_18_o_lut<0> (Inst_CNT2S/Mcompar_Bus_Sel_INV_18_o_lut<0>)
-     MUXCY:S->O            1   0.215   0.000  Inst_CNT2S/Mcompar_Bus_Sel_INV_18_o_cy<0> (Inst_CNT2S/Mcompar_Bus_Sel_INV_18_o_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  Inst_CNT2S/Mcompar_Bus_Sel_INV_18_o_cy<1> (Inst_CNT2S/Mcompar_Bus_Sel_INV_18_o_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Inst_CNT2S/Mcompar_Bus_Sel_INV_18_o_cy<2> (Inst_CNT2S/Mcompar_Bus_Sel_INV_18_o_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Inst_CNT2S/Mcompar_Bus_Sel_INV_18_o_cy<3> (Inst_CNT2S/Mcompar_Bus_Sel_INV_18_o_cy<3>)
-     MUXCY:CI->O          16   0.023   1.182  Inst_CNT2S/Mcompar_Bus_Sel_INV_18_o_cy<4> (Inst_CNT2S/Bus_Sel_INV_18_o_inv)
-     LUT2:I1->O            1   0.254   0.000  Inst_CNT2S/Mcount_Q_Bus_lut<0> (Inst_CNT2S/Mcount_Q_Bus_lut<0>)
+     FDRE:C->Q             5   0.525   1.271  Inst_CNT2S/Q_Bus_24 (Inst_CNT2S/Q_Bus_24)
+     LUT5:I0->O           10   0.254   1.438  Inst_CNT2S/Bus_Sel_INV_19_o_inv_inv31_2 (Inst_CNT2S/Bus_Sel_INV_19_o_inv_inv312)
+     LUT6:I1->O            1   0.254   0.000  Inst_CNT2S/Mcount_Q_Bus_lut<0> (Inst_CNT2S/Mcount_Q_Bus_lut<0>)
      MUXCY:S->O            1   0.215   0.000  Inst_CNT2S/Mcount_Q_Bus_cy<0> (Inst_CNT2S/Mcount_Q_Bus_cy<0>)
      MUXCY:CI->O           1   0.023   0.000  Inst_CNT2S/Mcount_Q_Bus_cy<1> (Inst_CNT2S/Mcount_Q_Bus_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  Inst_CNT2S/Mcount_Q_Bus_cy<2> (Inst_CNT2S/Mcount_Q_Bus_cy<2>)
@@ -572,40 +553,54 @@ Delay:               4.493ns (Levels of Logic = 21)
      MUXCY:CI->O           1   0.023   0.000  Inst_CNT2S/Mcount_Q_Bus_cy<9> (Inst_CNT2S/Mcount_Q_Bus_cy<9>)
      MUXCY:CI->O           1   0.023   0.000  Inst_CNT2S/Mcount_Q_Bus_cy<10> (Inst_CNT2S/Mcount_Q_Bus_cy<10>)
      MUXCY:CI->O           1   0.023   0.000  Inst_CNT2S/Mcount_Q_Bus_cy<11> (Inst_CNT2S/Mcount_Q_Bus_cy<11>)
-     MUXCY:CI->O           0   0.023   0.000  Inst_CNT2S/Mcount_Q_Bus_cy<12> (Inst_CNT2S/Mcount_Q_Bus_cy<12>)
-     XORCY:CI->O           1   0.206   0.000  Inst_CNT2S/Mcount_Q_Bus_xor<13> (Inst_CNT2S/Mcount_Q_Bus13)
-     FDRE:D                    0.074          Inst_CNT2S/Q_Bus_13
+     MUXCY:CI->O           1   0.023   0.000  Inst_CNT2S/Mcount_Q_Bus_cy<12> (Inst_CNT2S/Mcount_Q_Bus_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_CNT2S/Mcount_Q_Bus_cy<13> (Inst_CNT2S/Mcount_Q_Bus_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_CNT2S/Mcount_Q_Bus_cy<14> (Inst_CNT2S/Mcount_Q_Bus_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_CNT2S/Mcount_Q_Bus_cy<15> (Inst_CNT2S/Mcount_Q_Bus_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_CNT2S/Mcount_Q_Bus_cy<16> (Inst_CNT2S/Mcount_Q_Bus_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_CNT2S/Mcount_Q_Bus_cy<17> (Inst_CNT2S/Mcount_Q_Bus_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_CNT2S/Mcount_Q_Bus_cy<18> (Inst_CNT2S/Mcount_Q_Bus_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_CNT2S/Mcount_Q_Bus_cy<19> (Inst_CNT2S/Mcount_Q_Bus_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_CNT2S/Mcount_Q_Bus_cy<20> (Inst_CNT2S/Mcount_Q_Bus_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_CNT2S/Mcount_Q_Bus_cy<21> (Inst_CNT2S/Mcount_Q_Bus_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_CNT2S/Mcount_Q_Bus_cy<22> (Inst_CNT2S/Mcount_Q_Bus_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_CNT2S/Mcount_Q_Bus_cy<23> (Inst_CNT2S/Mcount_Q_Bus_cy<23>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_CNT2S/Mcount_Q_Bus_cy<24> (Inst_CNT2S/Mcount_Q_Bus_cy<24>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_CNT2S/Mcount_Q_Bus_cy<25> (Inst_CNT2S/Mcount_Q_Bus_cy<25>)
+     MUXCY:CI->O           0   0.023   0.000  Inst_CNT2S/Mcount_Q_Bus_cy<26> (Inst_CNT2S/Mcount_Q_Bus_cy<26>)
+     XORCY:CI->O           1   0.206   0.000  Inst_CNT2S/Mcount_Q_Bus_xor<27> (Inst_CNT2S/Mcount_Q_Bus27)
+     FDRE:D                    0.074          Inst_CNT2S/Q_Bus_27
     ----------------------------------------
-    Total                      4.493ns (2.115ns logic, 2.378ns route)
-                                       (47.1% logic, 52.9% route)
+    Total                      4.842ns (2.133ns logic, 2.709ns route)
+                                       (44.0% logic, 56.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 19 / 7
+  Total number of paths / destination ports: 15 / 8
 -------------------------------------------------------------------------
-Offset:              4.958ns (Levels of Logic = 4)
-  Source:            SW2 (PAD)
+Offset:              4.903ns (Levels of Logic = 4)
+  Source:            SW0 (PAD)
   Destination:       Inst_SM_CTRL/q_bus_FSM_FFd4 (FF)
   Destination Clock: CLK rising
 
-  Data Path: SW2 to Inst_SM_CTRL/q_bus_FSM_FFd4
+  Data Path: SW0 to Inst_SM_CTRL/q_bus_FSM_FFd4
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             3   1.328   1.221  SW2_IBUF (SW2_IBUF)
-     LUT6:I0->O            1   0.254   0.910  Inst_SM_CTRL/q_bus_FSM_FFd4-In1 (Inst_SM_CTRL/q_bus_FSM_FFd4-In1)
-     LUT6:I3->O            1   0.235   0.682  Inst_SM_CTRL/q_bus_FSM_FFd4-In3 (Inst_SM_CTRL/q_bus_FSM_FFd4-In3)
-     LUT4:I3->O            2   0.254   0.000  Inst_SM_CTRL/q_bus_FSM_FFd4-In6 (Inst_SM_CTRL/q_bus_FSM_FFd4-In)
-     FD:D                      0.074          Inst_SM_CTRL/q_bus_FSM_FFd4
+     IBUF:I->O             5   1.328   1.271  SW0_IBUF (SW0_IBUF)
+     LUT5:I0->O            1   0.254   0.790  Inst_SM_CTRL/q_bus_FSM_FFd4-In1 (Inst_SM_CTRL/q_bus_FSM_FFd4-In1)
+     LUT6:I4->O            1   0.250   0.682  Inst_SM_CTRL/q_bus_FSM_FFd4-In2 (Inst_SM_CTRL/q_bus_FSM_FFd4-In2)
+     LUT6:I5->O            1   0.254   0.000  Inst_SM_CTRL/q_bus_FSM_FFd4-In5 (Inst_SM_CTRL/q_bus_FSM_FFd4-In)
+     FDR:D                     0.074          Inst_SM_CTRL/q_bus_FSM_FFd4
     ----------------------------------------
-    Total                      4.958ns (2.145ns logic, 2.813ns route)
-                                       (43.3% logic, 56.7% route)
+    Total                      4.903ns (2.160ns logic, 2.743ns route)
+                                       (44.1% logic, 55.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
   Total number of paths / destination ports: 409 / 33
 -------------------------------------------------------------------------
-Offset:              8.313ns (Levels of Logic = 4)
+Offset:              8.363ns (Levels of Logic = 4)
   Source:            Inst_SM_CTRL/q_bus_FSM_FFd1 (FF)
   Destination:       DQ_BIDIR<2> (PAD)
   Source Clock:      CLK rising
@@ -614,14 +609,14 @@ Offset:              8.313ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              25   0.525   1.679  Inst_SM_CTRL/q_bus_FSM_FFd1 (Inst_SM_CTRL/q_bus_FSM_FFd1)
+     FDR:C->Q             28   0.525   1.729  Inst_SM_CTRL/q_bus_FSM_FFd1 (Inst_SM_CTRL/q_bus_FSM_FFd1)
      LUT5:I1->O            3   0.254   0.766  A<6>21 (A<6>2)
      LUT3:I2->O            2   0.254   0.726  A<7>11 (A<7>1)
      LUT6:I5->O            8   0.254   0.943  A<7> (A_7_OBUF)
      OBUF:I->O                 2.912          A_13_OBUF (A<13>)
     ----------------------------------------
-    Total                      8.313ns (4.199ns logic, 4.114ns route)
-                                       (50.5% logic, 49.5% route)
+    Total                      8.363ns (4.199ns logic, 4.164ns route)
+                                       (50.2% logic, 49.8% route)
 
 =========================================================================
 Timing constraint: Default path analysis
@@ -652,21 +647,21 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    4.493|         |         |         |
+CLK            |    4.842|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 32.00 secs
-Total CPU time to Xst completion: 25.73 secs
+Total REAL time to Xst completion: 24.00 secs
+Total CPU time to Xst completion: 23.40 secs
  
 --> 
 
 
-Total memory usage is 394992 kilobytes
+Total memory usage is 394996 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   14 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 
