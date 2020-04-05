@@ -1,0 +1,2 @@
+vhdtdtfi -prj Escritura -o /home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/DIV_FREQ.vhi -module DIV_FREQ -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work DIV_FREQ.vhd 
+vhdtdtfi -prj Escritura -o /home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/DIV_FREQ.vhi -module DIV_FREQ -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work DIV_FREQ.vhd 

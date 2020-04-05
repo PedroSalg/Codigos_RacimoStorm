@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/Lectura.xst" -ofn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/Lectura.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/Lectura.xst" -ofn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/Lectura.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/Lectura.xst" -ofn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/Lectura.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/Lectura.xst" -ofn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/Lectura.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/Lectura.xst" -ofn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/Lectura.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/Lectura.xst" -ofn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/Lectura.syr" 
+vhdtdtfi -prj Escritura -o /home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/Lectura.vhi -module Lectura -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Lectura.vhd 

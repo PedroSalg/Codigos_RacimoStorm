@@ -1,0 +1,7 @@
+work	"Borrado.vhd"
+work	"CNT2S.vhd"
+work	"DIV_FREQ.vhd"
+work	"Escritura_SM.vhd"
+work	"Lectura.vhd"
+work	"SM_CTRL.vhd"
+work	"TOP.vhd"

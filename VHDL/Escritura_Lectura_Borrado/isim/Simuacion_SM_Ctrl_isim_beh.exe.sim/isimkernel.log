@@ -1,0 +1,29 @@
+Command line:
+   Simuacion_SM_Ctrl_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55066
+
+Sat Apr  4 16:54:09 2020
+
+
+ Elaboration Time: 0.06 sec
+
+ Current Memory Usage: 227.389 Meg
+
+ Total Signals          : 25
+ Total Nets             : 18
+ Total Signal Drivers   : 13
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 10
+ Total Traceable Variables  : 9
+ Total Scalar Nets and Variables : 379
+Total Line Count : 56
+
+ Total Simulation Time: 0.08 sec
+
+ Current Memory Usage: 302.891 Meg
+
+Sat Apr  4 16:54:44 2020
+

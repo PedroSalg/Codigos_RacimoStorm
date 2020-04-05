@@ -1,0 +1,8 @@
+vhdl work "SM_CTRL.vhd"
+vhdl work "Lectura.vhd"
+vhdl work "Escritura_SM.vhd"
+vhdl work "DIV_FREQ.vhd"
+vhdl work "CNT2S.vhd"
+vhdl work "Borrado.vhd"
+vhdl work "TOP.vhd"
+vhdl work "Simulacion_TOP.vhd"

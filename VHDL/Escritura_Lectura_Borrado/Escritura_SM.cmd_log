@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/Escritura_SM.xst" -ofn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/Escritura_SM.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/Escritura_SM.xst" -ofn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/Escritura_SM.syr" 
+vhdtdtfi -prj Escritura -o /home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/Escritura_SM.vhi -module Escritura_SM -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Escritura_SM.vhd 

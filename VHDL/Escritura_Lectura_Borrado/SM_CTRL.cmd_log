@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/SM_CTRL.xst" -ofn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/SM_CTRL.syr" 
+vhdtdtfi -prj Escritura -o /home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/SM_CTRL.vhi -module SM_CTRL -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work SM_CTRL.vhd 

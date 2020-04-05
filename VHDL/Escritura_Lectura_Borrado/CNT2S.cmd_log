@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/CNT2S.xst" -ofn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/CNT2S.syr" 
+vhdtdtfi -prj Escritura -o /home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Escritura/CNT2S.vhi -module CNT2S -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work CNT2S.vhd 
