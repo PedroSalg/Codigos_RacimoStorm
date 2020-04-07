@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Esc_Lec_Bor_Toda_La_Memoria/Escritura_SM.xst" -ofn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Esc_Lec_Bor_Toda_La_Memoria/Escritura_SM.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Esc_Lec_Bor_Toda_La_Memoria/Escritura_SM.xst" -ofn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Esc_Lec_Bor_Toda_La_Memoria/Escritura_SM.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Esc_Lec_Bor_Toda_La_Memoria/Escritura_SM.xst" -ofn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Esc_Lec_Bor_Toda_La_Memoria/Escritura_SM.syr" 
+vhdtdtfi -prj Esc_Lec_Bor_Toda_La_Memoria -o /home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Esc_Lec_Bor_Toda_La_Memoria/Escritura_SM.vhi -module Escritura_SM -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Escritura_SM.vhd 
