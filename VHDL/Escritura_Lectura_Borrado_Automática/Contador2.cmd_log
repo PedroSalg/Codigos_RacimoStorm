@@ -1,2 +1,0 @@
-xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Esc_Lec_Bor_Toda_La_Memoria/Contador2.xst" -ofn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Esc_Lec_Bor_Toda_La_Memoria/Contador2.syr" 
-vhdtdtfi -prj Esc_Lec_Bor_Toda_La_Memoria -o /home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Esc_Lec_Bor_Toda_La_Memoria/Contador2.vhi -module Contador2 -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Contador2.vhd 

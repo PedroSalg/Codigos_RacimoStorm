@@ -1,3 +1,0 @@
-xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Esc_Lec_Bor_Toda_La_Memoria/Lectura.xst" -ofn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Esc_Lec_Bor_Toda_La_Memoria/Lectura.syr" 
-xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Esc_Lec_Bor_Toda_La_Memoria/Lectura.xst" -ofn "/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Esc_Lec_Bor_Toda_La_Memoria/Lectura.syr" 
-vhdtdtfi -prj Esc_Lec_Bor_Toda_La_Memoria -o /home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Esc_Lec_Bor_Toda_La_Memoria/Lectura.vhi -module Lectura -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Lectura.vhd 
