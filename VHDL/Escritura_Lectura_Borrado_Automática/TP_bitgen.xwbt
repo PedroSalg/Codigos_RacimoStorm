@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Esc_Lec_Bor_Toda_La_Memoria/TP.ncd
+OUTFILE=/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Esc_Lec_Bor_Toda_La_Memoria/TP.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=/home/pedro/Documents/ISE/Escritura_Borrado_Lectura/Esc_Lec_Bor_Toda_La_Memoria
+LICENSE=WebPack
+USER_INFO=211202850_0_0_779
