@@ -1,0 +1,387 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> 
+Reading design: Contador_Lectura.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Contador_Lectura.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Contador_Lectura"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : Contador_Lectura
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/pedro/Documents/ISE/Comunicacion_Memoria_RP/Contador_Lectura.vhd" into library work
+Parsing entity <Contador_Lectura>.
+Parsing architecture <Behavioral> of entity <contador_lectura>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Contador_Lectura> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Contador_Lectura>.
+    Related source file is "/home/pedro/Documents/ISE/Comunicacion_Memoria_RP/Contador_Lectura.vhd".
+    Found 8-bit register for signal <q_bus>.
+    Found 8-bit adder for signal <q_bus[7]_GND_6_o_add_5_OUT> created at line 43.
+    Found 8-bit comparator lessequal for signal <bus_sel_INV_1_o> created at line 40
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <Contador_Lectura> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 1
+ 8-bit comparator lessequal                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Contador_Lectura>.
+The following registers are absorbed into counter <q_bus>: 1 register on signal <q_bus>.
+Unit <Contador_Lectura> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 8-bit up counter                                      : 1
+# Comparators                                          : 1
+ 8-bit comparator lessequal                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Contador_Lectura> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Contador_Lectura, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Contador_Lectura.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 37
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 7
+#      LUT3                        : 2
+#      LUT4                        : 8
+#      LUT6                        : 2
+#      MUXCY                       : 7
+#      VCC                         : 1
+#      XORCY                       : 8
+# FlipFlops/Latches                : 8
+#      FD                          : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      IBUF                        : 2
+#      OBUF                        : 9
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               8  out of  11440     0%  
+ Number of Slice LUTs:                   20  out of   5720     0%  
+    Number used as Logic:                20  out of   5720     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     20
+   Number with an unused Flip Flop:      12  out of     20    60%  
+   Number with an unused LUT:             0  out of     20     0%  
+   Number of fully used LUT-FF pairs:     8  out of     20    40%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    102    11%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 8     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 4.044ns (Maximum Frequency: 247.280MHz)
+   Minimum input arrival time before clock: 5.079ns
+   Maximum output required time after clock: 6.365ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.044ns (frequency: 247.280MHz)
+  Total number of paths / destination ports: 108 / 8
+-------------------------------------------------------------------------
+Delay:               4.044ns (Levels of Logic = 3)
+  Source:            q_bus_2 (FF)
+  Destination:       q_bus_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: q_bus_2 to q_bus_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.525   1.032  q_bus_2 (q_bus_2)
+     LUT3:I0->O            2   0.235   0.726  out_cnt_lectura1_SW0 (N3)
+     LUT6:I5->O            8   0.254   0.944  Mcount_q_bus_val1 (Mcount_q_bus_val)
+     LUT4:I3->O            1   0.254   0.000  q_bus_0_rstpot (q_bus_0_rstpot)
+     FD:D                      0.074          q_bus_0
+    ----------------------------------------
+    Total                      4.044ns (1.342ns logic, 2.702ns route)
+                                       (33.2% logic, 66.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 24 / 8
+-------------------------------------------------------------------------
+Offset:              5.079ns (Levels of Logic = 4)
+  Source:            en_cnt_lec (PAD)
+  Destination:       q_bus_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: en_cnt_lec to q_bus_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.328   1.204  en_cnt_lec_IBUF (en_cnt_lec_IBUF)
+     LUT3:I0->O            1   0.235   0.790  out_cnt_lectura1_SW1 (N5)
+     LUT6:I4->O            8   0.250   0.944  Mcount_q_bus_val1 (Mcount_q_bus_val)
+     LUT4:I3->O            1   0.254   0.000  q_bus_0_rstpot (q_bus_0_rstpot)
+     FD:D                      0.074          q_bus_0
+    ----------------------------------------
+    Total                      5.079ns (2.141ns logic, 2.938ns route)
+                                       (42.2% logic, 57.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 16 / 9
+-------------------------------------------------------------------------
+Offset:              6.365ns (Levels of Logic = 3)
+  Source:            q_bus_2 (FF)
+  Destination:       out_cnt_lectura (PAD)
+  Source Clock:      clk rising
+
+  Data Path: q_bus_2 to out_cnt_lectura
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.525   1.032  q_bus_2 (q_bus_2)
+     LUT3:I0->O            2   0.235   0.726  out_cnt_lectura1_SW0 (N3)
+     LUT6:I5->O            1   0.254   0.681  out_cnt_lectura1 (out_cnt_lectura_OBUF)
+     OBUF:I->O                 2.912          out_cnt_lectura_OBUF (out_cnt_lectura)
+    ----------------------------------------
+    Total                      6.365ns (3.926ns logic, 2.439ns route)
+                                       (61.7% logic, 38.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.044|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 23.00 secs
+Total CPU time to Xst completion: 21.71 secs
+ 
+--> 
+
+
+Total memory usage is 393792 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

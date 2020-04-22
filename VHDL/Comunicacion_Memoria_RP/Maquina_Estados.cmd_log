@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Comunicacion_Memoria_RP/Maquina_Estados.xst" -ofn "/home/pedro/Documents/ISE/Comunicacion_Memoria_RP/Maquina_Estados.syr" 
+vhdtdtfi -prj Comunicacion_Memoria_RP -o /home/pedro/Documents/ISE/Comunicacion_Memoria_RP/Maquina_Estados.vhi -module Maquina_Estados -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Maquina_Estados.vhd 

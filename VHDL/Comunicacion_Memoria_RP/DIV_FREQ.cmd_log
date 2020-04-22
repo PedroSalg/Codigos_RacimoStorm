@@ -1,0 +1,1 @@
+vhdtdtfi -prj Comunicacion_Memoria_RP -o /home/pedro/Documents/ISE/Comunicacion_Memoria_RP/DIV_FREQ.vhi -module DIV_FREQ -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work DIV_FREQ.vhd 

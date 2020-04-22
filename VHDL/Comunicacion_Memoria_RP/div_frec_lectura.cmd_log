@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Comunicacion_Memoria_RP/div_frec_lectura.xst" -ofn "/home/pedro/Documents/ISE/Comunicacion_Memoria_RP/div_frec_lectura.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Comunicacion_Memoria_RP/div_frec_lectura.xst" -ofn "/home/pedro/Documents/ISE/Comunicacion_Memoria_RP/div_frec_lectura.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Comunicacion_Memoria_RP/div_frec_lectura.xst" -ofn "/home/pedro/Documents/ISE/Comunicacion_Memoria_RP/div_frec_lectura.syr" 
+vhdtdtfi -prj Comunicacion_Memoria_RP -o /home/pedro/Documents/ISE/Comunicacion_Memoria_RP/div_frec_lectura.vhi -module div_frec_lectura -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work div_frec_lectura.vhd 
