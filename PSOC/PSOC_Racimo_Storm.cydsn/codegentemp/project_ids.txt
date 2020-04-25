@@ -1,0 +1,6 @@
+C:\Users\leonf\OneDrive\Desktop\Proyecto Racimo Storm\Documentacion nueva version\Codigos y datos\psoc\PSOC_Racimo_Storm.cydsn\PSOC_Racimo_Storm.cyprj|b096d956-d2ad-4000-ac42-217eaeba7e4c
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|97d39239-709e-4ef0-9ca3-6b8eff36fab2
+C:\Users\leonf\OneDrive\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|a2dc26c1-e990-4796-bbbe-418269e9b9d3
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|8ee58e3d-df9a-4eb4-ac5f-b2b50a12a727
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|7aefc2e7-6e29-4749-a4d2-cb017e0a518b
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|49cf5bf5-c058-4b90-bda8-825c55567c09

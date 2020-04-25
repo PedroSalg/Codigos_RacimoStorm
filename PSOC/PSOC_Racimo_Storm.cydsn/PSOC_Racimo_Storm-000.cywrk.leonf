@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
+<CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
+<indicators />
+</CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
+</dataGuid>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>PSOC_Racimo_Storm-000</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\TopDesign</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\PSOC_Racimo_Storm.cydwr</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\PSOC_Racimo_Storm.cydwr\Pins</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\PSOC_Racimo_Storm.cydwr\Analog</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\PSOC_Racimo_Storm.cydwr\Clocks</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\PSOC_Racimo_Storm.cydwr\Interrupts</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\PSOC_Racimo_Storm.cydwr\DMA</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\PSOC_Racimo_Storm.cydwr\System</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\PSOC_Racimo_Storm.cydwr\Directives</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\PSOC_Racimo_Storm.cydwr\Flash Security</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\PSOC_Racimo_Storm.cydwr\EEPROM</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\Header Files</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\Header Files\cyapicallbacks.h</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\Source Files</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\Source Files\main.c</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\Generated_Source</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\Generated_Source\PSoC5</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>PSOC_Racimo_Storm-000</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\TopDesign</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\PSOC_Racimo_Storm.cydwr</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\PSOC_Racimo_Storm.cydwr\Pins</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\PSOC_Racimo_Storm.cydwr\Analog</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\PSOC_Racimo_Storm.cydwr\Clocks</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\PSOC_Racimo_Storm.cydwr\Interrupts</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\PSOC_Racimo_Storm.cydwr\DMA</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\PSOC_Racimo_Storm.cydwr\System</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\PSOC_Racimo_Storm.cydwr\Directives</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\PSOC_Racimo_Storm.cydwr\Flash Security</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\PSOC_Racimo_Storm.cydwr\EEPROM</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\Header Files</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\Header Files\cyapicallbacks.h</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\Source Files</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\Source Files\main.c</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\Generated_Source</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\Generated_Source\PSoC5</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\Generated_Source\PSoC5\ADC</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\Generated_Source\PSoC5\ADC_AMux</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>PSOC_Racimo_Storm-000</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\TopDesign</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>PSOC_Racimo_Storm-000</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\TopDesign</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>PSOC_Racimo_Storm-000</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_AMux.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_Ext_CP_Clk.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_INT.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_IRQ.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_PM.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_theACLK.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\ENCODER.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\EZI2C.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\EZI2C_INT.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\EZI2C_PM.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\Mixer.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\Mixer_PM.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\VDC.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\VIN.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\VOUT.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\VREF.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\PSOC_Racimo_Storm.elf</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\PSOC_Racimo_Storm.hex</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\PSOC_Racimo_Storm.map</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\PSOC_Racimo_Storm.gpdsc</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\PSOC_Racimo_Storm.rpt</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\PSOC_Racimo_Storm_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>PSOC_Racimo_Storm-000</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_AMux.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_Ext_CP_Clk.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_INT.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_IRQ.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_PM.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_theACLK.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>PSOC_Racimo_Storm-000</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\PSoC 5LP Architecture TRM</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CY8C58LP Family Datasheet</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\System Reference Guides</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\System Reference Guides\cy_boot_v5_70</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\ADC_DelSig_v3_30.pdf</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\cy_pins_v2_20</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\EZI2C_v2_0.pdf</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\Mixer_v2_0.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>PSOC_Racimo_Storm-000</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\PSoC 5LP Architecture TRM</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\CY8C58LP Family Datasheet</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\System Reference Guides</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\System Reference Guides\cy_boot_v5_70</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\ADC_DelSig_v3_30.pdf</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\cy_pins_v2_20</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\EZI2C_v2_0.pdf</v>
+<v>PSOC_Racimo_Storm-000\PSOC_Racimo_Storm\Mixer_v2_0.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\TopDesign\TopDesign.cysch" />
+<name v=".\main.c" />
+<name v=".\PSOC_Racimo_Storm.cydwr" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="885, 429" SelectedTabbedMdiWindow="af8ca233-a904-42c9-beb0-b27e25c3f94c"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="587da168-1632-4143-bbf4-8543d866ee61" /><DocumentWindow Key="C:\Users\leonf\OneDrive\Desktop\Proyecto Racimo Storm\Documentacion nueva version\Codigos y datos\psoc\PSOC_Racimo_Storm.cydsn\TopDesign\TopDesign.cysch" Guid="af8ca233-a904-42c9-beb0-b27e25c3f94c" /><DocumentWindow Key="C:\Users\leonf\OneDrive\Desktop\Proyecto Racimo Storm\Documentacion nueva version\Codigos y datos\psoc\PSOC_Racimo_Storm.cydsn\main.c" Guid="904feb03-96e0-46e8-829b-021b360407f5" /><DocumentWindow Key="C:\Users\leonf\OneDrive\Desktop\Proyecto Racimo Storm\Documentacion nueva version\Codigos y datos\psoc\PSOC_Racimo_Storm.cydsn\PSOC_Racimo_Storm.cydwr" Guid="e7d22e2d-ac46-4e6a-9bb1-7eb5a46df007" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>
