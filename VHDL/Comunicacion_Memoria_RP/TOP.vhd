@@ -100,6 +100,7 @@ begin
 
 B1 <= "0000" & bus_out_dq(11 downto 8);
 B0 <= bus_out_dq(7 downto 0);
+
 	Inst_Maquina_Estados: Maquina_Estados PORT MAP(
 		sw0 => SW0,
 		dq => DQ,
@@ -107,7 +108,7 @@ B0 <= bus_out_dq(7 downto 0);
 		stop => bus_out_cnt_lectura,
 		from_rp => FROM_RP,
 		en_maquina => bus_out_div_frec,
-		rst_maquina => NOT (RESET),
+		rst_maquina => NOT(RESET),
 		led => bus_led,
 		out_dq => bus_out_dq,
 		oe => bus_oe,
@@ -119,6 +120,7 @@ B0 <= bus_out_dq(7 downto 0);
 	);
 
 	Inst_Contador_Lectura: Contador_Lectura PORT MAP(
+		--en_cnt_lec => bus_en_contador and bus_freq_out,
 		en_cnt_lec => bus_en_contador,
 		rst_cnt_lec => bus_rst_contador,
 		clk => CLK,
@@ -170,7 +172,7 @@ if rising_edge(clk) then
 end if;
 end process;
 
-TO_RP <= bus_to_rp;
+TO_RP <= bus_to_rp;   -- Configuracion Original
 A <= bus_cuenta;
 CE <= bus_ce;
 OE <= bus_oe;

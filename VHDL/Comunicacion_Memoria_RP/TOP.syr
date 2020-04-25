@@ -4,14 +4,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 2.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.13 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 2.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.13 secs
  
 --> 
@@ -129,7 +129,7 @@ Parsing architecture <Behavioral> of entity <contador_lectura>.
 Parsing VHDL file "/home/pedro/Documents/ISE/Comunicacion_Memoria_RP/TOP.vhd" into library work
 Parsing entity <TOP>.
 Parsing architecture <Behavioral> of entity <top>.
-WARNING:HDLCompiler:946 - "/home/pedro/Documents/ISE/Comunicacion_Memoria_RP/TOP.vhd" Line 110: Actual for formal port rst_maquina is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/pedro/Documents/ISE/Comunicacion_Memoria_RP/TOP.vhd" Line 111: Actual for formal port rst_maquina is neither a static name nor a globally static expression
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -138,7 +138,7 @@ WARNING:HDLCompiler:946 - "/home/pedro/Documents/ISE/Comunicacion_Memoria_RP/TOP
 Elaborating entity <TOP> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <Maquina_Estados> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "/home/pedro/Documents/ISE/Comunicacion_Memoria_RP/Maquina_Estados.vhd" Line 86. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/pedro/Documents/ISE/Comunicacion_Memoria_RP/Maquina_Estados.vhd" Line 90. Case statement is complete. others clause is never selected
 
 Elaborating entity <Contador_Lectura> (architecture <Behavioral>) from library <work>.
 
@@ -159,7 +159,7 @@ INFO:HDLCompiler:679 - "/home/pedro/Documents/ISE/Comunicacion_Memoria_RP/I2C_sl
 
 Synthesizing Unit <TOP>.
     Related source file is "/home/pedro/Documents/ISE/Comunicacion_Memoria_RP/TOP.vhd".
-INFO:Xst:3210 - "/home/pedro/Documents/ISE/Comunicacion_Memoria_RP/TOP.vhd" line 142: Output port <read_req> of the instance <i2cSlave> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/pedro/Documents/ISE/Comunicacion_Memoria_RP/TOP.vhd" line 144: Output port <read_req> of the instance <i2cSlave> is unconnected or connected to loadless signal.
     Found 8-bit register for signal <data_to_master>.
     Summary:
 	inferred   8 D-type flip-flop(s).
@@ -169,19 +169,29 @@ Unit <TOP> synthesized.
 Synthesizing Unit <Maquina_Estados>.
     Related source file is "/home/pedro/Documents/ISE/Comunicacion_Memoria_RP/Maquina_Estados.vhd".
     Found 3-bit register for signal <q_bus>.
-    Found 8x14-bit Read Only RAM for signal <_n0066>
-    Found 3-bit 6-to-1 multiplexer for signal <d_bus> created at line 37.
+    Found finite state machine <FSM_0> for signal <q_bus>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 17                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 14                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_maquina (positive)                         |
+    | Reset type         | synchronous                                    |
+    | Reset State        | s0                                             |
+    | Power Up State     | s0                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
     Summary:
-	inferred   1 RAM(s).
-	inferred   3 D-type flip-flop(s).
-	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
 Unit <Maquina_Estados> synthesized.
 
 Synthesizing Unit <Contador_Lectura>.
     Related source file is "/home/pedro/Documents/ISE/Comunicacion_Memoria_RP/Contador_Lectura.vhd".
     Found 20-bit register for signal <q_bus>.
-    Found 20-bit adder for signal <q_bus[19]_GND_11_o_add_5_OUT> created at line 43.
-    Found 20-bit comparator greater for signal <bus_sel_INV_6_o> created at line 40
+    Found 20-bit adder for signal <q_bus[19]_GND_8_o_add_5_OUT> created at line 43.
+    Found 20-bit comparator greater for signal <bus_sel_INV_4_o> created at line 40
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  20 D-type flip-flop(s).
@@ -192,8 +202,8 @@ Unit <Contador_Lectura> synthesized.
 Synthesizing Unit <DIV_FREQ>.
     Related source file is "/home/pedro/Documents/ISE/Comunicacion_Memoria_RP/DIV_FREQ.vhd".
     Found 6-bit register for signal <q_bus>.
-    Found 6-bit adder for signal <q_bus[5]_GND_12_o_add_4_OUT> created at line 45.
-    Found 6-bit comparator greater for signal <bus_sel_INV_7_o> created at line 42
+    Found 6-bit adder for signal <q_bus[5]_GND_9_o_add_4_OUT> created at line 45.
+    Found 6-bit comparator greater for signal <bus_sel_INV_5_o> created at line 42
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   6 D-type flip-flop(s).
@@ -203,10 +213,8 @@ Unit <DIV_FREQ> synthesized.
 Synthesizing Unit <div_frec_lectura>.
     Related source file is "/home/pedro/Documents/ISE/Comunicacion_Memoria_RP/div_frec_lectura.vhd".
     Found 4-bit register for signal <q_bus>.
-    Found 4-bit adder for signal <q_bus[3]_GND_14_o_add_5_OUT> created at line 41.
-    Found 4-bit comparator lessequal for signal <bus_sel_INV_8_o> created at line 38
+    Found 4-bit comparator lessequal for signal <bus_sel_INV_6_o> created at line 38
     Summary:
-	inferred   1 Adder/Subtractor(s).
 	inferred   4 D-type flip-flop(s).
 	inferred   1 Comparator(s).
 Unit <div_frec_lectura> synthesized.
@@ -235,7 +243,7 @@ Always blocking tristate driving signal <scl> is removed.
     Found 8-bit register for signal <data_from_master_reg>.
     Found 1-bit register for signal <continue_reg>.
     Found 1-bit register for signal <scl_reg>.
-    Found finite state machine <FSM_0> for signal <state_reg>.
+    Found finite state machine <FSM_1> for signal <state_reg>.
     -----------------------------------------------------------------------
     | States             | 8                                              |
     | Transitions        | 30                                             |
@@ -249,12 +257,12 @@ Always blocking tristate driving signal <scl> is removed.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 4-bit adder for signal <bits_processed_reg[3]_GND_17_o_add_38_OUT> created at line 224.
-    Found 3-bit subtractor for signal <GND_17_o_GND_17_o_sub_5_OUT<2:0>> created at line 160.
-    Found 3-bit subtractor for signal <GND_17_o_GND_17_o_sub_36_OUT<2:0>> created at line 221.
-    Found 1-bit 8-to-1 multiplexer for signal <GND_17_o_data_to_master_reg[7]_Mux_36_o> created at line 221.
+    Found 4-bit adder for signal <bits_processed_reg[3]_GND_14_o_add_38_OUT> created at line 224.
+    Found 3-bit subtractor for signal <GND_14_o_GND_14_o_sub_5_OUT<2:0>> created at line 160.
+    Found 3-bit subtractor for signal <GND_14_o_GND_14_o_sub_36_OUT<2:0>> created at line 221.
+    Found 1-bit 8-to-1 multiplexer for signal <GND_14_o_data_to_master_reg[7]_Mux_36_o> created at line 221.
     Found 1-bit tristate buffer for signal <sda> created at line 293
-    Found 4-bit comparator greater for signal <bits_processed_reg[3]_GND_17_o_LessThan_25_o> created at line 203
+    Found 4-bit comparator greater for signal <bits_processed_reg[3]_GND_14_o_LessThan_25_o> created at line 203
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred  48 D-type flip-flop(s).
@@ -271,7 +279,7 @@ Synthesizing Unit <debounce>.
     Found 2-bit register for signal <counter>.
     Found 1-bit register for signal <out_reg>.
     Found 1-bit register for signal <signal_in_reg>.
-    Found 2-bit subtractor for signal <GND_18_o_GND_18_o_sub_3_OUT<1:0>> created at line 54.
+    Found 2-bit subtractor for signal <GND_15_o_GND_15_o_sub_3_OUT<1:0>> created at line 54.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   5 D-type flip-flop(s).
@@ -281,19 +289,16 @@ Unit <debounce> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 1
- 8x14-bit single-port Read Only RAM                    : 1
-# Adders/Subtractors                                   : 8
+# Adders/Subtractors                                   : 7
  2-bit subtractor                                      : 2
  20-bit adder                                          : 1
  3-bit subtractor                                      : 2
- 4-bit adder                                           : 2
+ 4-bit adder                                           : 1
  6-bit adder                                           : 1
-# Registers                                            : 32
+# Registers                                            : 31
  1-bit register                                        : 20
  2-bit register                                        : 2
  20-bit register                                       : 1
- 3-bit register                                        : 1
  4-bit register                                        : 2
  6-bit register                                        : 1
  7-bit register                                        : 2
@@ -303,16 +308,15 @@ Macro Statistics
  4-bit comparator greater                              : 1
  4-bit comparator lessequal                            : 1
  6-bit comparator greater                              : 1
-# Multiplexers                                         : 35
- 1-bit 2-to-1 multiplexer                              : 24
+# Multiplexers                                         : 33
+ 1-bit 2-to-1 multiplexer                              : 23
  1-bit 8-to-1 multiplexer                              : 1
  20-bit 2-to-1 multiplexer                             : 1
- 3-bit 6-to-1 multiplexer                              : 1
  4-bit 2-to-1 multiplexer                              : 7
  8-bit 2-to-1 multiplexer                              : 1
 # Tristates                                            : 1
  1-bit tristate buffer                                 : 1
-# FSMs                                                 : 1
+# FSMs                                                 : 2
 # Xors                                                 : 4
  1-bit xor2                                            : 4
 
@@ -322,6 +326,10 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+WARNING:Xst:1293 - FF/Latch <q_bus_0> has a constant value of 0 in block <Inst_div_frec_lectura>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_bus_1> has a constant value of 0 in block <Inst_div_frec_lectura>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_bus_2> has a constant value of 0 in block <Inst_div_frec_lectura>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <q_bus_3> has a constant value of 0 in block <Inst_div_frec_lectura>. This FF/Latch will be trimmed during the optimization process.
 
 Synthesizing (advanced) Unit <Contador_Lectura>.
 The following registers are absorbed into counter <q_bus>: 1 register on signal <q_bus>.
@@ -331,56 +339,34 @@ Synthesizing (advanced) Unit <DIV_FREQ>.
 The following registers are absorbed into counter <q_bus>: 1 register on signal <q_bus>.
 Unit <DIV_FREQ> synthesized (advanced).
 
-Synthesizing (advanced) Unit <Maquina_Estados>.
-INFO:Xst:3212 - HDL ADVISOR - Asynchronous or synchronous initialization of the register <q_bus> prevents it from being combined with the RAM <Mram__n0066> for implementation as read-only block RAM.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 8-word x 14-bit                     |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <q_bus>         |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-Unit <Maquina_Estados> synthesized (advanced).
-
 Synthesizing (advanced) Unit <debounce>.
 The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
 Unit <debounce> synthesized (advanced).
-
-Synthesizing (advanced) Unit <div_frec_lectura>.
-The following registers are absorbed into counter <q_bus>: 1 register on signal <q_bus>.
-Unit <div_frec_lectura> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 1
- 8x14-bit single-port distributed Read Only RAM        : 1
 # Adders/Subtractors                                   : 3
  3-bit subtractor                                      : 2
  4-bit adder                                           : 1
-# Counters                                             : 5
+# Counters                                             : 4
  2-bit down counter                                    : 2
  20-bit up counter                                     : 1
- 4-bit up counter                                      : 1
  6-bit up counter                                      : 1
-# Registers                                            : 65
- Flip-Flops                                            : 65
+# Registers                                            : 66
+ Flip-Flops                                            : 66
 # Comparators                                          : 4
  20-bit comparator greater                             : 1
  4-bit comparator greater                              : 1
  4-bit comparator lessequal                            : 1
  6-bit comparator greater                              : 1
-# Multiplexers                                         : 34
- 1-bit 2-to-1 multiplexer                              : 24
+# Multiplexers                                         : 32
+ 1-bit 2-to-1 multiplexer                              : 23
  1-bit 8-to-1 multiplexer                              : 1
- 3-bit 6-to-1 multiplexer                              : 1
  4-bit 2-to-1 multiplexer                              : 7
  8-bit 2-to-1 multiplexer                              : 1
-# FSMs                                                 : 1
+# FSMs                                                 : 2
 # Xors                                                 : 4
  1-bit xor2                                            : 4
 
@@ -389,8 +375,24 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:1293 - FF/Latch <q_bus_0> has a constant value of 0 in block <div_frec_lectura>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <q_bus_1> has a constant value of 0 in block <div_frec_lectura>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <q_bus_2> has a constant value of 0 in block <div_frec_lectura>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <q_bus_3> has a constant value of 0 in block <div_frec_lectura>. This FF/Latch will be trimmed during the optimization process.
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <i2cSlave/FSM_0> on signal <state_reg[1:3]> with user encoding.
+Optimizing FSM <FSM_0> on signal <q_bus[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ s0    | 000
+ s1    | 001
+ s2    | 011
+ s3    | 010
+ s4    | 110
+ s5    | 111
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <i2cSlave/FSM_1> on signal <state_reg[1:3]> with user encoding.
 ---------------------------------
  State               | Encoding
 ---------------------------------
@@ -407,23 +409,15 @@ WARNING:Xst:2677 - Node <i2cSlave/read_req_reg> of sequential type is unconnecte
 
 Optimizing unit <TOP> ...
 
-Optimizing unit <Maquina_Estados> ...
-
 Optimizing unit <debounce> ...
-WARNING:Xst:1293 - FF/Latch <Inst_Contador_Lectura/q_bus_13> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Contador_Lectura/q_bus_14> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Contador_Lectura/q_bus_15> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Contador_Lectura/q_bus_16> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Contador_Lectura/q_bus_17> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Inst_Contador_Lectura/q_bus_17> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Contador_Lectura/q_bus_18> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Contador_Lectura/q_bus_19> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block TOP, actual ratio is 2.
-FlipFlop i2cSlave/SDA_debounce/out_reg has been replicated 1 time(s)
 FlipFlop i2cSlave/bits_processed_reg_0 has been replicated 1 time(s)
-FlipFlop i2cSlave/bits_processed_reg_2 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -431,8 +425,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 97
- Flip-Flops                                            : 97
+# Registers                                            : 89
+ Flip-Flops                                            : 89
 
 =========================================================================
 
@@ -455,22 +449,22 @@ Top Level Output File Name         : TOP.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 162
+# BELS                             : 160
 #      GND                         : 1
-#      INV                         : 6
-#      LUT2                        : 14
-#      LUT3                        : 50
-#      LUT4                        : 11
-#      LUT5                        : 27
-#      LUT6                        : 26
-#      MUXCY                       : 12
-#      MUXF7                       : 1
+#      INV                         : 3
+#      LUT2                        : 16
+#      LUT3                        : 25
+#      LUT4                        : 12
+#      LUT5                        : 38
+#      LUT6                        : 28
+#      MUXCY                       : 16
+#      MUXF7                       : 3
 #      VCC                         : 1
-#      XORCY                       : 13
-# FlipFlops/Latches                : 97
-#      FD                          : 27
+#      XORCY                       : 17
+# FlipFlops/Latches                : 89
+#      FD                          : 23
 #      FDE                         : 38
-#      FDR                         : 10
+#      FDR                         : 6
 #      FDRE                        : 22
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
@@ -486,16 +480,16 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              97  out of  11440     0%  
- Number of Slice LUTs:                  134  out of   5720     2%  
-    Number used as Logic:               134  out of   5720     2%  
+ Number of Slice Registers:              89  out of  11440     0%  
+ Number of Slice LUTs:                  122  out of   5720     2%  
+    Number used as Logic:               122  out of   5720     2%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    148
-   Number with an unused Flip Flop:      51  out of    148    34%  
-   Number with an unused LUT:            14  out of    148     9%  
-   Number of fully used LUT-FF pairs:    83  out of    148    56%  
-   Number of unique control sets:        12
+ Number of LUT Flip Flop pairs used:    131
+   Number with an unused Flip Flop:      42  out of    131    32%  
+   Number with an unused LUT:             9  out of    131     6%  
+   Number of fully used LUT-FF pairs:    80  out of    131    61%  
+   Number of unique control sets:        11
 
 IO Utilization: 
  Number of IOs:                          51
@@ -525,7 +519,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-CLK                                | BUFGP                  | 97    |
+CLK                                | BUFGP                  | 89    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -536,9 +530,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 4.989ns (Maximum Frequency: 200.441MHz)
-   Minimum input arrival time before clock: 3.488ns
-   Maximum output required time after clock: 6.001ns
+   Minimum period: 4.897ns (Maximum Frequency: 204.207MHz)
+   Minimum input arrival time before clock: 4.089ns
+   Maximum output required time after clock: 6.207ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -547,66 +541,84 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 4.989ns (frequency: 200.441MHz)
-  Total number of paths / destination ports: 1259 / 184
+  Clock period: 4.897ns (frequency: 204.207MHz)
+  Total number of paths / destination ports: 3113 / 172
 -------------------------------------------------------------------------
-Delay:               4.989ns (Levels of Logic = 2)
-  Source:            i2cSlave/bits_processed_reg_2 (FF)
-  Destination:       i2cSlave/data_from_master_reg_7 (FF)
+Delay:               4.897ns (Levels of Logic = 19)
+  Source:            Inst_Contador_Lectura/q_bus_8 (FF)
+  Destination:       Inst_Contador_Lectura/q_bus_16 (FF)
   Source Clock:      CLK rising
   Destination Clock: CLK rising
 
-  Data Path: i2cSlave/bits_processed_reg_2 to i2cSlave/data_from_master_reg_7
+  Data Path: Inst_Contador_Lectura/q_bus_8 to Inst_Contador_Lectura/q_bus_16
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q            19   0.525   1.489  i2cSlave/bits_processed_reg_2 (i2cSlave/bits_processed_reg_2)
-     LUT3:I0->O           17   0.235   1.209  i2cSlave/Mmux_state_reg[2]_GND_17_o_mux_65_OUT411 (i2cSlave/Mmux_state_reg[2]_GND_17_o_mux_65_OUT41)
-     LUT6:I5->O            9   0.254   0.975  i2cSlave/_n0278_inv1 (i2cSlave/data_valid_reg_rstpot)
-     FDE:CE                    0.302          i2cSlave/data_from_master_reg_0
+     FDRE:C->Q             3   0.525   1.221  Inst_Contador_Lectura/q_bus_8 (Inst_Contador_Lectura/q_bus_8)
+     LUT6:I0->O           21   0.254   1.310  Inst_Contador_Lectura/bus_sel_INV_4_o_inv_inv21 (Inst_Contador_Lectura/bus_sel_INV_4_o_inv_inv2)
+     LUT4:I3->O            1   0.254   0.681  Inst_Contador_Lectura/bus_sel_INV_4_o_inv_inv23 (Inst_Contador_Lectura/bus_sel_INV_4_o_inv_inv)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Lectura/Mcount_q_bus_cy<0> (Inst_Contador_Lectura/Mcount_q_bus_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Lectura/Mcount_q_bus_cy<1> (Inst_Contador_Lectura/Mcount_q_bus_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Lectura/Mcount_q_bus_cy<2> (Inst_Contador_Lectura/Mcount_q_bus_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Lectura/Mcount_q_bus_cy<3> (Inst_Contador_Lectura/Mcount_q_bus_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Lectura/Mcount_q_bus_cy<4> (Inst_Contador_Lectura/Mcount_q_bus_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Lectura/Mcount_q_bus_cy<5> (Inst_Contador_Lectura/Mcount_q_bus_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Lectura/Mcount_q_bus_cy<6> (Inst_Contador_Lectura/Mcount_q_bus_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Lectura/Mcount_q_bus_cy<7> (Inst_Contador_Lectura/Mcount_q_bus_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Lectura/Mcount_q_bus_cy<8> (Inst_Contador_Lectura/Mcount_q_bus_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Lectura/Mcount_q_bus_cy<9> (Inst_Contador_Lectura/Mcount_q_bus_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Lectura/Mcount_q_bus_cy<10> (Inst_Contador_Lectura/Mcount_q_bus_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Lectura/Mcount_q_bus_cy<11> (Inst_Contador_Lectura/Mcount_q_bus_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Lectura/Mcount_q_bus_cy<12> (Inst_Contador_Lectura/Mcount_q_bus_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Lectura/Mcount_q_bus_cy<13> (Inst_Contador_Lectura/Mcount_q_bus_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Lectura/Mcount_q_bus_cy<14> (Inst_Contador_Lectura/Mcount_q_bus_cy<14>)
+     MUXCY:CI->O           0   0.023   0.000  Inst_Contador_Lectura/Mcount_q_bus_cy<15> (Inst_Contador_Lectura/Mcount_q_bus_cy<15>)
+     XORCY:CI->O           1   0.206   0.000  Inst_Contador_Lectura/Mcount_q_bus_xor<16> (Inst_Contador_Lectura/Mcount_q_bus16)
+     FDRE:D                    0.074          Inst_Contador_Lectura/q_bus_16
     ----------------------------------------
-    Total                      4.989ns (1.316ns logic, 3.673ns route)
-                                       (26.4% logic, 73.6% route)
+    Total                      4.897ns (1.685ns logic, 3.212ns route)
+                                       (34.4% logic, 65.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 22 / 16
+  Total number of paths / destination ports: 23 / 16
 -------------------------------------------------------------------------
-Offset:              3.488ns (Levels of Logic = 2)
-  Source:            RESET (PAD)
-  Destination:       Inst_Maquina_Estados/q_bus_2 (FF)
+Offset:              4.089ns (Levels of Logic = 3)
+  Source:            FROM_RP (PAD)
+  Destination:       Inst_Maquina_Estados/q_bus_FSM_FFd3 (FF)
   Destination Clock: CLK rising
 
-  Data Path: RESET to Inst_Maquina_Estados/q_bus_2
+  Data Path: FROM_RP to Inst_Maquina_Estados/q_bus_FSM_FFd3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.328   0.681  RESET_IBUF (RESET_IBUF)
-     INV:I->O              3   0.255   0.765  RESET_INV_1_o1_INV_0 (RESET_INV_1_o)
-     FDRE:R                    0.459          Inst_Maquina_Estados/q_bus_0
+     IBUF:I->O             3   1.328   1.042  FROM_RP_IBUF (FROM_RP_IBUF)
+     LUT5:I1->O            1   0.254   1.137  Inst_Contador_Lectura/bus_sel_INV_4_o_inv_inv23_SW2 (N31)
+     LUT6:I0->O            1   0.254   0.000  Inst_Maquina_Estados/q_bus_FSM_FFd3-In1 (Inst_Maquina_Estados/q_bus_FSM_FFd3-In)
+     FDR:D                     0.074          Inst_Maquina_Estados/q_bus_FSM_FFd3
     ----------------------------------------
-    Total                      3.488ns (2.042ns logic, 1.446ns route)
-                                       (58.5% logic, 41.5% route)
+    Total                      4.089ns (1.910ns logic, 2.179ns route)
+                                       (46.7% logic, 53.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 39 / 24
+  Total number of paths / destination ports: 45 / 28
 -------------------------------------------------------------------------
-Offset:              6.001ns (Levels of Logic = 2)
-  Source:            Inst_Maquina_Estados/q_bus_0 (FF)
+Offset:              6.207ns (Levels of Logic = 2)
+  Source:            Inst_Maquina_Estados/q_bus_FSM_FFd3 (FF)
   Destination:       LED<7> (PAD)
   Source Clock:      CLK rising
 
-  Data Path: Inst_Maquina_Estados/q_bus_0 to LED<7>
+  Data Path: Inst_Maquina_Estados/q_bus_FSM_FFd3 to LED<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             5   0.525   1.069  Inst_Maquina_Estados/q_bus_0 (Inst_Maquina_Estados/q_bus_0)
-     LUT3:I0->O           19   0.235   1.260  Inst_Maquina_Estados/Mram__n006611 (LED_0_OBUF)
+     FDR:C->Q             14   0.525   1.235  Inst_Maquina_Estados/q_bus_FSM_FFd3 (Inst_Maquina_Estados/q_bus_FSM_FFd3)
+     LUT2:I0->O           20   0.250   1.285  LED<6>1 (LED_6_OBUF)
      OBUF:I->O                 2.912          LED_7_OBUF (LED<7>)
     ----------------------------------------
-    Total                      6.001ns (3.672ns logic, 2.329ns route)
-                                       (61.2% logic, 38.8% route)
+    Total                      6.207ns (3.687ns logic, 2.520ns route)
+                                       (59.4% logic, 40.6% route)
 
 =========================================================================
 
@@ -618,21 +630,21 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    4.989|         |         |         |
+CLK            |    4.897|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 29.00 secs
-Total CPU time to Xst completion: 24.13 secs
+Total REAL time to Xst completion: 26.00 secs
+Total CPU time to Xst completion: 24.17 secs
  
 --> 
 
 
-Total memory usage is 409232 kilobytes
+Total memory usage is 409248 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   11 (   0 filtered)
-Number of infos    :    2 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
 

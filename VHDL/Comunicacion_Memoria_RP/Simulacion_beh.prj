@@ -1,0 +1,8 @@
+vhdl work "SDA.vhd"
+vhdl work "Maquina_Estados.vhd"
+vhdl work "I2C_slave.vhd"
+vhdl work "DIV_FREQ.vhd"
+vhdl work "div_frec_lectura.vhd"
+vhdl work "Contador_Lectura.vhd"
+vhdl work "TOP.vhd"
+vhdl work "Simulacion.vhd"

@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Tue Apr 21 23:24:07 2020
+Sat Apr 25 16:49:45 2020
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -134,11 +134,11 @@ Pinout by Pin Number:
 |P112      |LED<6>     |IOB      |IO_L66P_SCP1_0            |OUTPUT   |LVCMOS33   |0             |8         |FAST     |PULLUP     |         |       |LOCATED   |NO         |NONE            |
 |P113      |           |         |GND                       |         |           |              |          |         |           |         |       |          |           |                |
 |P114      |LED<5>     |IOB      |IO_L65N_SCP2_0            |OUTPUT   |LVCMOS33   |0             |8         |FAST     |PULLUP     |         |       |LOCATED   |NO         |NONE            |
-|P115      |LED<4>     |IOB      |IO_L65P_SCP3_0            |OUTPUT   |LVCMOS33   |0             |8         |FAST     |           |         |       |LOCATED   |NO         |NONE            |
-|P116      |LED<3>     |IOB      |IO_L64N_SCP4_0            |OUTPUT   |LVCMOS33   |0             |8         |FAST     |           |         |       |LOCATED   |NO         |NONE            |
+|P115      |LED<4>     |IOB      |IO_L65P_SCP3_0            |OUTPUT   |LVCMOS33   |0             |8         |FAST     |PULLUP     |         |       |LOCATED   |NO         |NONE            |
+|P116      |LED<3>     |IOB      |IO_L64N_SCP4_0            |OUTPUT   |LVCMOS33   |0             |8         |FAST     |PULLUP     |         |       |LOCATED   |NO         |NONE            |
 |P117      |LED<2>     |IOB      |IO_L64P_SCP5_0            |OUTPUT   |LVCMOS33   |0             |8         |FAST     |PULLUP     |         |       |LOCATED   |NO         |NONE            |
 |P118      |LED<1>     |IOB      |IO_L63N_SCP6_0            |OUTPUT   |LVCMOS33   |0             |8         |FAST     |PULLUP     |         |       |LOCATED   |NO         |NONE            |
-|P119      |LED<0>     |IOB      |IO_L63P_SCP7_0            |OUTPUT   |LVCMOS33   |0             |8         |FAST     |PULLUP     |         |       |LOCATED   |NO         |NONE            |
+|P119      |LED<0>     |IOB      |IO_L63P_SCP7_0            |OUTPUT   |LVCMOS33   |0             |8         |FAST     |           |         |       |LOCATED   |NO         |NONE            |
 |P120      |RESET      |IOB      |IO_L62N_VREF_0            |INPUT    |LVCMOS33   |0             |          |         |PULLUP     |NONE     |       |LOCATED   |NO         |NONE            |
 |P121      |           |IOBM     |IO_L62P_0                 |UNUSED   |           |0             |          |         |           |         |       |          |           |                |
 |P122      |           |         |VCCO_0                    |         |           |0             |          |         |           |         |3.30   |          |           |                |

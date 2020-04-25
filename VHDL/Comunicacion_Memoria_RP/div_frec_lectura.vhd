@@ -18,7 +18,7 @@ signal bus_sel : STD_LOGIC:='0';
 
 begin
 
-M <= conv_std_logic_Vector(10,4);    -- Frecuencia de 1 MHz - TEORICA
+M <= conv_std_logic_Vector(16,4);    -- Frecuencia de 1 MHz - TEORICA
 
 
 ------ REGISTRO 

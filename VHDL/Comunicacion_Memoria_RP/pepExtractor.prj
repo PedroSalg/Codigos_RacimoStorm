@@ -1,1 +1,7 @@
+work	"Contador_Lectura.vhd"
+work	"DIV_FREQ.vhd"
+work	"I2C_slave.vhd"
+work	"Maquina_Estados.vhd"
+work	"SDA.vhd"
+work	"TOP.vhd"
 work	"div_frec_lectura.vhd"
