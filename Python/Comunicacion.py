@@ -8,7 +8,7 @@ from gpiozero import LED
 
 Contador = 1         # Contador de eventos
 Bandera = 0 		  # Bandera de salida del While
-N = 1000			      # Numero de eventos para terminal el While, N-1	
+N = 100000			      # Numero de eventos para terminal el While, N-1	
 Datos = []             # Vector que contendra la informacion 	
 
 #I2C
@@ -21,19 +21,18 @@ Entrada = 20
 Salida = 21
 
 #Define los pines de salida
-#GPIO.setwarnings(False)
+GPIO.setwarnings(False)
+#GPIO.cleanup()
 GPIO.setup(Salida, GPIO.OUT)
 GPIO.output(Salida, False) 
 #Led = LED(Salida)
 #Led.off()
 
 # Apertura de archivo de texto
-Archivo = open("Prueba21.txt","w")
+Archivo = open("Prueba31.txt","w")
 
 # Funcion a ejecutar durante interrupcion 
 def Lectura_Datos(channel):	
-	GPIO.output(Salida, True)
-	time.sleep(0.000001)
 	#Led.on()
 	#time.sleep(0.1)
 	global Contador
@@ -42,7 +41,9 @@ def Lectura_Datos(channel):
 	dat1 = bus.read_byte_data(address, 0x01)
 	Val = (dat1 << 8 ) + dat0
 	Datos.append(str(Val))
-	print (Val)	
+	#print (Contador, Val)	
+	GPIO.output(Salida, True)
+	time.sleep(0.0000001)
 	#time.sleep(0.1)
 	#print("Data on buffer!")
 	#GPIO.output(Salida, False) 
@@ -56,14 +57,13 @@ GPIO.add_event_detect(Entrada, GPIO.RISING, callback=Lectura_Datos)
 
 #message = input("Press enterto quit\n\n")
 
-#GPIO.cleanup()
-print ("Cambio")
+#
 
 while (Bandera == 0):
 	if (Contador <=  N):
 		Bandera = 0
 		GPIO.output(Salida, False) 
-		time.sleep(0.000001)
+		time.sleep(0.0000001)
 		#Led.off()
 		
 			
@@ -72,7 +72,7 @@ while (Bandera == 0):
 
 print ("Escribiendo Datos")
 
-for i in range(len(Datos)):
+for i in range(1,len(Datos)):
 	#print (Datos[i])
 	##Archivo = open("Prueba13.txt","a")
 	Archivo.write(Datos[i] + '\n')
