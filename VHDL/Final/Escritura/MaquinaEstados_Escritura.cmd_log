@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Final/Escritura/MaquinaEstados_Escritura.xst" -ofn "/home/pedro/Documents/ISE/Final/Escritura/MaquinaEstados_Escritura.syr" 
+vhdtdtfi -prj Escritura -o /home/pedro/Documents/ISE/Final/Escritura/MaquinaEstados_Escritura.vhi -module MaquinaEstados_Escritura -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work MaquinaEstados_Escritura.vhd 

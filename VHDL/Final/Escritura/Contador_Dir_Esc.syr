@@ -1,0 +1,388 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> 
+Reading design: Contador_Dir_Esc.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Contador_Dir_Esc.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Contador_Dir_Esc"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : Contador_Dir_Esc
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/pedro/Documents/ISE/Final/Escritura/Contador_Dir_Esc.vhd" into library work
+Parsing entity <Contador_Dir_Esc>.
+Parsing architecture <Behavioral> of entity <contador_dir_esc>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Contador_Dir_Esc> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Contador_Dir_Esc>.
+    Related source file is "/home/pedro/Documents/ISE/Final/Escritura/Contador_Dir_Esc.vhd".
+    Found 20-bit register for signal <q_bus>.
+    Found 20-bit adder for signal <q_bus[19]_GND_6_o_add_5_OUT> created at line 44.
+    Found 20-bit comparator lessequal for signal <bus_sel_INV_1_o> created at line 41
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <Contador_Dir_Esc> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 20-bit adder                                          : 1
+# Registers                                            : 1
+ 20-bit register                                       : 1
+# Comparators                                          : 1
+ 20-bit comparator lessequal                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Contador_Dir_Esc>.
+The following registers are absorbed into counter <q_bus>: 1 register on signal <q_bus>.
+Unit <Contador_Dir_Esc> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 20-bit up counter                                     : 1
+# Comparators                                          : 1
+ 20-bit comparator lessequal                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Contador_Dir_Esc> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Contador_Dir_Esc, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 20
+ Flip-Flops                                            : 20
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Contador_Dir_Esc.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 87
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 19
+#      LUT3                        : 1
+#      LUT4                        : 21
+#      LUT5                        : 1
+#      LUT6                        : 3
+#      MUXCY                       : 19
+#      VCC                         : 1
+#      XORCY                       : 20
+# FlipFlops/Latches                : 20
+#      FD                          : 20
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 23
+#      IBUF                        : 2
+#      OBUF                        : 21
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              20  out of  11440     0%  
+ Number of Slice LUTs:                   46  out of   5720     0%  
+    Number used as Logic:                46  out of   5720     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     46
+   Number with an unused Flip Flop:      26  out of     46    56%  
+   Number with an unused LUT:             0  out of     46     0%  
+   Number of fully used LUT-FF pairs:    20  out of     46    43%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          24
+ Number of bonded IOBs:                  24  out of    102    23%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 20    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 4.607ns (Maximum Frequency: 217.061MHz)
+   Minimum input arrival time before clock: 5.926ns
+   Maximum output required time after clock: 6.655ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.607ns (frequency: 217.061MHz)
+  Total number of paths / destination ports: 548 / 20
+-------------------------------------------------------------------------
+Delay:               4.607ns (Levels of Logic = 3)
+  Source:            q_bus_9 (FF)
+  Destination:       q_bus_3 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: q_bus_9 to q_bus_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.525   1.259  q_bus_9 (q_bus_9)
+     LUT6:I0->O            2   0.254   0.726  ocuapdo24_SW0 (N3)
+     LUT6:I5->O           19   0.254   1.261  Mcount_q_bus_val1 (Mcount_q_bus_val)
+     LUT4:I3->O            1   0.254   0.000  q_bus_3_rstpot (q_bus_3_rstpot)
+     FD:D                      0.074          q_bus_3
+    ----------------------------------------
+    Total                      4.607ns (1.361ns logic, 3.246ns route)
+                                       (29.5% logic, 70.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 78 / 20
+-------------------------------------------------------------------------
+Offset:              5.926ns (Levels of Logic = 4)
+  Source:            en_cnt_dir (PAD)
+  Destination:       q_bus_3 (FF)
+  Destination Clock: clk rising
+
+  Data Path: en_cnt_dir to q_bus_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            22   1.328   1.610  en_cnt_dir_IBUF (en_cnt_dir_IBUF)
+     LUT4:I0->O            1   0.254   0.910  ocuapdo24_SW1 (N5)
+     LUT6:I3->O           19   0.235   1.261  Mcount_q_bus_val1 (Mcount_q_bus_val)
+     LUT4:I3->O            1   0.254   0.000  q_bus_3_rstpot (q_bus_3_rstpot)
+     FD:D                      0.074          q_bus_3
+    ----------------------------------------
+    Total                      5.926ns (2.145ns logic, 3.781ns route)
+                                       (36.2% logic, 63.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 34 / 21
+-------------------------------------------------------------------------
+Offset:              6.655ns (Levels of Logic = 3)
+  Source:            q_bus_9 (FF)
+  Destination:       ocuapdo (PAD)
+  Source Clock:      clk rising
+
+  Data Path: q_bus_9 to ocuapdo
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.525   1.259  q_bus_9 (q_bus_9)
+     LUT6:I0->O            2   0.254   0.726  ocuapdo24_SW0 (N3)
+     LUT6:I5->O            2   0.254   0.725  ocuapdo24 (ocuapdo_OBUF)
+     OBUF:I->O                 2.912          ocuapdo_OBUF (ocuapdo)
+    ----------------------------------------
+    Total                      6.655ns (3.945ns logic, 2.710ns route)
+                                       (59.3% logic, 40.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.607|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 31.00 secs
+Total CPU time to Xst completion: 25.93 secs
+ 
+--> 
+
+
+Total memory usage is 393884 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,4 @@
+vhdl work "Retenedor_Borrado.vhd"
+vhdl work "MaquinaEstados_Borrado.vhd"
+vhdl work "Contador_Dir_Bor.vhd"
+vhdl work "Modulo_Borrado.vhd"

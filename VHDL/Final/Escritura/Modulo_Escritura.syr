@@ -1,0 +1,512 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> 
+Reading design: Modulo_Escritura.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Modulo_Escritura.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Modulo_Escritura"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : Modulo_Escritura
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/pedro/Documents/ISE/Final/Escritura/Retenedor_Lectura.vhd" into library work
+Parsing entity <Retenedor_Lectura>.
+Parsing architecture <Behavioral> of entity <retenedor_lectura>.
+Parsing VHDL file "/home/pedro/Documents/ISE/Final/Escritura/MaquinaEstados_Escritura.vhd" into library work
+Parsing entity <MaquinaEstados_Escritura>.
+Parsing architecture <Behavioral> of entity <maquinaestados_escritura>.
+Parsing VHDL file "/home/pedro/Documents/ISE/Final/Escritura/Contador_Dir_Esc.vhd" into library work
+Parsing entity <Contador_Dir_Esc>.
+Parsing architecture <Behavioral> of entity <contador_dir_esc>.
+Parsing VHDL file "/home/pedro/Documents/ISE/Final/Escritura/Modulo_Escritura.vhd" into library work
+Parsing entity <Modulo_Escritura>.
+Parsing architecture <Behavioral> of entity <modulo_escritura>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Modulo_Escritura> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <MaquinaEstados_Escritura> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "/home/pedro/Documents/ISE/Final/Escritura/MaquinaEstados_Escritura.vhd" Line 87. Case statement is complete. others clause is never selected
+
+Elaborating entity <Contador_Dir_Esc> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Retenedor_Lectura> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Modulo_Escritura>.
+    Related source file is "/home/pedro/Documents/ISE/Final/Escritura/Modulo_Escritura.vhd".
+    Summary:
+	no macro.
+Unit <Modulo_Escritura> synthesized.
+
+Synthesizing Unit <MaquinaEstados_Escritura>.
+    Related source file is "/home/pedro/Documents/ISE/Final/Escritura/MaquinaEstados_Escritura.vhd".
+    Found 4-bit register for signal <q_bus>.
+    Found finite state machine <FSM_0> for signal <q_bus>.
+    -----------------------------------------------------------------------
+    | States             | 9                                              |
+    | Transitions        | 20                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 41                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | s0                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   8 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <MaquinaEstados_Escritura> synthesized.
+
+Synthesizing Unit <Contador_Dir_Esc>.
+    Related source file is "/home/pedro/Documents/ISE/Final/Escritura/Contador_Dir_Esc.vhd".
+    Found 20-bit register for signal <q_bus>.
+    Found 20-bit adder for signal <q_bus[19]_GND_9_o_add_5_OUT> created at line 44.
+    Found 20-bit comparator greater for signal <bus_sel_INV_3_o> created at line 41
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <Contador_Dir_Esc> synthesized.
+
+Synthesizing Unit <Retenedor_Lectura>.
+    Related source file is "/home/pedro/Documents/ISE/Final/Escritura/Retenedor_Lectura.vhd".
+    Found 5-bit register for signal <q_bus>.
+    Found 5-bit adder for signal <q_bus[4]_GND_10_o_add_5_OUT> created at line 42.
+    Found 5-bit comparator lessequal for signal <bus_sel_INV_4_o> created at line 39
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   5 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <Retenedor_Lectura> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 20-bit adder                                          : 1
+ 5-bit adder                                           : 1
+# Registers                                            : 2
+ 20-bit register                                       : 1
+ 5-bit register                                        : 1
+# Comparators                                          : 2
+ 20-bit comparator greater                             : 1
+ 5-bit comparator lessequal                            : 1
+# Multiplexers                                         : 9
+ 12-bit 2-to-1 multiplexer                             : 4
+ 20-bit 2-to-1 multiplexer                             : 5
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Contador_Dir_Esc>.
+The following registers are absorbed into counter <q_bus>: 1 register on signal <q_bus>.
+Unit <Contador_Dir_Esc> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Retenedor_Lectura>.
+The following registers are absorbed into counter <q_bus>: 1 register on signal <q_bus>.
+Unit <Retenedor_Lectura> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 20-bit up counter                                     : 1
+ 5-bit up counter                                      : 1
+# Comparators                                          : 2
+ 20-bit comparator greater                             : 1
+ 5-bit comparator lessequal                            : 1
+# Multiplexers                                         : 8
+ 12-bit 2-to-1 multiplexer                             : 4
+ 20-bit 2-to-1 multiplexer                             : 4
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <Inst_MaquinaEstados_Escritura/FSM_0> on signal <q_bus[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ s0    | 0000
+ s1    | 0001
+ s2    | 0010
+ s3    | 0011
+ s4    | 0100
+ s5    | 0101
+ s6    | 0110
+ s7    | 0111
+ s8    | 1000
+-------------------
+
+Optimizing unit <Modulo_Escritura> ...
+
+Optimizing unit <MaquinaEstados_Escritura> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Modulo_Escritura, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 29
+ Flip-Flops                                            : 29
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Modulo_Escritura.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 112
+#      GND                         : 1
+#      INV                         : 2
+#      LUT2                        : 3
+#      LUT3                        : 4
+#      LUT4                        : 5
+#      LUT5                        : 35
+#      LUT6                        : 22
+#      MUXCY                       : 19
+#      VCC                         : 1
+#      XORCY                       : 20
+# FlipFlops/Latches                : 29
+#      FD                          : 4
+#      FDRE                        : 25
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 61
+#      IBUF                        : 16
+#      OBUF                        : 45
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              29  out of  11440     0%  
+ Number of Slice LUTs:                   71  out of   5720     1%  
+    Number used as Logic:                71  out of   5720     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     71
+   Number with an unused Flip Flop:      42  out of     71    59%  
+   Number with an unused LUT:             0  out of     71     0%  
+   Number of fully used LUT-FF pairs:    29  out of     71    40%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          62
+ Number of bonded IOBs:                  62  out of    102    60%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 29    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 4.930ns (Maximum Frequency: 202.850MHz)
+   Minimum input arrival time before clock: 3.966ns
+   Maximum output required time after clock: 7.471ns
+   Maximum combinational path delay: 6.287ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.930ns (frequency: 202.850MHz)
+  Total number of paths / destination ports: 3290 / 39
+-------------------------------------------------------------------------
+Delay:               4.930ns (Levels of Logic = 22)
+  Source:            Inst_Contador_Dir_Esc/q_bus_18 (FF)
+  Destination:       Inst_Contador_Dir_Esc/q_bus_19 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Inst_Contador_Dir_Esc/q_bus_18 to Inst_Contador_Dir_Esc/q_bus_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             4   0.525   1.080  Inst_Contador_Dir_Esc/q_bus_18 (Inst_Contador_Dir_Esc/q_bus_18)
+     LUT4:I0->O           21   0.254   1.418  Inst_Contador_Dir_Esc/bus_sel_INV_3_o_inv_inv21 (Inst_Contador_Dir_Esc/bus_sel_INV_3_o_inv_inv2)
+     LUT6:I4->O            1   0.250   0.681  Inst_Contador_Dir_Esc/bus_sel_INV_3_o_inv_inv23 (Inst_Contador_Dir_Esc/bus_sel_INV_3_o_inv_inv)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Dir_Esc/Mcount_q_bus_cy<0> (Inst_Contador_Dir_Esc/Mcount_q_bus_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Dir_Esc/Mcount_q_bus_cy<1> (Inst_Contador_Dir_Esc/Mcount_q_bus_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Dir_Esc/Mcount_q_bus_cy<2> (Inst_Contador_Dir_Esc/Mcount_q_bus_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Dir_Esc/Mcount_q_bus_cy<3> (Inst_Contador_Dir_Esc/Mcount_q_bus_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Dir_Esc/Mcount_q_bus_cy<4> (Inst_Contador_Dir_Esc/Mcount_q_bus_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Dir_Esc/Mcount_q_bus_cy<5> (Inst_Contador_Dir_Esc/Mcount_q_bus_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Dir_Esc/Mcount_q_bus_cy<6> (Inst_Contador_Dir_Esc/Mcount_q_bus_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Dir_Esc/Mcount_q_bus_cy<7> (Inst_Contador_Dir_Esc/Mcount_q_bus_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Dir_Esc/Mcount_q_bus_cy<8> (Inst_Contador_Dir_Esc/Mcount_q_bus_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Dir_Esc/Mcount_q_bus_cy<9> (Inst_Contador_Dir_Esc/Mcount_q_bus_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Dir_Esc/Mcount_q_bus_cy<10> (Inst_Contador_Dir_Esc/Mcount_q_bus_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Dir_Esc/Mcount_q_bus_cy<11> (Inst_Contador_Dir_Esc/Mcount_q_bus_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Dir_Esc/Mcount_q_bus_cy<12> (Inst_Contador_Dir_Esc/Mcount_q_bus_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Dir_Esc/Mcount_q_bus_cy<13> (Inst_Contador_Dir_Esc/Mcount_q_bus_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Dir_Esc/Mcount_q_bus_cy<14> (Inst_Contador_Dir_Esc/Mcount_q_bus_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Dir_Esc/Mcount_q_bus_cy<15> (Inst_Contador_Dir_Esc/Mcount_q_bus_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Dir_Esc/Mcount_q_bus_cy<16> (Inst_Contador_Dir_Esc/Mcount_q_bus_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  Inst_Contador_Dir_Esc/Mcount_q_bus_cy<17> (Inst_Contador_Dir_Esc/Mcount_q_bus_cy<17>)
+     MUXCY:CI->O           0   0.023   0.000  Inst_Contador_Dir_Esc/Mcount_q_bus_cy<18> (Inst_Contador_Dir_Esc/Mcount_q_bus_cy<18>)
+     XORCY:CI->O           1   0.206   0.000  Inst_Contador_Dir_Esc/Mcount_q_bus_xor<19> (Inst_Contador_Dir_Esc/Mcount_q_bus19)
+     FDRE:D                    0.074          Inst_Contador_Dir_Esc/q_bus_19
+    ----------------------------------------
+    Total                      4.930ns (1.751ns logic, 3.179ns route)
+                                       (35.5% logic, 64.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 55 / 54
+-------------------------------------------------------------------------
+Offset:              3.966ns (Levels of Logic = 2)
+  Source:            div_frec (PAD)
+  Destination:       Inst_Retenedor_Lectura/q_bus_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: div_frec to Inst_Retenedor_Lectura/q_bus_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.328   1.104  div_frec_IBUF (div_frec_IBUF)
+     LUT3:I0->O            5   0.235   0.840  Inst_Retenedor_Lectura/_n00201 (Inst_Retenedor_Lectura/_n0020)
+     FDRE:R                    0.459          Inst_Retenedor_Lectura/q_bus_0
+    ----------------------------------------
+    Total                      3.966ns (2.022ns logic, 1.944ns route)
+                                       (51.0% logic, 49.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 166 / 35
+-------------------------------------------------------------------------
+Offset:              7.471ns (Levels of Logic = 3)
+  Source:            Inst_Contador_Dir_Esc/q_bus_18 (FF)
+  Destination:       stop_cnt_dir (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Inst_Contador_Dir_Esc/q_bus_18 to stop_cnt_dir
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             4   0.525   1.080  Inst_Contador_Dir_Esc/q_bus_18 (Inst_Contador_Dir_Esc/q_bus_18)
+     LUT4:I0->O           21   0.254   1.765  Inst_Contador_Dir_Esc/bus_sel_INV_3_o_inv_inv21 (Inst_Contador_Dir_Esc/bus_sel_INV_3_o_inv_inv2)
+     LUT6:I0->O            1   0.254   0.681  Inst_Contador_Dir_Esc/bus_sel_INV_3_o_inv1 (Inst_Contador_Dir_Esc/bus_sel_INV_3_o_inv)
+     OBUF:I->O                 2.912          stop_cnt_dir_OBUF (stop_cnt_dir)
+    ----------------------------------------
+    Total                      7.471ns (3.945ns logic, 3.526ns route)
+                                       (52.8% logic, 47.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Delay:               6.287ns (Levels of Logic = 3)
+  Source:            dq_in_esc<11> (PAD)
+  Destination:       dq_esc<11> (PAD)
+
+  Data Path: dq_in_esc<11> to dq_esc<11>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   1.112  dq_in_esc_11_IBUF (dq_in_esc_11_IBUF)
+     LUT5:I0->O            1   0.254   0.681  Inst_MaquinaEstados_Escritura/Mmux_dq_esc31 (dq_esc_11_OBUF)
+     OBUF:I->O                 2.912          dq_esc_11_OBUF (dq_esc<11>)
+    ----------------------------------------
+    Total                      6.287ns (4.494ns logic, 1.793ns route)
+                                       (71.5% logic, 28.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.930|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 25.00 secs
+Total CPU time to Xst completion: 23.16 secs
+ 
+--> 
+
+
+Total memory usage is 394540 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

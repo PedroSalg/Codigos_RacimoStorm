@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Borrado.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Contador_Dir_Bor.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Contador_Dir_Bor.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Contador_Dir_Bor.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Contador_Dir_Bor.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Contador_Dir_Bor.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Contador_Dir_Bor.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Contador_Dir_Bor.syr"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="Contador_Dir_Bor.vhi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Contador_Dir_Bor.xst"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Contador_Dir_Bor_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="MaquinaEstados_Borrado.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="MaquinaEstados_Borrado.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="MaquinaEstados_Borrado.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="MaquinaEstados_Borrado.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MaquinaEstados_Borrado.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="MaquinaEstados_Borrado.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="MaquinaEstados_Borrado.syr"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="MaquinaEstados_Borrado.vhi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="MaquinaEstados_Borrado.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="MaquinaEstados_Borrado_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="MaquinaEstados_Borrado_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MaquinaEstados_Borrado_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Modulo_Borrado.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Modulo_Borrado.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Modulo_Borrado.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Modulo_Borrado.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Modulo_Borrado.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Modulo_Borrado.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Modulo_Borrado.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Modulo_Borrado.xst"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Modulo_Borrado_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Retenedor_Borrado.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Retenedor_Borrado.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Retenedor_Borrado.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Retenedor_Borrado.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Retenedor_Borrado.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Retenedor_Borrado.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Retenedor_Borrado.syr"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="Retenedor_Borrado.vhi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Retenedor_Borrado.xst"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Retenedor_Borrado_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1588050775" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1588050775">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1588053178" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-8656315090306060935" xil_pn:start_ts="1588053178">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1588053178" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="5850589879447450248" xil_pn:start_ts="1588053178">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1588053178" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1588053178">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1588053178" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="6568709994808345723" xil_pn:start_ts="1588053178">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1588053178" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745955965653" xil_pn:start_ts="1588053178">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1588053178" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-1555138880426950830" xil_pn:start_ts="1588053178">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1588053530" xil_pn:in_ck="1666310888612007017" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-7939037960562836127" xil_pn:start_ts="1588053500">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Contador_Dir_Bor.ngr"/>
+      <outfile xil_pn:name="MaquinaEstados_Borrado.ngr"/>
+      <outfile xil_pn:name="Modulo_Borrado.lso"/>
+      <outfile xil_pn:name="Modulo_Borrado.ngc"/>
+      <outfile xil_pn:name="Modulo_Borrado.ngr"/>
+      <outfile xil_pn:name="Modulo_Borrado.prj"/>
+      <outfile xil_pn:name="Modulo_Borrado.stx"/>
+      <outfile xil_pn:name="Modulo_Borrado.syr"/>
+      <outfile xil_pn:name="Modulo_Borrado.xst"/>
+      <outfile xil_pn:name="Modulo_Borrado_xst.xrpt"/>
+      <outfile xil_pn:name="Retenedor_Borrado.ngr"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+  </transforms>
+
+</generated_project>

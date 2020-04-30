@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Final/Lectura/MaquinaEstados_Lectura.xst" -ofn "/home/pedro/Documents/ISE/Final/Lectura/MaquinaEstados_Lectura.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Final/Lectura/MaquinaEstados_Lectura.xst" -ofn "/home/pedro/Documents/ISE/Final/Lectura/MaquinaEstados_Lectura.syr" 

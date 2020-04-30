@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Final/Escritura/Retenedor_Lectura.xst" -ofn "/home/pedro/Documents/ISE/Final/Escritura/Retenedor_Lectura.syr" 
+vhdtdtfi -prj Escritura -o /home/pedro/Documents/ISE/Final/Escritura/Retenedor_Lectura.vhi -module Retenedor_Lectura -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Retenedor_Lectura.vhd 

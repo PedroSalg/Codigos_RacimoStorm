@@ -1,0 +1,4 @@
+vhdl work "Retenedor_Lectura.vhd"
+vhdl work "MaquinaEstados_Escritura.vhd"
+vhdl work "Contador_Dir_Esc.vhd"
+vhdl work "Modulo_Escritura.vhd"

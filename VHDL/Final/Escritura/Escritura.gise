@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Escritura.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Contador_Dir_Esc.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Contador_Dir_Esc.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Contador_Dir_Esc.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Contador_Dir_Esc.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Contador_Dir_Esc.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Contador_Dir_Esc.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Contador_Dir_Esc.syr"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="Contador_Dir_Esc.vhi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Contador_Dir_Esc.xst"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Contador_Dir_Esc_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="MaquinaEstados_Escritura.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="MaquinaEstados_Escritura.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="MaquinaEstados_Escritura.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="MaquinaEstados_Escritura.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MaquinaEstados_Escritura.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="MaquinaEstados_Escritura.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="MaquinaEstados_Escritura.syr"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="MaquinaEstados_Escritura.vhi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="MaquinaEstados_Escritura.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="MaquinaEstados_Escritura_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MaquinaEstados_Escritura_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Modulo_Escritura.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Modulo_Escritura.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Modulo_Escritura.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Modulo_Escritura.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Modulo_Escritura.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Modulo_Escritura.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Modulo_Escritura.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Modulo_Escritura.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Modulo_Escritura_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Modulo_Escritura_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Modulo_Escritura_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Retenedor_Lectura.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Retenedor_Lectura.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Retenedor_Lectura.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Retenedor_Lectura.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Retenedor_Lectura.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Retenedor_Lectura.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Retenedor_Lectura.syr"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="Retenedor_Lectura.vhi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Retenedor_Lectura.xst"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Retenedor_Lectura_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1587995776" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1587995776">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587995776" xil_pn:in_ck="-1793776383392978310" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1587995776">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Contador_Dir_Esc.vhd"/>
+      <outfile xil_pn:name="MaquinaEstados_Escritura.vhd"/>
+      <outfile xil_pn:name="Modulo_Escritura.vhd"/>
+      <outfile xil_pn:name="Retenedor_Lectura.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1587995776" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-9044832904953873877" xil_pn:start_ts="1587995776">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587995776" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2793873426928892759" xil_pn:start_ts="1587995776">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587995776" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-4499727449443966575" xil_pn:start_ts="1587995776">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587948250" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1587948250">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587993860" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-7488715093137716958" xil_pn:start_ts="1587993860">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587993860" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-4499727449443966575" xil_pn:start_ts="1587993860">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587993860" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1587993860">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587993860" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="7387424405273782436" xil_pn:start_ts="1587993860">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587993860" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745955965653" xil_pn:start_ts="1587993860">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587993860" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-8111186741592684325" xil_pn:start_ts="1587993860">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1588042921" xil_pn:in_ck="-1793776383392978310" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-4514507153319029078" xil_pn:start_ts="1588042889">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Contador_Dir_Esc.ngr"/>
+      <outfile xil_pn:name="MaquinaEstados_Escritura.ngr"/>
+      <outfile xil_pn:name="Modulo_Escritura.lso"/>
+      <outfile xil_pn:name="Modulo_Escritura.ngc"/>
+      <outfile xil_pn:name="Modulo_Escritura.ngr"/>
+      <outfile xil_pn:name="Modulo_Escritura.prj"/>
+      <outfile xil_pn:name="Modulo_Escritura.stx"/>
+      <outfile xil_pn:name="Modulo_Escritura.syr"/>
+      <outfile xil_pn:name="Modulo_Escritura.xst"/>
+      <outfile xil_pn:name="Modulo_Escritura_xst.xrpt"/>
+      <outfile xil_pn:name="Retenedor_Lectura.ngr"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+  </transforms>
+
+</generated_project>
