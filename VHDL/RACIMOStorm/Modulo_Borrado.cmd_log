@@ -1,0 +1,1 @@
+vhdtdtfi -prj RACIMOStorm -o /home/pedro/Documents/ISE/RACIMOStorm/Modulo_Borrado.vhi -module Modulo_Borrado -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Retenedor_Borrado.vhd -lib work MaquinaEstados_Borrado.vhd -lib work Contador_Dir_Bor.vhd -lib work Modulo_Borrado.vhd 
