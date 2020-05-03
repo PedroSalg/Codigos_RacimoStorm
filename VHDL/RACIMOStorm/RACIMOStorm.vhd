@@ -5,6 +5,7 @@ entity RACIMOStorm is
     Port ( SW0 : in  STD_LOGIC;
            SW1 : in  STD_LOGIC;
            SW2 : in  STD_LOGIC;
+			  D : in STD_LOGIC_VECTOR(11 downto 0);
            RESET : in  STD_LOGIC;
 			  FROM_RP : in  STD_LOGIC;
            CLK : in  STD_LOGIC;
@@ -136,7 +137,8 @@ signal bus_stop_cnt_dir, bus_stop_cnt_bor, bus_Freq_ADC : STD_LOGIC;
 
 begin
 
-bus_dq_in_esc <= "000000001010";
+--bus_dq_in_esc <= "000100001010";
+bus_dq_in_esc <= D;
 
 bus_stop_final <= bus_stop_cnt_dir or bus_stop_cnt_bor;
 

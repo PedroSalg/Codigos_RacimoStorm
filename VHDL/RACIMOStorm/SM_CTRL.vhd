@@ -108,7 +108,7 @@ begin
 			
 		when s5 =>
 			if (sw2 = '1') then 
-				d_bus <= p_bor;
+				d_bus <= s6;
 			else 
 				d_bus <= s5;
 			end if;

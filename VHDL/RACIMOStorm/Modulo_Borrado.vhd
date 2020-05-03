@@ -56,14 +56,17 @@ COMPONENT MaquinaEstados_Borrado
 		stop_cnt_bor : OUT std_logic
 		);
 	END COMPONENT;
+	
+
 
 signal bus_cnt_dir_bor : STD_LOGIC_VECTOR(5 downto 0);
 signal bus_stop_cnt_bor, bus_esp_bor, bus_en_ret_bor : STD_LOGIC;
-signal bus_ocupado : STD_LOGIC;
+signal bus_ocupado, bus_en_cnt_bor : STD_LOGIC;
 
 begin
 
 bus_en_ret_bor <= div_frec and bus_ocupado;
+bus_en_cnt_bor <= en_cnt_bor and div_frec;
 
 	Inst_MaquinaEstados_Borrado: MaquinaEstados_Borrado PORT MAP(
 		borrado => borrar,
@@ -92,11 +95,12 @@ bus_en_ret_bor <= div_frec and bus_ocupado;
 
 	Inst_Contador_Dir_Bor: Contador_Dir_Bor PORT MAP(
 		clk => clk,
-		en_cnt_bor => en_cnt_bor,
+		en_cnt_bor => bus_en_cnt_bor,
 		rst_cnt_bor => rst_cnt_bor,
 		cnt_dir_bor => bus_cnt_dir_bor,
 		stop_cnt_bor => stop_cnt_bor
 	);
+	
 
 
 end Behavioral;

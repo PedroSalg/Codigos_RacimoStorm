@@ -28,7 +28,7 @@ Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/Simulacion_Escritura.vh
 Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 114600 KB
-Fuse CPU Usage: 2340 ms
+Fuse CPU Usage: 2400 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -61,5 +61,5 @@ Waiting for 1 sub-compilation(s) to finish...
 Compiled 47 VHDL Units
 Built simulation executable /home/pedro/Documents/ISE/RACIMOStorm/Simulacion_Escritura_isim_beh.exe
 Fuse Memory Usage: 429616 KB
-Fuse CPU Usage: 2850 ms
-GCC CPU Usage: 580 ms
+Fuse CPU Usage: 2940 ms
+GCC CPU Usage: 560 ms

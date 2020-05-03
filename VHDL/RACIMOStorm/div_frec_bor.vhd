@@ -4,33 +4,32 @@ use IEEE.numeric_std.all;
 use IEEE.std_logic_unsigned.all;
 use IEEE.std_logic_arith.all;
 
-entity Contador_Dir_Esc is
+
+entity div_frec_bor is
     Port ( clk : in  STD_LOGIC;
-           en_cnt_dir : in  STD_LOGIC;
-           rst_cnt_dir : in  STD_LOGIC;
-           ocuapdo  : out  STD_LOGIC;
-           cnt_dir : out  STD_LOGIC_VECTOR (19 downto 0));
-end Contador_Dir_Esc;
+           en_div_frec_bor : in  STD_LOGIC;
+           rst_div_frec_bor : in  STD_LOGIC;
+           out_div_frec_bor : out  STD_LOGIC);
+end div_frec_bor;
 
-architecture Behavioral of Contador_Dir_Esc is
+architecture Behavioral of div_frec_bor is
 
-signal q_bus, d_bus, M : STD_LOGIC_VECTOR(19 downto 0):=(others => '0');   -- 6 bits para contar hasta 50
+signal q_bus, d_bus, M : STD_LOGIC_VECTOR(3 downto 0):=(others => '0');   -- 6 bits para contar hasta 50
 signal bus_sel : STD_LOGIC:='0';
 
 begin
 
 
-
-M <= conv_std_logic_Vector(10000,20);    -- Frecuencia de 1 MHz - TEORICA
+M <= conv_std_logic_Vector(10,4);    -- Frecuencia de 1 MHz - TEORICA
 
 
 ------ REGISTRO 
 process (CLK)
 begin
    if CLK'event and CLK='1' then  
-      if rst_cnt_dir='1' then   
+      if rst_div_frec_bor='1' then   
          q_bus <= (others => '0');
-      elsif (en_cnt_dir = '1') then 
+      elsif (en_div_frec_bor='1') then 
          q_bus <= d_bus;
       end if;
    end if;
@@ -46,8 +45,8 @@ d_bus <= q_bus + '1' when (bus_sel = '0') else
 			
 ------ LOGICA DE SALIDA 
 
-cnt_dir <= q_bus;
-ocuapdo <= bus_sel;
+out_div_frec_bor <= Bus_Sel;
+
 
 end Behavioral;
 

@@ -13,7 +13,7 @@ end Retenedor_Borrado;
 
 architecture Behavioral of Retenedor_Borrado is
 
-signal q_bus, d_bus, M : STD_LOGIC_VECTOR(9 downto 0):=(others => '0');   -- 6 bits para contar hasta 50
+signal q_bus, d_bus, M : STD_LOGIC_VECTOR(27 downto 0):=(others => '0');   -- 6 bits para contar hasta 50
 signal bus_sel : STD_LOGIC:='0';
 
 
@@ -21,7 +21,7 @@ begin
 
 
 
-M <= conv_std_logic_Vector(1000,10);    -- Contador original en 15
+M <= conv_std_logic_Vector(1000,28);    -- Contador original en 15
 
 
 ------ REGISTRO 

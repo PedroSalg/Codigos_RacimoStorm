@@ -126,7 +126,8 @@ with q_bus select
 				 x"05555" when s5,
 				 x"05555" when s7,
 				 x"02AAA" when s9,
-				 bus_dir_a_bor when s11,
+				 --bus_dir_a_bor when s11,
+				 x"05555" when s11,
 				 X"00000" when others;
 
 with q_Bus select
@@ -135,7 +136,7 @@ with q_Bus select
 			     x"080" when s5,
 			     x"0AA" when s7,
 				  x"055" when s9,
-				  x"050" when s11,
+				  x"010" when s11,
 				  X"000" when others;
 				 
 with q_bus select

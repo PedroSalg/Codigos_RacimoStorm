@@ -37,25 +37,25 @@ Setup/Hold to clock CLK
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-DQ_BIDIR<0> |    1.824(R)|      SLOW  |   -0.338(R)|      SLOW  |CLK_BUFGP         |   0.000|
-DQ_BIDIR<1> |    1.901(R)|      SLOW  |   -0.411(R)|      SLOW  |CLK_BUFGP         |   0.000|
-DQ_BIDIR<2> |    1.764(R)|      SLOW  |   -0.284(R)|      SLOW  |CLK_BUFGP         |   0.000|
-DQ_BIDIR<3> |    2.104(R)|      SLOW  |   -0.606(R)|      SLOW  |CLK_BUFGP         |   0.000|
-DQ_BIDIR<4> |    2.332(R)|      SLOW  |   -0.819(R)|      SLOW  |CLK_BUFGP         |   0.000|
-DQ_BIDIR<5> |    3.075(R)|      SLOW  |   -1.270(R)|      FAST  |CLK_BUFGP         |   0.000|
-DQ_BIDIR<6> |    3.053(R)|      SLOW  |   -1.276(R)|      FAST  |CLK_BUFGP         |   0.000|
-DQ_BIDIR<7> |    3.211(R)|      SLOW  |   -1.320(R)|      FAST  |CLK_BUFGP         |   0.000|
-DQ_BIDIR<8> |    1.673(R)|      SLOW  |   -0.195(R)|      SLOW  |CLK_BUFGP         |   0.000|
-DQ_BIDIR<9> |    1.391(R)|      SLOW  |    0.071(R)|      SLOW  |CLK_BUFGP         |   0.000|
-DQ_BIDIR<10>|    1.831(R)|      SLOW  |   -0.346(R)|      SLOW  |CLK_BUFGP         |   0.000|
-DQ_BIDIR<11>|    2.101(R)|      SLOW  |   -0.604(R)|      SLOW  |CLK_BUFGP         |   0.000|
-FROM_RP     |    4.105(R)|      SLOW  |   -1.768(R)|      FAST  |CLK_BUFGP         |   0.000|
-RESET       |    2.334(R)|      SLOW  |   -0.341(R)|      SLOW  |CLK_BUFGP         |   0.000|
+DQ_BIDIR<0> |    2.317(R)|      SLOW  |   -0.904(R)|      FAST  |CLK_BUFGP         |   0.000|
+DQ_BIDIR<1> |    1.949(R)|      SLOW  |   -0.594(R)|      SLOW  |CLK_BUFGP         |   0.000|
+DQ_BIDIR<2> |    1.782(R)|      SLOW  |   -0.440(R)|      SLOW  |CLK_BUFGP         |   0.000|
+DQ_BIDIR<3> |    1.997(R)|      SLOW  |   -0.626(R)|      FAST  |CLK_BUFGP         |   0.000|
+DQ_BIDIR<4> |    2.180(R)|      SLOW  |   -0.795(R)|      FAST  |CLK_BUFGP         |   0.000|
+DQ_BIDIR<5> |    2.859(R)|      SLOW  |   -1.208(R)|      FAST  |CLK_BUFGP         |   0.000|
+DQ_BIDIR<6> |    3.188(R)|      SLOW  |   -1.327(R)|      FAST  |CLK_BUFGP         |   0.000|
+DQ_BIDIR<7> |    3.013(R)|      SLOW  |   -1.275(R)|      FAST  |CLK_BUFGP         |   0.000|
+DQ_BIDIR<8> |    1.629(R)|      SLOW  |   -0.292(R)|      SLOW  |CLK_BUFGP         |   0.000|
+DQ_BIDIR<9> |    1.592(R)|      SLOW  |   -0.256(R)|      SLOW  |CLK_BUFGP         |   0.000|
+DQ_BIDIR<10>|    1.973(R)|      SLOW  |   -0.618(R)|      SLOW  |CLK_BUFGP         |   0.000|
+DQ_BIDIR<11>|    2.251(R)|      SLOW  |   -0.855(R)|      FAST  |CLK_BUFGP         |   0.000|
+FROM_RP     |    3.927(R)|      SLOW  |   -1.501(R)|      FAST  |CLK_BUFGP         |   0.000|
+RESET       |    2.486(R)|      SLOW  |   -0.499(R)|      SLOW  |CLK_BUFGP         |   0.000|
 SCL         |    1.398(R)|      SLOW  |    0.066(R)|      SLOW  |CLK_BUFGP         |   0.000|
-SDA         |    1.792(R)|      SLOW  |   -0.435(R)|      SLOW  |CLK_BUFGP         |   0.000|
-SW0         |    3.645(R)|      SLOW  |   -1.169(R)|      FAST  |CLK_BUFGP         |   0.000|
-SW1         |    4.316(R)|      SLOW  |   -0.980(R)|      FAST  |CLK_BUFGP         |   0.000|
-SW2         |    4.278(R)|      SLOW  |   -1.279(R)|      FAST  |CLK_BUFGP         |   0.000|
+SDA         |    1.999(R)|      SLOW  |   -0.501(R)|      SLOW  |CLK_BUFGP         |   0.000|
+SW0         |    5.832(R)|      SLOW  |   -1.398(R)|      FAST  |CLK_BUFGP         |   0.000|
+SW1         |    5.682(R)|      SLOW  |   -0.930(R)|      FAST  |CLK_BUFGP         |   0.000|
+SW2         |    5.394(R)|      SLOW  |   -1.348(R)|      FAST  |CLK_BUFGP         |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock CLK to Pad
@@ -63,47 +63,47 @@ Clock CLK to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-A<0>        |        15.318(R)|      SLOW  |         5.593(R)|      FAST  |CLK_BUFGP         |   0.000|
-A<1>        |        12.474(R)|      SLOW  |         4.412(R)|      FAST  |CLK_BUFGP         |   0.000|
-A<2>        |        13.519(R)|      SLOW  |         4.310(R)|      FAST  |CLK_BUFGP         |   0.000|
-A<3>        |        12.838(R)|      SLOW  |         4.150(R)|      FAST  |CLK_BUFGP         |   0.000|
-A<4>        |        12.860(R)|      SLOW  |         4.307(R)|      FAST  |CLK_BUFGP         |   0.000|
-A<5>        |        12.427(R)|      SLOW  |         4.455(R)|      FAST  |CLK_BUFGP         |   0.000|
-A<6>        |        13.026(R)|      SLOW  |         4.328(R)|      FAST  |CLK_BUFGP         |   0.000|
-A<7>        |        14.307(R)|      SLOW  |         4.160(R)|      FAST  |CLK_BUFGP         |   0.000|
-A<8>        |        14.232(R)|      SLOW  |         4.631(R)|      FAST  |CLK_BUFGP         |   0.000|
-A<9>        |        15.009(R)|      SLOW  |         4.542(R)|      FAST  |CLK_BUFGP         |   0.000|
-A<10>       |        13.915(R)|      SLOW  |         5.010(R)|      FAST  |CLK_BUFGP         |   0.000|
-A<11>       |        14.580(R)|      SLOW  |         5.153(R)|      FAST  |CLK_BUFGP         |   0.000|
-A<12>       |        12.985(R)|      SLOW  |         4.396(R)|      FAST  |CLK_BUFGP         |   0.000|
-A<13>       |        14.807(R)|      SLOW  |         5.228(R)|      FAST  |CLK_BUFGP         |   0.000|
-A<14>       |        12.851(R)|      SLOW  |         4.348(R)|      FAST  |CLK_BUFGP         |   0.000|
-CE          |        13.553(R)|      SLOW  |         5.386(R)|      FAST  |CLK_BUFGP         |   0.000|
-CLK_ADC     |        10.147(R)|      SLOW  |         4.354(R)|      FAST  |CLK_BUFGP         |   0.000|
-DQ_BIDIR<0> |        14.857(R)|      SLOW  |         5.000(R)|      FAST  |CLK_BUFGP         |   0.000|
-DQ_BIDIR<1> |        13.580(R)|      SLOW  |         4.740(R)|      FAST  |CLK_BUFGP         |   0.000|
-DQ_BIDIR<2> |        14.595(R)|      SLOW  |         4.861(R)|      FAST  |CLK_BUFGP         |   0.000|
-DQ_BIDIR<3> |        13.290(R)|      SLOW  |         4.573(R)|      FAST  |CLK_BUFGP         |   0.000|
-DQ_BIDIR<4> |        14.556(R)|      SLOW  |         4.814(R)|      FAST  |CLK_BUFGP         |   0.000|
-DQ_BIDIR<5> |        12.711(R)|      SLOW  |         4.322(R)|      FAST  |CLK_BUFGP         |   0.000|
-DQ_BIDIR<6> |        13.971(R)|      SLOW  |         4.513(R)|      FAST  |CLK_BUFGP         |   0.000|
-DQ_BIDIR<7> |        12.929(R)|      SLOW  |         4.461(R)|      FAST  |CLK_BUFGP         |   0.000|
-DQ_BIDIR<8> |        12.273(R)|      SLOW  |         5.114(R)|      FAST  |CLK_BUFGP         |   0.000|
-DQ_BIDIR<9> |        12.049(R)|      SLOW  |         4.998(R)|      FAST  |CLK_BUFGP         |   0.000|
-DQ_BIDIR<10>|        12.000(R)|      SLOW  |         4.949(R)|      FAST  |CLK_BUFGP         |   0.000|
-DQ_BIDIR<11>|        11.777(R)|      SLOW  |         4.834(R)|      FAST  |CLK_BUFGP         |   0.000|
-LED<0>      |        11.116(R)|      SLOW  |         4.703(R)|      FAST  |CLK_BUFGP         |   0.000|
-LED<1>      |        11.526(R)|      SLOW  |         4.961(R)|      FAST  |CLK_BUFGP         |   0.000|
-LED<2>      |        12.499(R)|      SLOW  |         4.688(R)|      FAST  |CLK_BUFGP         |   0.000|
-LED<3>      |        13.028(R)|      SLOW  |         5.020(R)|      FAST  |CLK_BUFGP         |   0.000|
-LED<4>      |        12.584(R)|      SLOW  |         4.988(R)|      FAST  |CLK_BUFGP         |   0.000|
-LED<5>      |        12.878(R)|      SLOW  |         4.890(R)|      FAST  |CLK_BUFGP         |   0.000|
-LED<6>      |        11.159(R)|      SLOW  |         4.249(R)|      FAST  |CLK_BUFGP         |   0.000|
-LED<7>      |        11.151(R)|      SLOW  |         4.241(R)|      FAST  |CLK_BUFGP         |   0.000|
-OE          |        13.540(R)|      SLOW  |         5.366(R)|      FAST  |CLK_BUFGP         |   0.000|
-SDA         |        10.463(R)|      SLOW  |         4.354(R)|      FAST  |CLK_BUFGP         |   0.000|
-TO_RP       |        12.614(R)|      SLOW  |         5.481(R)|      FAST  |CLK_BUFGP         |   0.000|
-WE          |        12.659(R)|      SLOW  |         4.735(R)|      FAST  |CLK_BUFGP         |   0.000|
+A<0>        |        17.254(R)|      SLOW  |         5.149(R)|      FAST  |CLK_BUFGP         |   0.000|
+A<1>        |        16.698(R)|      SLOW  |         4.791(R)|      FAST  |CLK_BUFGP         |   0.000|
+A<2>        |        16.558(R)|      SLOW  |         4.575(R)|      FAST  |CLK_BUFGP         |   0.000|
+A<3>        |        17.054(R)|      SLOW  |         4.687(R)|      FAST  |CLK_BUFGP         |   0.000|
+A<4>        |        16.415(R)|      SLOW  |         4.699(R)|      FAST  |CLK_BUFGP         |   0.000|
+A<5>        |        16.730(R)|      SLOW  |         4.758(R)|      FAST  |CLK_BUFGP         |   0.000|
+A<6>        |        16.286(R)|      SLOW  |         4.751(R)|      FAST  |CLK_BUFGP         |   0.000|
+A<7>        |        16.738(R)|      SLOW  |         4.551(R)|      FAST  |CLK_BUFGP         |   0.000|
+A<8>        |        17.004(R)|      SLOW  |         4.880(R)|      FAST  |CLK_BUFGP         |   0.000|
+A<9>        |        17.053(R)|      SLOW  |         4.750(R)|      FAST  |CLK_BUFGP         |   0.000|
+A<10>       |        16.489(R)|      SLOW  |         5.019(R)|      FAST  |CLK_BUFGP         |   0.000|
+A<11>       |        17.599(R)|      SLOW  |         4.961(R)|      FAST  |CLK_BUFGP         |   0.000|
+A<12>       |        15.787(R)|      SLOW  |         4.542(R)|      FAST  |CLK_BUFGP         |   0.000|
+A<13>       |        17.291(R)|      SLOW  |         4.639(R)|      FAST  |CLK_BUFGP         |   0.000|
+A<14>       |        16.646(R)|      SLOW  |         4.452(R)|      FAST  |CLK_BUFGP         |   0.000|
+CE          |        17.952(R)|      SLOW  |         4.758(R)|      FAST  |CLK_BUFGP         |   0.000|
+CLK_ADC     |        11.035(R)|      SLOW  |         4.958(R)|      FAST  |CLK_BUFGP         |   0.000|
+DQ_BIDIR<0> |        18.224(R)|      SLOW  |         5.080(R)|      FAST  |CLK_BUFGP         |   0.000|
+DQ_BIDIR<1> |        17.742(R)|      SLOW  |         4.913(R)|      FAST  |CLK_BUFGP         |   0.000|
+DQ_BIDIR<2> |        17.827(R)|      SLOW  |         4.708(R)|      FAST  |CLK_BUFGP         |   0.000|
+DQ_BIDIR<3> |        17.569(R)|      SLOW  |         4.798(R)|      FAST  |CLK_BUFGP         |   0.000|
+DQ_BIDIR<4> |        15.861(R)|      SLOW  |         4.923(R)|      FAST  |CLK_BUFGP         |   0.000|
+DQ_BIDIR<5> |        15.824(R)|      SLOW  |         4.653(R)|      FAST  |CLK_BUFGP         |   0.000|
+DQ_BIDIR<6> |        16.421(R)|      SLOW  |         4.750(R)|      FAST  |CLK_BUFGP         |   0.000|
+DQ_BIDIR<7> |        16.267(R)|      SLOW  |         4.758(R)|      FAST  |CLK_BUFGP         |   0.000|
+DQ_BIDIR<8> |        17.708(R)|      SLOW  |         4.852(R)|      FAST  |CLK_BUFGP         |   0.000|
+DQ_BIDIR<9> |        17.955(R)|      SLOW  |         4.868(R)|      FAST  |CLK_BUFGP         |   0.000|
+DQ_BIDIR<10>|        18.345(R)|      SLOW  |         4.923(R)|      FAST  |CLK_BUFGP         |   0.000|
+DQ_BIDIR<11>|        16.907(R)|      SLOW  |         4.678(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<0>      |        11.182(R)|      SLOW  |         4.672(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<1>      |        11.182(R)|      SLOW  |         4.672(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<2>      |        11.461(R)|      SLOW  |         4.675(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<3>      |        10.893(R)|      SLOW  |         4.376(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<4>      |        11.721(R)|      SLOW  |         4.781(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<5>      |        11.461(R)|      SLOW  |         4.403(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<6>      |        11.196(R)|      SLOW  |         4.529(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<7>      |        11.012(R)|      SLOW  |         4.431(R)|      FAST  |CLK_BUFGP         |   0.000|
+OE          |        17.587(R)|      SLOW  |         4.518(R)|      FAST  |CLK_BUFGP         |   0.000|
+SDA         |        11.094(R)|      SLOW  |         4.529(R)|      FAST  |CLK_BUFGP         |   0.000|
+TO_RP       |        12.740(R)|      SLOW  |         5.418(R)|      FAST  |CLK_BUFGP         |   0.000|
+WE          |        15.432(R)|      SLOW  |         5.107(R)|      FAST  |CLK_BUFGP         |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK
@@ -111,11 +111,29 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    5.302|         |         |         |
+CLK            |    5.312|         |         |         |
 ---------------+---------+---------+---------+---------+
 
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+D<0>           |DQ_BIDIR<0>    |   10.863|
+D<1>           |DQ_BIDIR<1>    |   11.668|
+D<2>           |DQ_BIDIR<2>    |   10.217|
+D<3>           |DQ_BIDIR<3>    |   11.600|
+D<4>           |DQ_BIDIR<4>    |   11.808|
+D<5>           |DQ_BIDIR<5>    |   12.044|
+D<6>           |DQ_BIDIR<6>    |   13.431|
+D<7>           |DQ_BIDIR<7>    |   12.450|
+D<8>           |DQ_BIDIR<8>    |   11.494|
+D<9>           |DQ_BIDIR<9>    |   11.272|
+D<10>          |DQ_BIDIR<10>   |   12.163|
+D<11>          |DQ_BIDIR<11>   |   13.408|
+---------------+---------------+---------+
 
-Analysis completed Thu Apr 30 01:50:07 2020 
+
+Analysis completed Sat May  2 17:55:41 2020 
 --------------------------------------------------------------------------------
 
 Trace Settings:

@@ -23,7 +23,7 @@ begin
 
 
 
-M <= conv_std_logic_Vector(34,6);    -- Frecuencia de 1 MHz - TEORICA
+M <= conv_std_logic_Vector(1,6);    -- Frecuencia de 1 MHz - TEORICA
 
 
 ------ REGISTRO 

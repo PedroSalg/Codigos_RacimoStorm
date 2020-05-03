@@ -160,7 +160,7 @@ LAB6:    *((char **)t1) = &&LAB7;
 
 LAB1:    return;
 LAB4:    xsi_set_current_line(133, ng0);
-    t2 = (t0 + 5592);
+    t2 = (t0 + 5528);
     t3 = (t2 + 56U);
     t4 = *((char **)t3);
     t5 = (t4 + 56U);
@@ -180,7 +180,7 @@ LAB5:    goto LAB4;
 LAB7:    goto LAB5;
 
 LAB8:    xsi_set_current_line(136, ng0);
-    t2 = (t0 + 5592);
+    t2 = (t0 + 5528);
     t3 = (t2 + 56U);
     t4 = *((char **)t3);
     t5 = (t4 + 56U);

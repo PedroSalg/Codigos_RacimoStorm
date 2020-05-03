@@ -19,7 +19,7 @@ signal bus_sel : STD_LOGIC:='0';
 begin
 
 
-M <= conv_std_logic_Vector(1000,10);    -- Contador original en 15
+M <= conv_std_logic_Vector(375,10);    -- Contador original en 15
 
 
 ------ REGISTRO 

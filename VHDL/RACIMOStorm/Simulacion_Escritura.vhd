@@ -130,10 +130,10 @@ BEGIN
 		SW2 <= '1';
       wait for 1 ms;	
 		
-		SW1 <= '0';
+		SW0 <= '0';
       wait for 1 ms;	
 		
-		SW1 <= '1';
+		SW0 <= '1';
       wait for 1 ms;	
 		
 		FROM_RP <= '1';
