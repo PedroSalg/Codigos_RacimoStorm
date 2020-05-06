@@ -19,6 +19,7 @@ entity SM_CTRL is
 			  en_cnt_dir : out  STD_LOGIC;
            rst_contador : out  STD_LOGIC;
 			  en_cnt_bor : out  STD_LOGIC;
+			  finish : out STD_LOGIC;
            selector : out  STD_LOGIC_VECTOR (1 downto 0));
 end SM_CTRL;
 
@@ -26,7 +27,7 @@ architecture Behavioral of SM_CTRL is
 
 type Estados is (s0,s1,s2,s3,s4,s5,s6,s7,esp_esc,esp_bor,p_esc,p_bor,r_esc,r_bor, Sin_ADC);
 signal d_bus, q_bus : Estados;
-signal Salidas : STD_LOGIC_VECTOR(6 downto 0);
+signal Salidas : STD_LOGIC_VECTOR(7 downto 0);
 signal con_rep_esc : STD_LOGIC_vECTOR(1 downto 0);
 
 begin
@@ -52,22 +53,22 @@ begin
 
 	case (q_bus) is 
 		when s0 => 
-			if (sw0 = '0') then
-				d_bus <= s1;
-			elsif (sw1 = '0') then 
-				d_bus <= s3;
-			elsif (sw2 = '0') then 
-				d_bus <= s5;
+			if (sw0 = '1') then
+				d_bus <= p_esc;
+			elsif (sw1 = '1') then 
+				d_bus <= s4;
+			elsif (sw2 = '1') then 
+				d_bus <= s6;
 			else 
 				d_bus <= s0;
 			end if;
 			
-		when s1 =>
-			if (sw0 = '1') then 
-				d_bus <= p_esc;
-			else 
-				d_bus <= s1;
-			end if;
+--		when s1 =>
+--			if (sw0 = '1') then 
+--				d_bus <= p_esc;
+--			else 
+--				d_bus <= s1;
+--			end if;
 	
 --	when Sin_ADC => 
 --		if (In_Freq_ADC = '1') then 
@@ -83,12 +84,12 @@ begin
 				d_bus <= s2;
 			end if;
 			
-		when s3 => 
-			if (sw1 = '1') then 
-				d_bus <= s4;
-			else 
-				d_bus <= s3;
-			end if;
+--		when s3 => 
+--			if (sw1 = '1') then 
+--				d_bus <= s4;
+--			else 
+--				d_bus <= s3;
+--			end if;
 			
 		when s4 =>
 			if (band_lec = '1') then 
@@ -106,12 +107,12 @@ begin
 --				d_bus <= s4;
 --			end if;
 			
-		when s5 =>
-			if (sw2 = '1') then 
-				d_bus <= s6;
-			else 
-				d_bus <= s5;
-			end if;
+--		when s5 =>
+--			if (sw2 = '1') then 
+--				d_bus <= s6;
+--			else 
+--				d_bus <= s5;
+--			end if;
 			
 		when s6 =>
 			if (band_bor = '1') then 
@@ -203,21 +204,22 @@ with q_bus select
 					"00" when others;
  
 with q_bus select
-	Salidas <= "0010001" when s0,
-				  "0001000" when s2,
-				  "0000100" when s4,
-				  "0000010" when s6,
-				  "0001000" when esp_esc,
-				  --"0000100" when esp_lec,
-				  "0000010" when esp_bor,
-				  "0101000" when p_esc,
-				  "0000000" when r_esc,
-				  --"0000100" when p_lec,
-				  --"0000000" when r_lec,
-				  "1000010" when p_bor,
-				  "0000000" when r_bor,
-				  "0000000" when others;
+	Salidas <= "10010001" when s0,
+				  "00001000" when s2,
+				  "00000100" when s4,
+				  "00000010" when s6,
+				  "00001000" when esp_esc,
+				  --"00000100" when esp_lec,
+				  "00000010" when esp_bor,
+				  "00101000" when p_esc,
+				  "00000000" when r_esc,
+				  --"00000100" when p_lec,
+				  --"00000000" when r_lec,
+				  "01000010" when p_bor,
+				  "00000000" when r_bor,
+				  "00000000" when others;
 				  
+finish <= Salidas(7);				  
 en_cnt_bor <= Salidas(6);
 en_cnt_dir <= Salidas(5);
 rst_contador <= Salidas(4);

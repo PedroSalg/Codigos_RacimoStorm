@@ -3,8 +3,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity RACIMOStorm is
     Port ( SW0 : in  STD_LOGIC;
-           SW1 : in  STD_LOGIC;
-           SW2 : in  STD_LOGIC;
+           --SW1 : in  STD_LOGIC;
+           --SW2 : in  STD_LOGIC;
 			  D : in STD_LOGIC_VECTOR(11 downto 0);
            RESET : in  STD_LOGIC;
 			  FROM_RP : in  STD_LOGIC;
@@ -16,7 +16,7 @@ entity RACIMOStorm is
            CE : out  STD_LOGIC;
            OE : out  STD_LOGIC;
            WE : out  STD_LOGIC;
-			  CLK_ADC : out  STD_LOGIC;
+			  Reloj_ADC : out  STD_LOGIC;
 			  TO_RP : out  STD_LOGIC;
            LED : out  STD_LOGIC_VECTOR (7 downto 0);
            RST_MEM : out  STD_LOGIC);
@@ -42,6 +42,7 @@ architecture Behavioral of RACIMOStorm is
 		leer : OUT std_logic;
 		en_cnt_dir : OUT std_logic;
 		rst_contador : OUT std_logic;
+		finish : out STD_LOGIC;
 		en_cnt_bor : OUT std_logic;
 		selector : OUT std_logic_vector(1 downto 0)
 		);
@@ -120,6 +121,33 @@ COMPONENT Modulo_Borrado
 		PWM_OUT : OUT std_logic
 		);
 	END COMPONENT;
+	
+	COMPONENT Event_Detect
+	PORT(
+		D : IN std_logic_vector(11 downto 0);
+		Disparo : in STD_LOGIC;
+		finish : IN std_logic;
+		clk : IN std_logic;
+		en_maquina : IN std_logic;
+		rst_maquina : IN std_logic;
+		stop : IN std_logic;     
+		en_cnt_espera : out  STD_LOGIC;
+		rst_cnt_espera : out  STD_LOGIC;
+		sw0 : OUT std_logic;
+		sw1 : OUT std_logic;
+		sw2 : OUT std_logic
+		);
+	END COMPONENT;
+	
+	COMPONENT cnt_espera
+	PORT(
+		clk : IN std_logic;
+		en_cnt_espera : IN std_logic;
+		rst_cnt_espera : IN std_logic;          
+		salida_espera : OUT std_logic
+		);
+	END COMPONENT;
+
 
 signal bus_a_esc, bus_a_bor, bus_a_lec : STD_LOGIC_VECTOR(19 downto 0);
 signal bus_dq_esc, bus_dq_bor, bus_dq_in_esc: STD_LOGIC_VECTOR(11 downto 0);
@@ -129,15 +157,17 @@ signal bus_en_cnt_dir, bus_rst_contador, bus_en_cnt_bor : STD_LOGIC;
 signal bus_selector : STD_LOGIC_VECTOR(1 downto 0);
 
 signal bus_ce_esc, bus_ce_bor, bus_ce_lec, bus_Stop_cnt_lec : STD_LOGIC;
-signal bus_oe_esc, bus_oe_bor, bus_oe_lec : STD_LOGIC;
+signal bus_oe_esc, bus_oe_bor, bus_oe_lec, bus_finish : STD_LOGIC;
 signal bus_we_esc, bus_we_bor, bus_we_lec : STD_LOGIC;
 signal bus_led_esc, bus_led_bor, bus_led_lec : STD_LOGIC_VECTOR(7 downto 0);
 signal BUS_DQ_BIDIR : STD_LOGIC_VECTOR(11 downto 0);
-signal bus_stop_cnt_dir, bus_stop_cnt_bor, bus_Freq_ADC : STD_LOGIC;
+signal bus_stop_cnt_dir, bus_stop_cnt_bor, bus_Freq_ADC, bus_PWM_ADC : STD_LOGIC:='0';
+signal bus_SW0, bus_SW1, bus_SW2 : STD_LOGIC;
+signal bus_en_cnt_espera, bus_rst_cnt_espera, bus_salida_espera : STD_LOGIC;
 
 begin
 
---bus_dq_in_esc <= "000100001010";
+--bus_dq_in_esc <= "000000001010";
 bus_dq_in_esc <= D;
 
 bus_stop_final <= bus_stop_cnt_dir or bus_stop_cnt_bor;
@@ -146,10 +176,33 @@ with bus_leer select
 DQ_BIDIR <= "ZZZZZZZZZZZZ" when '1', 
 				BUS_DQ_BIDIR when others;
 
+	Inst_cnt_espera: cnt_espera PORT MAP(
+		clk => clk,
+		en_cnt_espera => bus_en_cnt_espera,
+		rst_cnt_espera => bus_rst_cnt_espera,
+		salida_espera => bus_salida_espera
+	);
+
+				
+	Inst_Event_Detect: Event_Detect PORT MAP(
+		D => D,
+		Disparo => SW0,
+	   finish =>  bus_salida_espera,
+		clk => clk,
+		en_maquina => bus_freq_out,
+		rst_maquina => not(RESET),
+		stop => bus_finish,
+		en_cnt_espera => bus_en_cnt_espera,
+		rst_cnt_espera => bus_rst_cnt_espera,
+		sw0 => bus_SW0,
+		sw1 => bus_SW1,
+		sw2 => bus_SW2
+	);
+
 	Inst_SM_CTRL: SM_CTRL PORT MAP(
-		sw0 => SW0,
-		sw1 => SW1,
-		sw2 => SW2,
+		sw0 => bus_SW0,
+		sw1 => bus_SW1,
+		sw2 => bus_SW2,
 		clk => CLK,
 		band_esc => bus_band_esc,
 		band_bor => bus_band_bor,
@@ -163,6 +216,7 @@ DQ_BIDIR <= "ZZZZZZZZZZZZ" when '1',
 		leer => bus_leer,
 		en_cnt_dir => bus_en_cnt_dir,
 		rst_contador => bus_rst_contador,
+		finish => bus_finish,
 		en_cnt_bor => bus_en_cnt_bor,
 		selector => bus_selector
 	);
@@ -228,7 +282,7 @@ DQ_BIDIR <= "ZZZZZZZZZZZZ" when '1',
 	Inst_ADC: ADC PORT MAP(
 		CLK => CLK,
 		Freq_ADC => bus_Freq_ADC,
-		PWM_OUT => CLK_ADC 
+		PWM_OUT => bus_PWM_ADC 
 	);
 
 	----------------------------------------------------------------
@@ -272,6 +326,8 @@ with bus_selector select
 		   "11111111" when others;
 			
 RST_MEM <= '1';
+Reloj_ADC <= bus_PWM_ADC;
+--Reloj_ADC <= '1';
 
 end Behavioral;
 

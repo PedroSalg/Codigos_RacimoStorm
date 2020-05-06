@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sat May 02 17:55:02 2020
+// Written by: Map P.20131013 on Wed May 06 00:01:51 2020
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -11,8 +11,6 @@ COMP "RST_MEM" LOCATE = SITE "P2" LEVEL 1;
 COMP "SDA" LOCATE = SITE "P56" LEVEL 1;
 COMP "SCL" LOCATE = SITE "P51" LEVEL 1;
 COMP "SW0" LOCATE = SITE "P124" LEVEL 1;
-COMP "SW1" LOCATE = SITE "P123" LEVEL 1;
-COMP "SW2" LOCATE = SITE "P121" LEVEL 1;
 COMP "A<0>" LOCATE = SITE "P81" LEVEL 1;
 COMP "A<1>" LOCATE = SITE "P11" LEVEL 1;
 COMP "A<2>" LOCATE = SITE "P12" LEVEL 1;
@@ -67,7 +65,7 @@ COMP "LED<6>" LOCATE = SITE "P112" LEVEL 1;
 COMP "LED<7>" LOCATE = SITE "P111" LEVEL 1;
 COMP "DQ_BIDIR<10>" LOCATE = SITE "P92" LEVEL 1;
 COMP "DQ_BIDIR<11>" LOCATE = SITE "P94" LEVEL 1;
-COMP "CLK_ADC" LOCATE = SITE "P15" LEVEL 1;
+COMP "Reloj_ADC" LOCATE = SITE "P15" LEVEL 1;
 COMP "FROM_RP" LOCATE = SITE "P79" LEVEL 1;
 SCHEMATIC END;
 

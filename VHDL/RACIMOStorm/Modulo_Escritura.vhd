@@ -62,11 +62,12 @@ COMPONENT MaquinaEstados_Escritura
 
 signal bus_esp_esc, bus_ocupado, bus_en_ret_esc : STD_LOGIC;
 signal bus_a_in : STD_LOGIC_VECTOR(19 downto 0);
-signal bus_ce_esc, bus_oe_esc, bus_we_esc : STD_LOGIC;
+signal bus_ce_esc, bus_oe_esc, bus_we_esc, bus_en_cnt_dir : STD_LOGIC;
 
 begin
 
 bus_en_ret_esc <= div_frec and bus_ocupado;
+bus_en_cnt_dir <= en_cnt_dir and div_frec;
 
 	Inst_MaquinaEstados_Escritura: MaquinaEstados_Escritura PORT MAP(
 		escribir => escribir,
@@ -89,7 +90,7 @@ bus_en_ret_esc <= div_frec and bus_ocupado;
 	
 	Inst_Contador_Dir_Esc: Contador_Dir_Esc PORT MAP(
 		clk => clk,
-		en_cnt_dir => en_cnt_dir and div_frec,
+		en_cnt_dir => bus_en_cnt_dir,
 		rst_cnt_dir => rst_cnt_dir,
 		ocuapdo => stop_cnt_dir,
 		cnt_dir => bus_a_in

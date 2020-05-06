@@ -122,19 +122,20 @@ BEGIN
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
-		--wait for 1 ms;	
+		wait for 1 ms;	
+		
 		RESET <= '0';
 		FROM_RP <= '0';
-		SW0 <= '1';
-		SW1 <= '1';
-		SW2 <= '1';
-      wait for 1 ms;	
-		
 		SW0 <= '0';
+		--SW1 <= '1';
+		--SW2 <= '1';
       wait for 1 ms;	
 		
 		SW0 <= '1';
       wait for 1 ms;	
+		
+		--SW0 <= '1';
+      --wait for 1 ms;	
 		
 		FROM_RP <= '1';
 		wait for 100 us;	

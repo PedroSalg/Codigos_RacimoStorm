@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/RACIMOStorm/cnt_espera.xst" -ofn "/home/pedro/Documents/ISE/RACIMOStorm/cnt_espera.syr" 
+vhdtdtfi -prj RACIMOStorm -o /home/pedro/Documents/ISE/RACIMOStorm/cnt_espera.vhi -module cnt_espera -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work cnt_espera.vhd 
