@@ -8,7 +8,7 @@ from gpiozero import LED
 
 Contador = 1         # Contador de eventos
 Bandera = 0 		  # Bandera de salida del While
-N = 10000			      # Numero de eventos para terminal el While, N-1	
+N = 100000			      # Numero de eventos para terminal el While, N-1	
 Datos = []             # Vector que contendra la informacion 	
 
 
@@ -30,7 +30,7 @@ GPIO.output(Salida, False)
 #Led.off()
 
 # Apertura de archivo de texto
-Archivo = open("Prueba91.txt","w")
+Archivo = open("Prueba108.txt","w")
 
 # Funcion a ejecutar durante interrupcion 
 def Lectura_Datos(channel):	
@@ -42,7 +42,7 @@ def Lectura_Datos(channel):
 	dat1 = bus.read_byte_data(address, 0x01)
 	Val = (dat1 << 8 ) + dat0
 	Datos.append(str(Val))
-	#print (Contador, Val)	
+	print (Contador, Val)	
 	GPIO.output(Salida, True)
 	time.sleep(0.000001)
 	#time.sleep(0.1)
