@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Registro_Serie_Serie/Registro_Serie_Serie.xst" -ofn "/home/pedro/Documents/ISE/Registro_Serie_Serie/Registro_Serie_Serie.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Registro_Serie_Serie/Registro_Serie_Serie.xst" -ofn "/home/pedro/Documents/ISE/Registro_Serie_Serie/Registro_Serie_Serie.syr" 
