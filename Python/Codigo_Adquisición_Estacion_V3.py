@@ -5,26 +5,26 @@
 
 import serial
 import time
-from datetime import datetime
+import datetime
 import os.path
 import smbus2
 import bme280
-import venusGPS as GPS
+import venusGPS
 import Emill
 
 # INICIALIZACION 
 ##########################################
 
 #-------BME280---------
-address = 0x77
+address = 0x76
 port = 1
 bus = smbus2.SMBus(port)
 calibration_params = bme280.load_calibration_params(bus, address)
 
 #-------VENUS GPS----------
-port = "/dev/serial0"
-baudrate = 9600
-timeout = 0.5
+portgps = "/dev/serial0"
+baudrategps = 9600
+timeoutgps = 0.5
 
 #-------EMILL---------
 adress2 = 0x60
@@ -70,7 +70,7 @@ if bool == False:
     name = "MONITOREO DE CAMPO ELECTRICO"
     version = '2.0'
     location = "UIS - HALLEY"
-    sensors = "CAMPO E LENTO (V/m), TEMPERATURA (°C), HUMEDAD (% rH), PRESION (hPa), ALTURA (m) Y POSICION (DD deg MM.MMMMM min)"
+    sensors = "CAMPO E LENTO (V/m), TEMPERATURA (C), HUMEDAD (% rH), PRESION (hPa), ALTURA (m) Y POSICION (DD deg MM.MMMMM min)"
     power = "5 V"
     zone = "UTC-5"
     
@@ -86,7 +86,7 @@ if bool == False:
     F1.close()
     F2.close()
 
-def newTxt(Data_File): #ESTAMPA OBTENIDA DESDE EL PC
+def newTxt(Data_File,hora): #ESTAMPA OBTENIDA DESDE EL PC
     tiempo = datetime.datetime.now()
     t = tiempo.timetuple()
     if t.tm_hour != hora:
@@ -100,11 +100,12 @@ def newTxt(Data_File): #ESTAMPA OBTENIDA DESDE EL PC
             hora = t.tm_hour
     return Data_File
         
-def newTxtGPS(data,Data_File): #ESTAMPA OBTENIDA CON EL GPS
-    ut= float(GPS.unixTime(data))
-    dtime=datetime.fromtimestamp(ut)
+def newTxtGPS(data,Data_File,hora): #ESTAMPA OBTENIDA CON EL GPS
+    ut= float(venusGPS.unixTime(data))
+    dtime=datetime.datetime.fromtimestamp(ut)
     t=dtime.timetuple()
-    if t.tm_hour != hora:
+    t1= t.tm_hour - 5
+    if t1 != hora:
         Data_File = Folder + 'Datos_' + str(t.tm_year) + '_' + str(t.tm_mon) + '_' + str(t.tm_mday) + '_' +  str(t.tm_hour) + '.txt'
         with open(Metadata, 'r') as F1:
             with open(Data_File, 'a') as F2:
@@ -112,7 +113,7 @@ def newTxtGPS(data,Data_File): #ESTAMPA OBTENIDA CON EL GPS
                     F2.write(line)
             F1.close()
             F2.close()
-            hora = t.tm_hour
+            hora = t.tm_hour - 5
     return Data_File
     
     
@@ -120,17 +121,20 @@ print("INICIANDO ADQUISICION")
 
 while True:
     #DATOS GPS
-    dgps = GPS.dataVec(port,baudrate,timeout)
+
+    dgps = venusGPS.dataVec(portgps,baudrategps,timeoutgps)
     #---------
-    lat = GPS.latitud(dgps)
-    dirlat = GPS.dirLat(dgps)
-    lon = GPS.longitud(dgps)
-    dirlon = GPS.dirLon(dgps)
-    alt = GPS.altitud(dgps)
+    lat = venusGPS.latitud(dgps)
+    dirlat = venusGPS.dirLat(dgps)
+    lon = venusGPS.longitud(dgps)
+    dirlon = venusGPS.dirLon(dgps)
+    alt = venusGPS.altitud(dgps)
     
     #Datos sensor BME
     tph = bme280.sample(bus, address, calibration_params)
+    
     #-----
+    
     temp = str(round(tph.temperature,2))
     hum = str(round(tph.humidity,2))
     pres = str(round(tph.pressure,2))
@@ -139,23 +143,26 @@ while True:
     
     campoE = Emill.emillValue(adress2)
     
-    if GPS.available(dgps) == "A":
-        Data_File2 = newTxtGPS(dgps,Data_File)
-        ut= float(GPS.unixTime(data))
-        Datos = str(ut) + ' ' +str(lat) + ' ' + str(dirlat) + ' ' + str(dir) + ' ' + str(dirlon) + ' ' + str(alt) + ' ' + str(campoE) + ' ' + str(temp) + ' ' + str(pres) + ' ' + str(hum) + '\n'
+    if venusGPS.available(dgps) == "A":
+        Data_File2 = newTxtGPS(dgps,Data_File,hora)
+        ut= float(venusGPS.unixTime(dgps))
+        Datos = str(ut) + ' ' +str(lat) + ' ' + str(dirlat) + ' ' + str(lon) + ' ' + str(dirlon) + ' ' + str(alt) + ' ' + str(campoE) + ' ' + str(temp) + ' ' + str(pres) + ' ' + str(hum) + '\n'
         archivo = open(Data_File2,'a')
         print (Datos)
         archivo.write(Datos)
         archivo.close()
+        dtime=datetime.datetime.fromtimestamp(ut)
+        t=dtime.timetuple()
+        hora = t.tm_hour - 5
     else:
-        Data_File2 = newTxt(Data_File)
-        now = datetime.now()
-        ut = datetime.timestamp(now)
-        Datos = str(ut) + ' ' +str(lat) + ' ' + str(dirlat) + ' ' + str(dir) + ' ' + str(dirlon) + ' ' + str(alt) + ' ' + str(campoE) + ' ' + str(temp) + ' ' + str(pres) + ' ' + str(hum) + '\n'
+        Data_File2 = newTxt(Data_File,hora)
+        ut = time.time()
+        Datos = str(ut) + ' ' +str(lat) + ' ' + str(dirlat) + ' ' + str(lon) + ' ' + str(dirlon) + ' ' + str(alt) + ' ' + str(campoE) + ' ' + str(temp) + ' ' + str(pres) + ' ' + str(hum) + '\n'
         archivo = open(Data_File2,'a')
         print (Datos)
         archivo.write(Datos)
         archivo.close()
+        hora = t.tm_hour
         
     
     
