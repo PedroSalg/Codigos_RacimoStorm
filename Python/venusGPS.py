@@ -34,7 +34,7 @@ def decode(coord):
     tail = x[1]
     deg= head[0:-2]
     min = head[-2:]
-    return deg+"deg"+min+"."+tail+"min"
+    return deg+min+"."+tail
 
 def toUnix(yr,mon,day,hr,min,sec):
     dt=datetime.datetime(yr,mon,day,hr,min,sec)
@@ -48,8 +48,9 @@ def dataVec(port,baudRate,timeOut):
         data = ser.readline()
         if len(vecData) != 7:
             vecData = parceGPS(data,vecData)
+
         else:
-            if len(vecData[0]) == 3:
+            if len(vecData[0]) < 7:
                 vecData += [vecData.pop(0)]
             break
     return vecData
