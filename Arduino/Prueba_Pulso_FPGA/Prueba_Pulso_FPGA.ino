@@ -15,7 +15,7 @@ void loop() {
   Lectura_Boton = digitalRead(Boton);
   if (Lectura_Boton == HIGH){
     digitalWrite(Led, HIGH);
-    delay(0.4);
+    delay(500);
     digitalWrite(Led, LOW);
     delay(200);
     }
