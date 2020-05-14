@@ -30,7 +30,7 @@ GPIO.output(Salida, False)
 #Led.off()
 
 # Apertura de archivo de texto
-Archivo = open("Prueba108.txt","w")
+Archivo = open("Prueba130.txt","w")
 
 # Funcion a ejecutar durante interrupcion 
 def Lectura_Datos(channel):	
