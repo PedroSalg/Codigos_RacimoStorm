@@ -53,6 +53,10 @@
     <transform xil_pn:end_ts="1588896330" xil_pn:in_ck="-854979420520290593" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1588896330">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Registro_Serie_Serie.vhd"/>
       <outfile xil_pn:name="Simulacion_Serie_Serie.vhd"/>
     </transform>
@@ -71,13 +75,21 @@
     <transform xil_pn:end_ts="1588896330" xil_pn:in_ck="-854979420520290593" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1588896330">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Registro_Serie_Serie.vhd"/>
       <outfile xil_pn:name="Simulacion_Serie_Serie.vhd"/>
     </transform>
     <transform xil_pn:end_ts="1588896334" xil_pn:in_ck="-854979420520290593" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6185967255349513584" xil_pn:start_ts="1588896330">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Simulacion_Serie_Serie_beh.prj"/>
       <outfile xil_pn:name="Simulacion_Serie_Serie_isim_beh.exe"/>
@@ -89,6 +101,9 @@
     <transform xil_pn:end_ts="1588896335" xil_pn:in_ck="-2291429740415021359" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6447749683353480477" xil_pn:start_ts="1588896334">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Simulacion_Serie_Serie_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
