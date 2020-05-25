@@ -3,6 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity Modulo_Escritura is
     Port ( clk : in  STD_LOGIC;
+			  --M_in : in STD_LOGIC_VECTOR(19 downto 0);
            en_cnt_dir : in  STD_LOGIC;
            rst_cnt_dir : in  STD_LOGIC;
            escribir : in  STD_LOGIC;
@@ -16,6 +17,8 @@ entity Modulo_Escritura is
            oe_esc : out  STD_LOGIC;
            we_esc : out  STD_LOGIC;
            led_esc : out  STD_LOGIC_VECTOR (7 downto 0);
+			  sig_termina_maq : out STD_LOGIC;
+			  sig_bandera_memoria : out STD_LOGIC;
            band_esc : out  STD_LOGIC);
 end Modulo_Escritura;
 
@@ -38,6 +41,7 @@ COMPONENT MaquinaEstados_Escritura
 		we_esc : OUT std_logic;
 		band_esc : OUT std_logic;
 		ocupado : OUT std_logic;
+		finish_escritura : out STD_LOGIC;
 		led_esc : OUT std_logic_vector(7 downto 0)
 		);
 	END COMPONENT;
@@ -46,8 +50,10 @@ COMPONENT MaquinaEstados_Escritura
 	PORT(
 		clk : IN std_logic;
 		en_cnt_dir : IN std_logic;
+		--M_set : in STD_LOGIC_VECTOR(19 downto 0);
 		rst_cnt_dir : IN std_logic;          
 		ocuapdo : OUT std_logic;
+		bandera_mem  : out  STD_LOGIC;
 		cnt_dir : OUT std_logic_vector(19 downto 0)
 		);
 	END COMPONENT;
@@ -60,11 +66,13 @@ COMPONENT MaquinaEstados_Escritura
 		);
 	END COMPONENT;
 
-signal bus_esp_esc, bus_ocupado, bus_en_ret_esc : STD_LOGIC;
+signal bus_esp_esc, bus_ocupado, bus_en_ret_esc, bus_finish_escritura : STD_LOGIC;
 signal bus_a_in : STD_LOGIC_VECTOR(19 downto 0);
-signal bus_ce_esc, bus_oe_esc, bus_we_esc, bus_en_cnt_dir : STD_LOGIC;
+signal bus_ce_esc, bus_oe_esc, bus_we_esc, bus_en_cnt_dir, bus_bandera_mem : STD_LOGIC;
 
 begin
+
+--bus_M_in <= M_in;
 
 bus_en_ret_esc <= div_frec and bus_ocupado;
 bus_en_cnt_dir <= en_cnt_dir and div_frec;
@@ -85,14 +93,17 @@ bus_en_cnt_dir <= en_cnt_dir and div_frec;
 		we_esc => bus_we_esc,
 		band_esc => band_esc,
 		ocupado => bus_ocupado,
+		finish_escritura => bus_finish_escritura, 
 		led_esc => led_esc
 	);
 	
 	Inst_Contador_Dir_Esc: Contador_Dir_Esc PORT MAP(
 		clk => clk,
 		en_cnt_dir => bus_en_cnt_dir,
+		--M_set => bus_M_in,
 		rst_cnt_dir => rst_cnt_dir,
 		ocuapdo => stop_cnt_dir,
+		bandera_mem => bus_bandera_mem, 
 		cnt_dir => bus_a_in
 	);
 
@@ -102,7 +113,9 @@ bus_en_cnt_dir <= en_cnt_dir and div_frec;
 		rst_ret_esc => '0',
 		ocupado_ret => bus_esp_esc
 	);
-
+	
+sig_bandera_memoria <= bus_bandera_mem;
+sig_termina_maq <= bus_finish_escritura;
 ce_esc <= bus_ce_esc;
 oe_esc <= bus_oe_esc;
 we_esc <= bus_we_esc;

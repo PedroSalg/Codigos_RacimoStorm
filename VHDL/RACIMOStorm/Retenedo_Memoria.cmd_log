@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/RACIMOStorm/Retenedo_Memoria.xst" -ofn "/home/pedro/Documents/ISE/RACIMOStorm/Retenedo_Memoria.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/RACIMOStorm/Retenedo_Memoria.xst" -ofn "/home/pedro/Documents/ISE/RACIMOStorm/Retenedo_Memoria.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/RACIMOStorm/Retenedo_Memoria.xst" -ofn "/home/pedro/Documents/ISE/RACIMOStorm/Retenedo_Memoria.syr" 
+vhdtdtfi -prj RACIMOStorm -o /home/pedro/Documents/ISE/RACIMOStorm/Retenedo_Memoria.vhi -module Retenedo_Memoria -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Retenedo_Memoria.vhd 

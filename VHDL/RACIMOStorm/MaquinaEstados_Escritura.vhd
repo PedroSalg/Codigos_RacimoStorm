@@ -10,7 +10,7 @@ entity MaquinaEstados_Escritura is
            clk : in  STD_LOGIC;
 			  In_Freq_ADC : in STD_LOGIC;
            a_in : in  STD_LOGIC_VECTOR (19 downto 0);
-           dq_in : in  STD_LOGIC_VECTOR (11 downto 0);
+           dq_in : in  STD_LOGIC_VECTOR (11 downto 0);    
            dq_esc : out  STD_LOGIC_VECTOR (11 downto 0);
            a_esc : out  STD_LOGIC_VECTOR (19 downto 0);
            ce_esc : out  STD_LOGIC;
@@ -18,6 +18,7 @@ entity MaquinaEstados_Escritura is
            we_esc : out  STD_LOGIC;
            band_esc : out  STD_LOGIC;
            ocupado : out  STD_LOGIC;
+			  finish_escritura : out STD_LOGIC;
            led_esc : out  STD_LOGIC_VECTOR (7 downto 0));
 end MaquinaEstados_Escritura;
 
@@ -25,7 +26,7 @@ architecture Behavioral of MaquinaEstados_Escritura is
 
 type Estados is (s0,s1,s2,s3,s4,s5,s6,s7,s8,Sin_ADC);
 signal d_bus, q_bus : Estados;
-signal Salidas : STD_LOGIC_VECTOR(3 downto 0);
+signal Salidas : STD_LOGIC_VECTOR(4 downto 0);
 signal bus_esc_dato : STD_LOGIC_VECTOR(11 downto 0);
 
 begin
@@ -101,17 +102,17 @@ end process;
 --- LOGICA DE SALIDA
 
 with q_bus select
-	Salidas <= "0011" when s0,
-				  "0011" when Sin_ADC,
-				  "1010" when s1,
-				  "1011" when s2,
-				  "1010" when s3,
-				  "1011" when s4,
-				  "1010" when s5,
-				  "1011" when s6,
-				  "1010" when s7,
-				  "0011" when s8,
-				  "0011" when others;
+	Salidas <= "10011" when s0,
+				  "00011" when Sin_ADC,
+				  "01010" when s1,
+				  "01011" when s2,
+				  "01010" when s3,
+				  "01011" when s4,
+				  "01010" when s5,
+				  "01011" when s6,
+				  "01010" when s7,
+				  "00011" when s8,
+				  "00011" when others;
 				  
 
 with q_Bus select
@@ -155,8 +156,9 @@ with q_bus select
 with q_bus select 
 	ocupado <= '1' when s8,
 				 '0' when others;
+				 
  
-
+finish_escritura <= Salidas(4);
 band_esc <= Salidas(3);		 
 ce_esc <= Salidas(2);
 oe_esc <= Salidas(1);

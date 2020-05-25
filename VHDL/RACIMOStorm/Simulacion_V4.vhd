@@ -125,6 +125,7 @@ BEGIN
 		RESET <= '0';
 		FROM_RP <= '0';
 		SW0 <= '1';
+		D <= "010000000000";
       wait for 100 us;	
 		
 		

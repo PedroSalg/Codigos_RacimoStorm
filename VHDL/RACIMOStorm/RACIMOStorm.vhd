@@ -1,5 +1,8 @@
 library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+use IEEE.std_logic_unsigned.all;
+use IEEE.std_logic_arith.all;
 
 entity RACIMOStorm is
     Port ( SW0 : in  STD_LOGIC;
@@ -51,6 +54,7 @@ architecture Behavioral of RACIMOStorm is
 	COMPONENT Modulo_Escritura
 	PORT(
 		clk : IN std_logic;
+		--M_in : in STD_LOGIC_VECTOR(19 downto 0);
 		en_cnt_dir : IN std_logic;
 		rst_cnt_dir : IN std_logic;
 		escribir : IN std_logic;
@@ -64,6 +68,8 @@ architecture Behavioral of RACIMOStorm is
 		oe_esc : OUT std_logic;
 		we_esc : OUT std_logic;
 		led_esc : OUT std_logic_vector(7 downto 0);
+		sig_termina_maq : out STD_LOGIC;
+		sig_bandera_memoria : out STD_LOGIC;
 		band_esc : OUT std_logic
 		);
 	END COMPONENT;
@@ -126,31 +132,37 @@ COMPONENT Modulo_Borrado
 	PORT(
 		D : IN std_logic_vector(11 downto 0);
 		Disparo : in STD_LOGIC;
-		finish : IN std_logic;
+		--finish_esc : IN std_logic;
 		clk : IN std_logic;
 		en_maquina : IN std_logic;
 		rst_maquina : IN std_logic;
 		stop : IN std_logic;     
-		en_cnt_espera : out  STD_LOGIC;
-		rst_cnt_espera : out  STD_LOGIC;
+		--en_cnt_espera : out  STD_LOGIC;
+		--rst_cnt_espera : out  STD_LOGIC;
+		disparo_out : out  STD_LOGIC;
 		sw0 : OUT std_logic;
 		sw1 : OUT std_logic;
 		sw2 : OUT std_logic
 		);
 	END COMPONENT;
-	
-	COMPONENT cnt_espera
+	COMPONENT TOP_Memoria_RAM
 	PORT(
+		data_in : IN std_logic_vector(11 downto 0);
+		evento : IN std_logic;
+		escritura_memoria : IN std_logic;
 		clk : IN std_logic;
-		en_cnt_espera : IN std_logic;
-		rst_cnt_espera : IN std_logic;          
-		salida_espera : OUT std_logic
+		sw0 : IN std_logic;
+		adc_reloj : IN std_logic;
+		en_maq : IN std_logic;
+		rst_maq : IN std_logic;          
+		sel_qd_out : OUT std_logic;
+		--termino_escritura : OUT std_logic;
+		memoria_dq_out : OUT std_logic_vector(11 downto 0)
 		);
 	END COMPONENT;
 
-
 signal bus_a_esc, bus_a_bor, bus_a_lec : STD_LOGIC_VECTOR(19 downto 0);
-signal bus_dq_esc, bus_dq_bor, bus_dq_in_esc: STD_LOGIC_VECTOR(11 downto 0);
+signal bus_dq_esc, bus_dq_bor, bus_dq_in_esc, Data_Esc, bus_memoria_dq_out : STD_LOGIC_VECTOR(11 downto 0);
 signal bus_band_esc, bus_band_bor, bus_freq_out, bus_reset : STD_LOGIC;
 signal bus_stop_final, bus_escribir, bus_leer, bus_borrado : STD_LOGIC;
 signal bus_en_cnt_dir, bus_rst_contador, bus_en_cnt_bor : STD_LOGIC;
@@ -163,7 +175,11 @@ signal bus_led_esc, bus_led_bor, bus_led_lec : STD_LOGIC_VECTOR(7 downto 0);
 signal BUS_DQ_BIDIR : STD_LOGIC_VECTOR(11 downto 0);
 signal bus_stop_cnt_dir, bus_stop_cnt_bor, bus_Freq_ADC, bus_PWM_ADC : STD_LOGIC:='0';
 signal bus_SW0, bus_SW1, bus_SW2 : STD_LOGIC;
-signal bus_en_cnt_espera, bus_rst_cnt_espera, bus_salida_espera : STD_LOGIC;
+--signal bus_en_cnt_espera, bus_rst_cnt_espera, bus_salida_espera : STD_LOGIC;
+
+signal bus_disparo_out, bus_sel_qd_out, bus_sig_bandera_memoria : STD_LOGIC;
+signal bus_sig_termina_maq : STD_LOGIC;
+
 
 begin
 
@@ -176,24 +192,38 @@ with bus_leer select
 DQ_BIDIR <= "ZZZZZZZZZZZZ" when '1', 
 				BUS_DQ_BIDIR when others;
 
-	Inst_cnt_espera: cnt_espera PORT MAP(
-		clk => clk,
-		en_cnt_espera => bus_en_cnt_espera,
-		rst_cnt_espera => bus_rst_cnt_espera,
-		salida_espera => bus_salida_espera
+with bus_sel_qd_out select 
+	Data_Esc <= bus_dq_in_esc when '0',
+					bus_memoria_dq_out when others;
+
+			
+					
+	Inst_TOP_Memoria_RAM: TOP_Memoria_RAM PORT MAP(
+		data_in => bus_dq_in_esc,
+		evento => bus_disparo_out,
+		escritura_memoria => bus_sig_bandera_memoria and bus_sig_termina_maq,
+		clk => CLK,
+		sw0 => SW0,
+		adc_reloj => bus_PWM_ADC,
+		en_maq => bus_freq_out,
+		rst_maq => NOT(RESET),
+		sel_qd_out => bus_sel_qd_out,
+		--termino_escritura => bus_termino_escritura,
+		memoria_dq_out => bus_memoria_dq_out
 	);
 
-				
+
 	Inst_Event_Detect: Event_Detect PORT MAP(
-		D => D,
+		D => bus_dq_in_esc,
 		Disparo => SW0,
-	   finish =>  bus_salida_espera,
+	   --finish_esc => bus_termino_escritura,
 		clk => clk,
 		en_maquina => bus_freq_out,
-		rst_maquina => not(RESET),
+		rst_maquina => NOT(RESET),
 		stop => bus_finish,
-		en_cnt_espera => bus_en_cnt_espera,
-		rst_cnt_espera => bus_rst_cnt_espera,
+		--en_cnt_espera => bus_en_cnt_espera,
+		--rst_cnt_espera => bus_rst_cnt_espera,
+		disparo_out => bus_disparo_out,
 		sw0 => bus_SW0,
 		sw1 => bus_SW1,
 		sw2 => bus_SW2
@@ -207,7 +237,7 @@ DQ_BIDIR <= "ZZZZZZZZZZZZ" when '1',
 		band_esc => bus_band_esc,
 		band_bor => bus_band_bor,
 		band_lec => bus_Stop_cnt_lec,
-		rst_sm_ctrl => not(RESET),
+		rst_sm_ctrl => NOT(RESET),
 		en_sm_ctrl => bus_freq_out,
 		stop => bus_stop_final,
 		escribir => bus_escribir,
@@ -222,11 +252,12 @@ DQ_BIDIR <= "ZZZZZZZZZZZZ" when '1',
 	);
 	Inst_Modulo_Escritura: Modulo_Escritura PORT MAP(
 		clk => CLK,
+		--M_in => bus_M_in,
 		en_cnt_dir => bus_en_cnt_dir,
 		rst_cnt_dir => bus_rst_contador,
 		escribir => bus_escribir,
 		div_frec => bus_freq_out,
-		dq_in_esc => bus_dq_in_esc,     -- FALTA
+		dq_in_esc => Data_Esc,     -- FALTA
 		In_Freq_ADC => bus_Freq_ADC, 
 		stop_cnt_dir => bus_stop_cnt_dir,
 		a_esc => bus_a_esc,
@@ -235,6 +266,8 @@ DQ_BIDIR <= "ZZZZZZZZZZZZ" when '1',
 		oe_esc => bus_oe_esc,
 		we_esc => bus_we_esc,
 		led_esc => bus_led_esc,
+		sig_termina_maq => bus_sig_termina_maq,
+		sig_bandera_memoria => bus_sig_bandera_memoria,
 		band_esc => bus_band_esc
 	);
 	

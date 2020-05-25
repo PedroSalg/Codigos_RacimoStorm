@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "/home/pedro/Documents/ISE/RACIMOStorm/Simulacion_V4_isim_beh.exe" -prj "/home/pedro/Documents/ISE/RACIMOStorm/Simulacion_V4_beh.prj" "work.Simulacion_V4" 
+-intstyle "ise" -incremental -lib "secureip" -o "/home/pedro/Documents/ISE/RACIMOStorm/Simulacion_v6_isim_beh.exe" -prj "/home/pedro/Documents/ISE/RACIMOStorm/Simulacion_v6_beh.prj" "work.Simulacion_v6" 

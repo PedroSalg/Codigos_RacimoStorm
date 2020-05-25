@@ -15,15 +15,18 @@
          <ClosedNode>/RACIMOStorm - Behavioral |home|pedro|Documents|ISE|RACIMOStorm|RACIMOStorm.vhd/Inst_ADC - ADC - Behavioral</ClosedNode>
          <ClosedNode>/RACIMOStorm - Behavioral |home|pedro|Documents|ISE|RACIMOStorm|RACIMOStorm.vhd/Inst_Modulo_Borrado - Modulo_Borrado - Behavioral</ClosedNode>
          <ClosedNode>/RACIMOStorm - Behavioral |home|pedro|Documents|ISE|RACIMOStorm|RACIMOStorm.vhd/Inst_Modulo_Escritura - Modulo_Escritura - Behavioral</ClosedNode>
+         <ClosedNode>/RACIMOStorm - Behavioral |home|pedro|Documents|ISE|RACIMOStorm|RACIMOStorm.vhd/Inst_Modulo_Lectura - Modulo_Lectura - Behavioral</ClosedNode>
          <ClosedNode>/RACIMOStorm - Behavioral |home|pedro|Documents|ISE|RACIMOStorm|RACIMOStorm.vhd/Inst_Modulo_Lectura - Modulo_Lectura - Behavioral/i2cSlave - I2C_slave - arch</ClosedNode>
+         <ClosedNode>/RACIMOStorm - Behavioral |home|pedro|Documents|ISE|RACIMOStorm|RACIMOStorm.vhd/Inst_TOP_Memoria_RAM - TOP_Memoria_RAM - Behavioral</ClosedNode>
          <ClosedNode>/TOP - Behavioral |home|pedro|Documents|ISE|RACIMOStorm|TOP.vhd/i2cSlave - I2C_slave - arch</ClosedNode>
+         <ClosedNode>/TOP_Memoria_RAM - Behavioral |home|pedro|Documents|ISE|RACIMOStorm|TOP_Memoria_RAM.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>RACIMOStorm - Behavioral (/home/pedro/Documents/ISE/RACIMOStorm/RACIMOStorm.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001f4000000020000000000000000000000000200000064ffffffff000000810000000300000002000001f40000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001fb000000020000000000000000000000000200000064ffffffff000000810000000300000002000001fb0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>RACIMOStorm - Behavioral (/home/pedro/Documents/ISE/RACIMOStorm/RACIMOStorm.vhd)</CurrentItem>
    </ItemView>
@@ -33,13 +36,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem>Design Utilities</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000ef000000010000000100000000000000000000000064ffffffff000000810000000000000001000000ef0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000fc000000010000000100000000000000000000000064ffffffff000000810000000000000001000000fc0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem>Design Utilities</CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -77,13 +80,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Generate Programming File</SelectedItem>
+         <SelectedItem>Design Summary/Reports</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000ef000000010000000100000000000000000000000064ffffffff000000810000000000000001000000ef0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000ec000000010000000100000000000000000000000064ffffffff000000810000000000000001000000ec0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Generate Programming File</CurrentItem>
+      <CurrentItem>Design Summary/Reports</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
@@ -93,21 +96,23 @@
          <ClosedNode>/Simulacion_Escritura - behavior |home|pedro|Documents|ISE|RACIMOStorm|Simulacion_Escritura.vhd/uut - RACIMOStorm - Behavioral/Inst_Modulo_Borrado - Modulo_Borrado - Behavioral</ClosedNode>
          <ClosedNode>/Simulacion_Escritura - behavior |home|pedro|Documents|ISE|RACIMOStorm|Simulacion_Escritura.vhd/uut - RACIMOStorm - Behavioral/Inst_Modulo_Escritura - Modulo_Escritura - Behavioral</ClosedNode>
          <ClosedNode>/Simulacion_Escritura - behavior |home|pedro|Documents|ISE|RACIMOStorm|Simulacion_Escritura.vhd/uut - RACIMOStorm - Behavioral/Inst_Modulo_Lectura - Modulo_Lectura - Behavioral/i2cSlave - I2C_slave - arch</ClosedNode>
+         <ClosedNode>/Simulacion_Escritura - behavior |home|pedro|Documents|ISE|RACIMOStorm|Simulacion_Escritura.vhd/uut - RACIMOStorm - Behavioral/Inst_TOP_Memoria_RAM - TOP_Memoria_RAM - Behavioral</ClosedNode>
          <ClosedNode>/Simulacion_Final - behavior |home|pedro|Documents|ISE|RACIMOStorm|Simulacion_Final.vhd</ClosedNode>
          <ClosedNode>/Simulacion_RACIMOSTORM_v5 - behavior |home|pedro|Documents|ISE|RACIMOStorm|Simulacion_RACIMOSTORM_v5.vhd</ClosedNode>
          <ClosedNode>/Simulacion_RacimoStorm - behavior |home|pedro|Documents|ISE|RACIMOStorm|Simulacion_RacimoStorm.vhd</ClosedNode>
          <ClosedNode>/Simulacion_V4 - behavior |home|pedro|Documents|ISE|RACIMOStorm|Simulacion_V4.vhd</ClosedNode>
+         <ClosedNode>/Simulacion_v6 - behavior |home|pedro|Documents|ISE|RACIMOStorm|Simulacion_v6.vhd</ClosedNode>
          <ClosedNode>/Test_RacimoStorm - behavior |home|pedro|Documents|ISE|RACIMOStorm|Test_RacimoStorm.vhd</ClosedNode>
          <ClosedNode>/testbench - behavior |home|pedro|Documents|ISE|RACIMOStorm|Simulacion_Borrado.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Simulacion_V4 - behavior (/home/pedro/Documents/ISE/RACIMOStorm/Simulacion_V4.vhd)</SelectedItem>
+         <SelectedItem>Simulacion_v6 - behavior (/home/pedro/Documents/ISE/RACIMOStorm/Simulacion_v6.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001cd000000020000000000000000000000000200000064ffffffff000000810000000300000002000001cd0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>Simulacion_V4 - behavior (/home/pedro/Documents/ISE/RACIMOStorm/Simulacion_V4.vhd)</CurrentItem>
+      <CurrentItem>Simulacion_v6 - behavior (/home/pedro/Documents/ISE/RACIMOStorm/Simulacion_v6.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -128,16 +133,16 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000ef000000010000000100000000000000000000000064ffffffff000000810000000000000001000000ef0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000fc000000010000000100000000000000000000000064ffffffff000000810000000000000001000000fc0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
-   <SourceProcessView>000000ff0000000000000002000000ef000000da01000000060100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
+   <SourceProcessView>000000ff00000000000000020000011c000000ad01000000060100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>

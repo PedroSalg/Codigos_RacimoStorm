@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/RACIMOStorm/cnt_memoria.xst" -ofn "/home/pedro/Documents/ISE/RACIMOStorm/cnt_memoria.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/RACIMOStorm/cnt_memoria.xst" -ofn "/home/pedro/Documents/ISE/RACIMOStorm/cnt_memoria.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/RACIMOStorm/cnt_memoria.xst" -ofn "/home/pedro/Documents/ISE/RACIMOStorm/cnt_memoria.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/RACIMOStorm/cnt_memoria.xst" -ofn "/home/pedro/Documents/ISE/RACIMOStorm/cnt_memoria.syr" 
+vhdtdtfi -prj RACIMOStorm -o /home/pedro/Documents/ISE/RACIMOStorm/cnt_memoria.vhi -module cnt_memoria -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work cnt_memoria.vhd 

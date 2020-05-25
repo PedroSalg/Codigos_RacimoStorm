@@ -1,0 +1,9 @@
+vhdtdtfi -prj RACIMOStorm -o /home/pedro/Documents/ISE/RACIMOStorm/TOP_Memoria_RAM.vhi -module TOP_Memoria_RAM -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Memoria_RAM.vhd -lib work Maquina_Memoria_RAM.vhd -lib work cnt_memoria.vhd -lib work TOP_Memoria_RAM.vhd 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/RACIMOStorm/TOP_Memoria_RAM.xst" -ofn "/home/pedro/Documents/ISE/RACIMOStorm/TOP_Memoria_RAM.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/RACIMOStorm/TOP_Memoria_RAM.xst" -ofn "/home/pedro/Documents/ISE/RACIMOStorm/TOP_Memoria_RAM.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/RACIMOStorm/TOP_Memoria_RAM.xst" -ofn "/home/pedro/Documents/ISE/RACIMOStorm/TOP_Memoria_RAM.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/RACIMOStorm/TOP_Memoria_RAM.xst" -ofn "/home/pedro/Documents/ISE/RACIMOStorm/TOP_Memoria_RAM.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/RACIMOStorm/TOP_Memoria_RAM.xst" -ofn "/home/pedro/Documents/ISE/RACIMOStorm/TOP_Memoria_RAM.syr" 
+vhdtdtfi -prj RACIMOStorm -o /home/pedro/Documents/ISE/RACIMOStorm/TOP_Memoria_RAM.vhi -module TOP_Memoria_RAM -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Memoria_RAM.vhd -lib work Maquina_Memoria_RAM.vhd -lib work cnt_memoria.vhd -lib work TOP_Memoria_RAM.vhd 
+vhdtdtfi -prj RACIMOStorm -o /home/pedro/Documents/ISE/RACIMOStorm/TOP_Memoria_RAM.vhi -module TOP_Memoria_RAM -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Memoria_RAM.vhd -lib work Maquina_Memoria_RAM.vhd -lib work cnt_memoria.vhd -lib work TOP_Memoria_RAM.vhd 
+vhdtdtfi -prj RACIMOStorm -o /home/pedro/Documents/ISE/RACIMOStorm/TOP_Memoria_RAM.vhi -module TOP_Memoria_RAM -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Memoria_RAM.vhd -lib work Maquina_Memoria_RAM.vhd -lib work cnt_memoria.vhd -lib work TOP_Memoria_RAM.vhd 

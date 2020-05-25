@@ -1,12 +1,15 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -lib "secureip" -o "/home/pedro/Documents/ISE/RACIMOStorm/Simulacion_V4_isim_beh.exe" -prj "/home/pedro/Documents/ISE/RACIMOStorm/Simulacion_V4_beh.prj" "work.Simulacion_V4" 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -lib "secureip" -o "/home/pedro/Documents/ISE/RACIMOStorm/Simulacion_v6_isim_beh.exe" -prj "/home/pedro/Documents/ISE/RACIMOStorm/Simulacion_v6_beh.prj" "work.Simulacion_v6" 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 2
 Turning on mult-threading, number of parallel sub-compilation jobs: 4 
 Determining compilation order of HDL files
 Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/SCL.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/Retenedo_Memoria.vhd" into library work
 Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/Retenedor_Lectura.vhd" into library work
 Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/Retenedor_Borrado.vhd" into library work
 Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/PWM.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/Memoria_RAM.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/Maquina_Memoria_RAM.vhd" into library work
 Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/Maquina_Estados.vhd" into library work
 Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/MaquinaEstados_Escritura.vhd" into library work
 Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/MaquinaEstados_Borrado.vhd" into library work
@@ -16,6 +19,9 @@ Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/div_frec_lectura.vhd" i
 Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/Contador_Lectura.vhd" into library work
 Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/Contador_Dir_Esc.vhd" into library work
 Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/Contador_Dir_Bor.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/cnt_memoria.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/TOP_Memoria_RAM.vhd" into library work
+WARNING:HDLCompiler:946 - "/home/pedro/Documents/ISE/RACIMOStorm/TOP_Memoria_RAM.vhd" Line 114: Actual for formal port en_cnt is neither a static name nor a globally static expression
 Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/SM_CTRL.vhd" into library work
 Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/PWM_SIGNAL.vhd" into library work
 Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/Modulo_Lectura.vhd" into library work
@@ -23,19 +29,23 @@ Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/Modulo_Escritura.vhd" i
 Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/Modulo_Borrado.vhd" into library work
 Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/Event_Detect.vhd" into library work
 Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/DIV_FREQ.vhd" into library work
-Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/cnt_espera.vhd" into library work
 Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/RACIMOStorm.vhd" into library work
-Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/Simulacion_V4.vhd" into library work
+WARNING:HDLCompiler:946 - "/home/pedro/Documents/ISE/RACIMOStorm/RACIMOStorm.vhd" Line 204: Actual for formal port escritura_memoria is neither a static name nor a globally static expression
+Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/Simulacion_v6.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 114600 KB
-Fuse CPU Usage: 2310 ms
+Fuse Memory Usage: 114680 KB
+Fuse CPU Usage: 2460 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
-Compiling architecture behavioral of entity cnt_espera [cnt_espera_default]
+Compiling architecture behavioral of entity Retenedo_Memoria [retenedo_memoria_default]
+Compiling architecture behavioral of entity Maquina_Memoria_RAM [maquina_memoria_ram_default]
+Compiling architecture behavioral of entity cnt_memoria [cnt_memoria_default]
+Compiling architecture behavioral of entity Memoria_RAM [memoria_ram_default]
+Compiling architecture behavioral of entity TOP_Memoria_RAM [top_memoria_ram_default]
 Compiling architecture behavioral of entity Event_Detect [event_detect_default]
 Compiling architecture behavioral of entity SM_CTRL [sm_ctrl_default]
 Compiling architecture behavioral of entity MaquinaEstados_Escritura [maquinaestados_escritura_default]
@@ -58,10 +68,11 @@ Compiling architecture behavioral of entity Div_Fre_Var [div_fre_var_default]
 Compiling architecture behavioral of entity PWM [pwm_default]
 Compiling architecture behavioral of entity ADC [adc_default]
 Compiling architecture behavioral of entity RACIMOStorm [racimostorm_default]
-Compiling architecture behavior of entity simulacion_v4
+Compiling architecture behavior of entity simulacion_v6
 Time Resolution for simulation is 1ps.
-Compiled 51 VHDL Units
-Built simulation executable /home/pedro/Documents/ISE/RACIMOStorm/Simulacion_V4_isim_beh.exe
-Fuse Memory Usage: 429760 KB
-Fuse CPU Usage: 2850 ms
-GCC CPU Usage: 580 ms
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 59 VHDL Units
+Built simulation executable /home/pedro/Documents/ISE/RACIMOStorm/Simulacion_v6_isim_beh.exe
+Fuse Memory Usage: 430092 KB
+Fuse CPU Usage: 3040 ms
+GCC CPU Usage: 690 ms

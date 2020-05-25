@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> 
 Reading design: RACIMOStorm.prj
@@ -111,6 +111,9 @@ Slice Utilization Ratio Delta      : 5
 Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/SCL.vhd" into library work
 Parsing entity <debounce>.
 Parsing architecture <arch> of entity <debounce>.
+Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/Retenedo_Memoria.vhd" into library work
+Parsing entity <Retenedo_Memoria>.
+Parsing architecture <Behavioral> of entity <retenedo_memoria>.
 Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/Retenedor_Lectura.vhd" into library work
 Parsing entity <Retenedor_Lectura>.
 Parsing architecture <Behavioral> of entity <retenedor_lectura>.
@@ -120,6 +123,12 @@ Parsing architecture <Behavioral> of entity <retenedor_borrado>.
 Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/PWM.vhd" into library work
 Parsing entity <PWM>.
 Parsing architecture <Behavioral> of entity <pwm>.
+Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/Memoria_RAM.vhd" into library work
+Parsing entity <Memoria_RAM>.
+Parsing architecture <Behavioral> of entity <memoria_ram>.
+Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/Maquina_Memoria_RAM.vhd" into library work
+Parsing entity <Maquina_Memoria_RAM>.
+Parsing architecture <Behavioral> of entity <maquina_memoria_ram>.
 Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/Maquina_Estados.vhd" into library work
 Parsing entity <Maquina_Estados>.
 Parsing architecture <Behavioral> of entity <maquina_estados>.
@@ -147,6 +156,13 @@ Parsing architecture <Behavioral> of entity <contador_dir_esc>.
 Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/Contador_Dir_Bor.vhd" into library work
 Parsing entity <Contador_Dir_Bor>.
 Parsing architecture <Behavioral> of entity <contador_dir_bor>.
+Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/cnt_memoria.vhd" into library work
+Parsing entity <cnt_memoria>.
+Parsing architecture <Behavioral> of entity <cnt_memoria>.
+Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/TOP_Memoria_RAM.vhd" into library work
+Parsing entity <TOP_Memoria_RAM>.
+Parsing architecture <Behavioral> of entity <top_memoria_ram>.
+WARNING:HDLCompiler:946 - "/home/pedro/Documents/ISE/RACIMOStorm/TOP_Memoria_RAM.vhd" Line 114: Actual for formal port en_cnt is neither a static name nor a globally static expression
 Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/SM_CTRL.vhd" into library work
 Parsing entity <SM_CTRL>.
 Parsing architecture <Behavioral> of entity <sm_ctrl>.
@@ -168,14 +184,13 @@ Parsing architecture <Behavioral> of entity <event_detect>.
 Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/DIV_FREQ.vhd" into library work
 Parsing entity <DIV_FREQ>.
 Parsing architecture <Behavioral> of entity <div_freq>.
-Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/cnt_espera.vhd" into library work
-Parsing entity <cnt_espera>.
-Parsing architecture <Behavioral> of entity <cnt_espera>.
 Parsing VHDL file "/home/pedro/Documents/ISE/RACIMOStorm/RACIMOStorm.vhd" into library work
 Parsing entity <RACIMOStorm>.
 Parsing architecture <Behavioral> of entity <racimostorm>.
-WARNING:HDLCompiler:946 - "/home/pedro/Documents/ISE/RACIMOStorm/RACIMOStorm.vhd" Line 193: Actual for formal port rst_maquina is neither a static name nor a globally static expression
-WARNING:HDLCompiler:946 - "/home/pedro/Documents/ISE/RACIMOStorm/RACIMOStorm.vhd" Line 210: Actual for formal port rst_sm_ctrl is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/pedro/Documents/ISE/RACIMOStorm/RACIMOStorm.vhd" Line 204: Actual for formal port escritura_memoria is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/pedro/Documents/ISE/RACIMOStorm/RACIMOStorm.vhd" Line 209: Actual for formal port rst_maq is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/pedro/Documents/ISE/RACIMOStorm/RACIMOStorm.vhd" Line 222: Actual for formal port rst_maquina is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/pedro/Documents/ISE/RACIMOStorm/RACIMOStorm.vhd" Line 240: Actual for formal port rst_sm_ctrl is neither a static name nor a globally static expression
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -183,18 +198,25 @@ WARNING:HDLCompiler:946 - "/home/pedro/Documents/ISE/RACIMOStorm/RACIMOStorm.vhd
 
 Elaborating entity <RACIMOStorm> (architecture <Behavioral>) from library <work>.
 
-Elaborating entity <cnt_espera> (architecture <Behavioral>) from library <work>.
+Elaborating entity <TOP_Memoria_RAM> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Retenedo_Memoria> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Maquina_Memoria_RAM> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "/home/pedro/Documents/ISE/RACIMOStorm/Maquina_Memoria_RAM.vhd" Line 129. Case statement is complete. others clause is never selected
+
+Elaborating entity <cnt_memoria> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Memoria_RAM> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <Event_Detect> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:92 - "/home/pedro/Documents/ISE/RACIMOStorm/Event_Detect.vhd" Line 68: disparo2 should be on the sensitivity list of the process
-INFO:HDLCompiler:679 - "/home/pedro/Documents/ISE/RACIMOStorm/Event_Detect.vhd" Line 114. Case statement is complete. others clause is never selected
 
 Elaborating entity <SM_CTRL> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <Modulo_Escritura> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <MaquinaEstados_Escritura> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "/home/pedro/Documents/ISE/RACIMOStorm/MaquinaEstados_Escritura.vhd" Line 95. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/pedro/Documents/ISE/RACIMOStorm/MaquinaEstados_Escritura.vhd" Line 96. Case statement is complete. others clause is never selected
 
 Elaborating entity <Contador_Dir_Esc> (architecture <Behavioral>) from library <work>.
 
@@ -239,50 +261,56 @@ Elaborating entity <PWM> (architecture <Behavioral>) from library <work>.
 
 Synthesizing Unit <RACIMOStorm>.
     Related source file is "/home/pedro/Documents/ISE/RACIMOStorm/RACIMOStorm.vhd".
-INFO:Xst:3210 - "/home/pedro/Documents/ISE/RACIMOStorm/RACIMOStorm.vhd" line 202: Output port <reset> of the instance <Inst_SM_CTRL> is unconnected or connected to loadless signal.
-    Found 12-bit 4-to-1 multiplexer for signal <BUS_DQ_BIDIR> created at line 292.
-    Found 20-bit 4-to-1 multiplexer for signal <A> created at line 298.
-    Found 1-bit 4-to-1 multiplexer for signal <CE> created at line 304.
-    Found 1-bit 4-to-1 multiplexer for signal <OE> created at line 310.
-    Found 1-bit 4-to-1 multiplexer for signal <WE> created at line 316.
-    Found 8-bit 4-to-1 multiplexer for signal <LED> created at line 322.
-    Found 1-bit tristate buffer for signal <DQ_BIDIR<11>> created at line 176
-    Found 1-bit tristate buffer for signal <DQ_BIDIR<10>> created at line 176
-    Found 1-bit tristate buffer for signal <DQ_BIDIR<9>> created at line 176
-    Found 1-bit tristate buffer for signal <DQ_BIDIR<8>> created at line 176
-    Found 1-bit tristate buffer for signal <DQ_BIDIR<7>> created at line 176
-    Found 1-bit tristate buffer for signal <DQ_BIDIR<6>> created at line 176
-    Found 1-bit tristate buffer for signal <DQ_BIDIR<5>> created at line 176
-    Found 1-bit tristate buffer for signal <DQ_BIDIR<4>> created at line 176
-    Found 1-bit tristate buffer for signal <DQ_BIDIR<3>> created at line 176
-    Found 1-bit tristate buffer for signal <DQ_BIDIR<2>> created at line 176
-    Found 1-bit tristate buffer for signal <DQ_BIDIR<1>> created at line 176
-    Found 1-bit tristate buffer for signal <DQ_BIDIR<0>> created at line 176
+INFO:Xst:3210 - "/home/pedro/Documents/ISE/RACIMOStorm/RACIMOStorm.vhd" line 232: Output port <reset> of the instance <Inst_SM_CTRL> is unconnected or connected to loadless signal.
+    Found 12-bit 4-to-1 multiplexer for signal <BUS_DQ_BIDIR> created at line 325.
+    Found 20-bit 4-to-1 multiplexer for signal <A> created at line 331.
+    Found 1-bit 4-to-1 multiplexer for signal <CE> created at line 337.
+    Found 1-bit 4-to-1 multiplexer for signal <OE> created at line 343.
+    Found 1-bit 4-to-1 multiplexer for signal <WE> created at line 349.
+    Found 8-bit 4-to-1 multiplexer for signal <LED> created at line 355.
+    Found 1-bit tristate buffer for signal <DQ_BIDIR<11>> created at line 192
+    Found 1-bit tristate buffer for signal <DQ_BIDIR<10>> created at line 192
+    Found 1-bit tristate buffer for signal <DQ_BIDIR<9>> created at line 192
+    Found 1-bit tristate buffer for signal <DQ_BIDIR<8>> created at line 192
+    Found 1-bit tristate buffer for signal <DQ_BIDIR<7>> created at line 192
+    Found 1-bit tristate buffer for signal <DQ_BIDIR<6>> created at line 192
+    Found 1-bit tristate buffer for signal <DQ_BIDIR<5>> created at line 192
+    Found 1-bit tristate buffer for signal <DQ_BIDIR<4>> created at line 192
+    Found 1-bit tristate buffer for signal <DQ_BIDIR<3>> created at line 192
+    Found 1-bit tristate buffer for signal <DQ_BIDIR<2>> created at line 192
+    Found 1-bit tristate buffer for signal <DQ_BIDIR<1>> created at line 192
+    Found 1-bit tristate buffer for signal <DQ_BIDIR<0>> created at line 192
     Summary:
-	inferred   6 Multiplexer(s).
+	inferred   7 Multiplexer(s).
 	inferred  12 Tristate(s).
 Unit <RACIMOStorm> synthesized.
 
-Synthesizing Unit <cnt_espera>.
-    Related source file is "/home/pedro/Documents/ISE/RACIMOStorm/cnt_espera.vhd".
-    Found 20-bit register for signal <q_bus>.
-    Found 20-bit adder for signal <q_bus[19]_GND_19_o_add_5_OUT> created at line 44.
-    Found 20-bit comparator lessequal for signal <bus_sel_INV_15_o> created at line 41
+Synthesizing Unit <TOP_Memoria_RAM>.
+    Related source file is "/home/pedro/Documents/ISE/RACIMOStorm/TOP_Memoria_RAM.vhd".
+    Summary:
+	no macro.
+Unit <TOP_Memoria_RAM> synthesized.
+
+Synthesizing Unit <Retenedo_Memoria>.
+    Related source file is "/home/pedro/Documents/ISE/RACIMOStorm/Retenedo_Memoria.vhd".
+    Found 9-bit register for signal <q_bus>.
+    Found 9-bit adder for signal <q_bus[8]_GND_20_o_add_5_OUT> created at line 42.
+    Found 9-bit comparator lessequal for signal <bus_sel_INV_17_o> created at line 39
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  20 D-type flip-flop(s).
+	inferred   9 D-type flip-flop(s).
 	inferred   1 Comparator(s).
-Unit <cnt_espera> synthesized.
+Unit <Retenedo_Memoria> synthesized.
 
-Synthesizing Unit <Event_Detect>.
-    Related source file is "/home/pedro/Documents/ISE/RACIMOStorm/Event_Detect.vhd".
+Synthesizing Unit <Maquina_Memoria_RAM>.
+    Related source file is "/home/pedro/Documents/ISE/RACIMOStorm/Maquina_Memoria_RAM.vhd".
     Found 4-bit register for signal <q_bus>.
     Found finite state machine <FSM_0> for signal <q_bus>.
     -----------------------------------------------------------------------
     | States             | 10                                             |
-    | Transitions        | 26                                             |
-    | Inputs             | 5                                              |
-    | Outputs            | 5                                              |
+    | Transitions        | 28                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 11                                             |
     | Clock              | clk (rising_edge)                              |
     | Reset              | rst_maquina (positive)                         |
     | Reset type         | synchronous                                    |
@@ -291,8 +319,61 @@ Synthesizing Unit <Event_Detect>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 12-bit comparator greater for signal <n0001> created at line 37
+WARNING:Xst:737 - Found 1-bit latch for signal <numero_ter<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numero_ter<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numero_ter<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numero_ter<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 4-bit comparator equal for signal <numero[3]_numero_ter[3]_equal_11_o> created at line 115
     Summary:
+	inferred   4 Latch(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <Maquina_Memoria_RAM> synthesized.
+
+Synthesizing Unit <cnt_memoria>.
+    Related source file is "/home/pedro/Documents/ISE/RACIMOStorm/cnt_memoria.vhd".
+    Found 4-bit register for signal <q_bus>.
+    Found 4-bit adder for signal <Temp[3]_GND_27_o_add_9_OUT> created at line 46.
+    Found 4-bit subtractor for signal <GND_27_o_GND_27_o_sub_9_OUT<3:0>> created at line 47.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <cnt_memoria> synthesized.
+
+Synthesizing Unit <Memoria_RAM>.
+    Related source file is "/home/pedro/Documents/ISE/RACIMOStorm/Memoria_RAM.vhd".
+    Found 16x12-bit single-port RAM <Mram_Memoria_Temporal> for signal <Memoria_Temporal>.
+    Found 12-bit register for signal <data_out>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  12 D-type flip-flop(s).
+Unit <Memoria_RAM> synthesized.
+
+Synthesizing Unit <Event_Detect>.
+    Related source file is "/home/pedro/Documents/ISE/RACIMOStorm/Event_Detect.vhd".
+    Found 4-bit register for signal <q_bus>.
+INFO:Xst:1799 - State ini_cnt is never reached in FSM <q_bus>.
+INFO:Xst:1799 - State espera is never reached in FSM <q_bus>.
+    Found finite state machine <FSM_1> for signal <q_bus>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 29                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_maquina (positive)                         |
+    | Reset type         | synchronous                                    |
+    | Reset State        | s0                                             |
+    | Power Up State     | s0                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16x3-bit Read Only RAM for signal <Salidas>
+    Found 12-bit comparator greater for signal <n0001> created at line 38
+    Summary:
+	inferred   1 RAM(s).
 	inferred   1 Comparator(s).
 	inferred   1 Finite State Machine(s).
 Unit <Event_Detect> synthesized.
@@ -304,7 +385,7 @@ INFO:Xst:1799 - State s1 is never reached in FSM <q_bus>.
 INFO:Xst:1799 - State s3 is never reached in FSM <q_bus>.
 INFO:Xst:1799 - State s5 is never reached in FSM <q_bus>.
 INFO:Xst:1799 - State sin_adc is never reached in FSM <q_bus>.
-    Found finite state machine <FSM_1> for signal <q_bus>.
+    Found finite state machine <FSM_2> for signal <q_bus>.
     -----------------------------------------------------------------------
     | States             | 15                                             |
     | Transitions        | 32                                             |
@@ -331,12 +412,12 @@ Unit <Modulo_Escritura> synthesized.
 Synthesizing Unit <MaquinaEstados_Escritura>.
     Related source file is "/home/pedro/Documents/ISE/RACIMOStorm/MaquinaEstados_Escritura.vhd".
     Found 4-bit register for signal <q_bus>.
-    Found finite state machine <FSM_2> for signal <q_bus>.
+    Found finite state machine <FSM_3> for signal <q_bus>.
     -----------------------------------------------------------------------
     | States             | 10                                             |
     | Transitions        | 23                                             |
     | Inputs             | 4                                              |
-    | Outputs            | 41                                             |
+    | Outputs            | 42                                             |
     | Clock              | clk (rising_edge)                              |
     | Power Up State     | s0                                             |
     | Encoding           | auto                                           |
@@ -350,20 +431,21 @@ Unit <MaquinaEstados_Escritura> synthesized.
 Synthesizing Unit <Contador_Dir_Esc>.
     Related source file is "/home/pedro/Documents/ISE/RACIMOStorm/Contador_Dir_Esc.vhd".
     Found 20-bit register for signal <q_bus>.
-    Found 20-bit adder for signal <q_bus[19]_GND_25_o_add_5_OUT> created at line 44.
-    Found 20-bit comparator greater for signal <bus_sel_INV_23_o> created at line 41
+    Found 20-bit adder for signal <q_bus[19]_GND_34_o_add_7_OUT> created at line 52.
+    Found 20-bit comparator lessequal for signal <n0004> created at line 46
+    Found 20-bit comparator greater for signal <bus_sel_INV_35_o> created at line 49
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  20 D-type flip-flop(s).
-	inferred   1 Comparator(s).
+	inferred   2 Comparator(s).
 	inferred   1 Multiplexer(s).
 Unit <Contador_Dir_Esc> synthesized.
 
 Synthesizing Unit <Retenedor_Lectura>.
     Related source file is "/home/pedro/Documents/ISE/RACIMOStorm/Retenedor_Lectura.vhd".
     Found 10-bit register for signal <q_bus>.
-    Found 10-bit adder for signal <q_bus[9]_GND_26_o_add_5_OUT> created at line 42.
-    Found 10-bit comparator lessequal for signal <bus_sel_INV_24_o> created at line 39
+    Found 10-bit adder for signal <q_bus[9]_GND_35_o_add_5_OUT> created at line 42.
+    Found 10-bit comparator lessequal for signal <bus_sel_INV_36_o> created at line 39
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  10 D-type flip-flop(s).
@@ -380,7 +462,7 @@ Synthesizing Unit <MaquinaEstados_Borrado>.
     Related source file is "/home/pedro/Documents/ISE/RACIMOStorm/MaquinaEstados_Borrado.vhd".
 WARNING:Xst:647 - Input <A_in> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 4-bit register for signal <q_bus>.
-    Found finite state machine <FSM_3> for signal <q_bus>.
+    Found finite state machine <FSM_4> for signal <q_bus>.
     -----------------------------------------------------------------------
     | States             | 13                                             |
     | Transitions        | 28                                             |
@@ -398,8 +480,8 @@ Unit <MaquinaEstados_Borrado> synthesized.
 Synthesizing Unit <Retenedor_Borrado>.
     Related source file is "/home/pedro/Documents/ISE/RACIMOStorm/Retenedor_Borrado.vhd".
     Found 28-bit register for signal <q_bus>.
-    Found 28-bit adder for signal <q_bus[27]_GND_31_o_add_5_OUT> created at line 44.
-    Found 28-bit comparator lessequal for signal <bus_sel_INV_26_o> created at line 41
+    Found 28-bit adder for signal <q_bus[27]_GND_40_o_add_5_OUT> created at line 44.
+    Found 28-bit comparator lessequal for signal <bus_sel_INV_38_o> created at line 41
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  28 D-type flip-flop(s).
@@ -409,8 +491,8 @@ Unit <Retenedor_Borrado> synthesized.
 Synthesizing Unit <Contador_Dir_Bor>.
     Related source file is "/home/pedro/Documents/ISE/RACIMOStorm/Contador_Dir_Bor.vhd".
     Found 6-bit register for signal <q_bus>.
-    Found 6-bit adder for signal <q_bus[5]_GND_33_o_add_5_OUT> created at line 46.
-    Found 6-bit comparator greater for signal <bus_sel_INV_27_o> created at line 43
+    Found 6-bit adder for signal <q_bus[5]_GND_42_o_add_5_OUT> created at line 46.
+    Found 6-bit comparator greater for signal <bus_sel_INV_39_o> created at line 43
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   6 D-type flip-flop(s).
@@ -432,7 +514,7 @@ Synthesizing Unit <Maquina_Estados>.
     Related source file is "/home/pedro/Documents/ISE/RACIMOStorm/Maquina_Estados.vhd".
     Found 3-bit register for signal <q_bus>.
 INFO:Xst:1799 - State s1 is never reached in FSM <q_bus>.
-    Found finite state machine <FSM_4> for signal <q_bus>.
+    Found finite state machine <FSM_5> for signal <q_bus>.
     -----------------------------------------------------------------------
     | States             | 6                                              |
     | Transitions        | 14                                             |
@@ -450,8 +532,8 @@ Unit <Maquina_Estados> synthesized.
 Synthesizing Unit <Contador_Lectura>.
     Related source file is "/home/pedro/Documents/ISE/RACIMOStorm/Contador_Lectura.vhd".
     Found 20-bit register for signal <q_bus>.
-    Found 20-bit adder for signal <q_bus[19]_GND_37_o_add_5_OUT> created at line 43.
-    Found 20-bit comparator greater for signal <bus_sel_INV_29_o> created at line 40
+    Found 20-bit adder for signal <q_bus[19]_GND_46_o_add_5_OUT> created at line 43.
+    Found 20-bit comparator greater for signal <bus_sel_INV_41_o> created at line 40
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  20 D-type flip-flop(s).
@@ -462,7 +544,7 @@ Unit <Contador_Lectura> synthesized.
 Synthesizing Unit <div_frec_lectura>.
     Related source file is "/home/pedro/Documents/ISE/RACIMOStorm/div_frec_lectura.vhd".
     Found 4-bit register for signal <q_bus>.
-    Found 4-bit comparator lessequal for signal <bus_sel_INV_30_o> created at line 38
+    Found 4-bit comparator lessequal for signal <bus_sel_INV_42_o> created at line 38
     Summary:
 	inferred   4 D-type flip-flop(s).
 	inferred   1 Comparator(s).
@@ -492,7 +574,7 @@ Always blocking tristate driving signal <scl> is removed.
     Found 8-bit register for signal <data_from_master_reg>.
     Found 1-bit register for signal <continue_reg>.
     Found 1-bit register for signal <scl_reg>.
-    Found finite state machine <FSM_5> for signal <state_reg>.
+    Found finite state machine <FSM_6> for signal <state_reg>.
     -----------------------------------------------------------------------
     | States             | 8                                              |
     | Transitions        | 30                                             |
@@ -506,12 +588,12 @@ Always blocking tristate driving signal <scl> is removed.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 4-bit adder for signal <bits_processed_reg[3]_GND_41_o_add_38_OUT> created at line 224.
-    Found 3-bit subtractor for signal <GND_41_o_GND_41_o_sub_5_OUT<2:0>> created at line 160.
-    Found 3-bit subtractor for signal <GND_41_o_GND_41_o_sub_36_OUT<2:0>> created at line 221.
-    Found 1-bit 8-to-1 multiplexer for signal <GND_41_o_data_to_master_reg[7]_Mux_36_o> created at line 221.
+    Found 4-bit adder for signal <bits_processed_reg[3]_GND_50_o_add_38_OUT> created at line 224.
+    Found 3-bit subtractor for signal <GND_50_o_GND_50_o_sub_5_OUT<2:0>> created at line 160.
+    Found 3-bit subtractor for signal <GND_50_o_GND_50_o_sub_36_OUT<2:0>> created at line 221.
+    Found 1-bit 8-to-1 multiplexer for signal <GND_50_o_data_to_master_reg[7]_Mux_36_o> created at line 221.
     Found 1-bit tristate buffer for signal <sda> created at line 293
-    Found 4-bit comparator greater for signal <bits_processed_reg[3]_GND_41_o_LessThan_25_o> created at line 203
+    Found 4-bit comparator greater for signal <bits_processed_reg[3]_GND_50_o_LessThan_25_o> created at line 203
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred  48 D-type flip-flop(s).
@@ -528,7 +610,7 @@ Synthesizing Unit <debounce>.
     Found 2-bit register for signal <counter>.
     Found 1-bit register for signal <out_reg>.
     Found 1-bit register for signal <signal_in_reg>.
-    Found 2-bit subtractor for signal <GND_42_o_GND_42_o_sub_3_OUT<1:0>> created at line 54.
+    Found 2-bit subtractor for signal <GND_51_o_GND_51_o_sub_3_OUT<1:0>> created at line 54.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   5 D-type flip-flop(s).
@@ -537,8 +619,8 @@ Unit <debounce> synthesized.
 Synthesizing Unit <DIV_FREQ>.
     Related source file is "/home/pedro/Documents/ISE/RACIMOStorm/DIV_FREQ.vhd".
     Found 6-bit register for signal <q_bus>.
-    Found 6-bit adder for signal <q_bus[5]_GND_47_o_add_4_OUT> created at line 45.
-    Found 6-bit comparator greater for signal <bus_sel_INV_62_o> created at line 42
+    Found 6-bit adder for signal <q_bus[5]_GND_56_o_add_4_OUT> created at line 45.
+    Found 6-bit comparator greater for signal <bus_sel_INV_69_o> created at line 42
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   6 D-type flip-flop(s).
@@ -554,8 +636,8 @@ Unit <ADC> synthesized.
 Synthesizing Unit <Div_Fre_Var>.
     Related source file is "/home/pedro/Documents/ISE/RACIMOStorm/Div_Fre_Var.vhd".
     Found 27-bit register for signal <Q_Bus>.
-    Found 27-bit adder for signal <Q_Bus[26]_GND_50_o_add_4_OUT> created at line 43.
-    Found 27-bit comparator greater for signal <Bus_Sel_INV_63_o> created at line 40
+    Found 27-bit adder for signal <Q_Bus[26]_GND_59_o_add_4_OUT> created at line 43.
+    Found 27-bit comparator greater for signal <Bus_Sel_INV_70_o> created at line 40
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  27 D-type flip-flop(s).
@@ -573,51 +655,62 @@ Unit <PWM> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 13
+# RAMs                                                 : 2
+ 16x12-bit single-port RAM                             : 1
+ 16x3-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 14
  10-bit adder                                          : 1
  2-bit subtractor                                      : 2
- 20-bit adder                                          : 3
+ 20-bit adder                                          : 2
  27-bit adder                                          : 1
  28-bit adder                                          : 1
  3-bit subtractor                                      : 2
  4-bit adder                                           : 1
+ 4-bit addsub                                          : 1
  6-bit adder                                           : 2
-# Registers                                            : 38
+ 9-bit adder                                           : 1
+# Registers                                            : 40
  1-bit register                                        : 21
  10-bit register                                       : 1
+ 12-bit register                                       : 1
  2-bit register                                        : 2
- 20-bit register                                       : 3
+ 20-bit register                                       : 2
  27-bit register                                       : 1
  28-bit register                                       : 1
- 4-bit register                                        : 2
+ 4-bit register                                        : 3
  6-bit register                                        : 2
  7-bit register                                        : 2
  8-bit register                                        : 3
-# Comparators                                          : 11
+ 9-bit register                                        : 1
+# Latches                                              : 4
+ 1-bit latch                                           : 4
+# Comparators                                          : 13
  10-bit comparator lessequal                           : 1
  12-bit comparator greater                             : 1
  20-bit comparator greater                             : 2
  20-bit comparator lessequal                           : 1
  27-bit comparator greater                             : 1
  28-bit comparator lessequal                           : 1
+ 4-bit comparator equal                                : 1
  4-bit comparator greater                              : 1
  4-bit comparator lessequal                            : 1
  6-bit comparator greater                              : 2
-# Multiplexers                                         : 49
- 1-bit 2-to-1 multiplexer                              : 23
+ 9-bit comparator lessequal                            : 1
+# Multiplexers                                         : 53
+ 1-bit 2-to-1 multiplexer                              : 24
  1-bit 4-to-1 multiplexer                              : 3
  1-bit 8-to-1 multiplexer                              : 1
- 12-bit 2-to-1 multiplexer                             : 4
+ 12-bit 2-to-1 multiplexer                             : 5
  12-bit 4-to-1 multiplexer                             : 1
  20-bit 2-to-1 multiplexer                             : 6
  20-bit 4-to-1 multiplexer                             : 1
- 4-bit 2-to-1 multiplexer                              : 7
+ 4-bit 2-to-1 multiplexer                              : 9
  6-bit 2-to-1 multiplexer                              : 1
  8-bit 2-to-1 multiplexer                              : 1
  8-bit 4-to-1 multiplexer                              : 1
 # Tristates                                            : 13
  1-bit tristate buffer                                 : 13
-# FSMs                                                 : 6
+# FSMs                                                 : 7
 # Xors                                                 : 4
  1-bit xor2                                            : 4
 
@@ -652,6 +745,40 @@ Synthesizing (advanced) Unit <Div_Fre_Var>.
 The following registers are absorbed into counter <Q_Bus>: 1 register on signal <Q_Bus>.
 Unit <Div_Fre_Var> synthesized (advanced).
 
+Synthesizing (advanced) Unit <Event_Detect>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Salidas> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <("0",q_bus)>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Salidas>       |          |
+    -----------------------------------------------------------------------
+Unit <Event_Detect> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Memoria_RAM>.
+INFO:Xst:3212 - HDL ADVISOR - Asynchronous or synchronous initialization of the register <q_bus> prevents it from being combined with the RAM <Mram_Memoria_Temporal> for implementation as read-only block RAM.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 12-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <wr_0>          | high     |
+    |     addrA          | connected to signal <address>       |          |
+    |     diA            | connected to signal <data_in>       |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_Memoria_Temporal> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+Unit <Memoria_RAM> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Retenedo_Memoria>.
+The following registers are absorbed into counter <q_bus>: 1 register on signal <q_bus>.
+Unit <Retenedo_Memoria> synthesized (advanced).
+
 Synthesizing (advanced) Unit <Retenedor_Borrado>.
 The following registers are absorbed into counter <q_bus>: 1 register on signal <q_bus>.
 Unit <Retenedor_Borrado> synthesized (advanced).
@@ -659,10 +786,6 @@ Unit <Retenedor_Borrado> synthesized (advanced).
 Synthesizing (advanced) Unit <Retenedor_Lectura>.
 The following registers are absorbed into counter <q_bus>: 1 register on signal <q_bus>.
 Unit <Retenedor_Lectura> synthesized (advanced).
-
-Synthesizing (advanced) Unit <cnt_espera>.
-The following registers are absorbed into counter <q_bus>: 1 register on signal <q_bus>.
-Unit <cnt_espera> synthesized (advanced).
 
 Synthesizing (advanced) Unit <debounce>.
 The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
@@ -672,40 +795,47 @@ Unit <debounce> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 3
+# RAMs                                                 : 2
+ 16x12-bit single-port distributed RAM                 : 1
+ 16x3-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 4
  3-bit subtractor                                      : 2
  4-bit adder                                           : 1
+ 4-bit addsub                                          : 1
 # Counters                                             : 10
  10-bit up counter                                     : 1
  2-bit down counter                                    : 2
- 20-bit up counter                                     : 3
+ 20-bit up counter                                     : 2
  27-bit up counter                                     : 1
  28-bit up counter                                     : 1
  6-bit up counter                                      : 2
-# Registers                                            : 67
- Flip-Flops                                            : 67
-# Comparators                                          : 11
+ 9-bit up counter                                      : 1
+# Registers                                            : 83
+ Flip-Flops                                            : 83
+# Comparators                                          : 13
  10-bit comparator lessequal                           : 1
  12-bit comparator greater                             : 1
  20-bit comparator greater                             : 2
  20-bit comparator lessequal                           : 1
  27-bit comparator greater                             : 1
  28-bit comparator lessequal                           : 1
+ 4-bit comparator equal                                : 1
  4-bit comparator greater                              : 1
  4-bit comparator lessequal                            : 1
  6-bit comparator greater                              : 2
-# Multiplexers                                         : 46
- 1-bit 2-to-1 multiplexer                              : 23
+ 9-bit comparator lessequal                            : 1
+# Multiplexers                                         : 50
+ 1-bit 2-to-1 multiplexer                              : 24
  1-bit 4-to-1 multiplexer                              : 3
  1-bit 8-to-1 multiplexer                              : 1
- 12-bit 2-to-1 multiplexer                             : 4
+ 12-bit 2-to-1 multiplexer                             : 5
  12-bit 4-to-1 multiplexer                             : 1
  20-bit 2-to-1 multiplexer                             : 4
  20-bit 4-to-1 multiplexer                             : 1
- 4-bit 2-to-1 multiplexer                              : 7
+ 4-bit 2-to-1 multiplexer                              : 9
  8-bit 2-to-1 multiplexer                              : 1
  8-bit 4-to-1 multiplexer                              : 1
-# FSMs                                                 : 6
+# FSMs                                                 : 7
 # Xors                                                 : 4
  1-bit xor2                                            : 4
 
@@ -719,7 +849,7 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <q_bus_1> has a cons
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <q_bus_2> has a constant value of 0 in block <div_frec_lectura>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <q_bus_3> has a constant value of 0 in block <div_frec_lectura>. This FF/Latch will be trimmed during the optimization process.
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <FSM_0> on signal <q_bus[1:4]> with user encoding.
+Optimizing FSM <FSM_1> on signal <q_bus[1:4]> with user encoding.
 -----------------------
  State     | Encoding
 -----------------------
@@ -731,11 +861,11 @@ Optimizing FSM <FSM_0> on signal <q_bus[1:4]> with user encoding.
  e_esc     | 0101
  e_env     | 0110
  e_bor     | 0111
- ini_cnt   | 1000
- espera    | 1001
+ ini_cnt   | unreached
+ espera    | unreached
 -----------------------
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <FSM_3> on signal <q_bus[1:13]> with one-hot encoding.
+Optimizing FSM <FSM_4> on signal <q_bus[1:13]> with one-hot encoding.
 ------------------------
  State | Encoding
 ------------------------
@@ -754,7 +884,7 @@ Optimizing FSM <FSM_3> on signal <q_bus[1:13]> with one-hot encoding.
  s12   | 1000000000000
 ------------------------
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <FSM_1> on signal <q_bus[1:4]> with gray encoding.
+Optimizing FSM <FSM_2> on signal <q_bus[1:4]> with gray encoding.
 ---------------------
  State   | Encoding
 ---------------------
@@ -775,7 +905,49 @@ Optimizing FSM <FSM_1> on signal <q_bus[1:4]> with gray encoding.
  sin_adc | unreached
 ---------------------
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <Inst_Modulo_Escritura/Inst_MaquinaEstados_Escritura/FSM_2> on signal <q_bus[1:4]> with user encoding.
+Optimizing FSM <Inst_TOP_Memoria_RAM/Inst_Maquina_Memoria_RAM/FSM_0> on signal <q_bus[1:4]> with user encoding.
+------------------------------
+ State            | Encoding
+------------------------------
+ s0               | 0000
+ s1               | 0001
+ habi1            | 0010
+ esp_esc          | 0011
+ s2               | 0100
+ habi2            | 0101
+ senal_fini       | 0110
+ senal_end        | 0111
+ sinc_freq_mues   | 1000
+ sinc_freq_mues_2 | 1001
+------------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <Inst_Modulo_Lectura/FSM_5> on signal <q_bus[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ s0    | 000
+ s1    | unreached
+ s2    | 001
+ s3    | 011
+ s4    | 010
+ s5    | 110
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <Inst_Modulo_Lectura/i2cSlave/FSM_6> on signal <state_reg[1:3]> with user encoding.
+---------------------------------
+ State               | Encoding
+---------------------------------
+ idle                | 000
+ get_address_and_cmd | 001
+ answer_ack_start    | 010
+ write               | 011
+ read                | 100
+ read_ack_start      | 101
+ read_ack_got_rising | 110
+ read_stop           | 111
+---------------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <Inst_Modulo_Escritura/Inst_MaquinaEstados_Escritura/FSM_3> on signal <q_bus[1:4]> with user encoding.
 ---------------------
  State   | Encoding
 ---------------------
@@ -790,32 +962,6 @@ Optimizing FSM <Inst_Modulo_Escritura/Inst_MaquinaEstados_Escritura/FSM_2> on si
  s8      | 1000
  sin_adc | 1001
 ---------------------
-Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <Inst_Modulo_Lectura/FSM_4> on signal <q_bus[1:3]> with gray encoding.
--------------------
- State | Encoding
--------------------
- s0    | 000
- s1    | unreached
- s2    | 001
- s3    | 011
- s4    | 010
- s5    | 110
--------------------
-Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <Inst_Modulo_Lectura/i2cSlave/FSM_5> on signal <state_reg[1:3]> with user encoding.
----------------------------------
- State               | Encoding
----------------------------------
- idle                | 000
- get_address_and_cmd | 001
- answer_ack_start    | 010
- write               | 011
- read                | 100
- read_ack_start      | 101
- read_ack_got_rising | 110
- read_stop           | 111
----------------------------------
 WARNING:Xst:2677 - Node <Inst_Modulo_Lectura/i2cSlave/read_req_reg> of sequential type is unconnected in block <RACIMOStorm>.
 
 Optimizing unit <RACIMOStorm> ...
@@ -825,17 +971,16 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Modulo_Borrado
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Modulo_Borrado/Inst_Contador_Dir_Bor/q_bus_4> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Modulo_Borrado/Inst_Contador_Dir_Bor/q_bus_5> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
 
-Optimizing unit <MaquinaEstados_Escritura> ...
+Optimizing unit <Memoria_RAM> ...
+
+Optimizing unit <Maquina_Memoria_RAM> ...
+
+Optimizing unit <cnt_memoria> ...
 
 Optimizing unit <debounce> ...
-WARNING:Xst:1293 - FF/Latch <Inst_Modulo_Borrado/Inst_Retenedor_Borrado/q_bus_25> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Modulo_Borrado/Inst_Retenedor_Borrado/q_bus_26> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Modulo_Borrado/Inst_Retenedor_Borrado/q_bus_27> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_DIV_FREQ/q_bus_1> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_DIV_FREQ/q_bus_2> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_DIV_FREQ/q_bus_3> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_DIV_FREQ/q_bus_4> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_DIV_FREQ/q_bus_5> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <MaquinaEstados_Escritura> ...
+WARNING:Xst:1293 - FF/Latch <Inst_DIV_FREQ/q_bus_5> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_ADC/Inst_Div_Fre_Var/Q_Bus_6> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_ADC/Inst_Div_Fre_Var/Q_Bus_7> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_ADC/Inst_Div_Fre_Var/Q_Bus_8> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
@@ -864,19 +1009,6 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Modulo_Escritu
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Modulo_Escritura/Inst_Contador_Dir_Esc/q_bus_18> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Modulo_Escritura/Inst_Contador_Dir_Esc/q_bus_19> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Modulo_Escritura/Inst_Retenedor_Lectura/q_bus_9> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_cnt_espera/q_bus_7> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_cnt_espera/q_bus_8> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_cnt_espera/q_bus_9> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_cnt_espera/q_bus_10> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_cnt_espera/q_bus_11> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_cnt_espera/q_bus_12> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_cnt_espera/q_bus_13> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_cnt_espera/q_bus_14> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_cnt_espera/q_bus_15> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_cnt_espera/q_bus_16> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_cnt_espera/q_bus_17> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_cnt_espera/q_bus_18> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_cnt_espera/q_bus_19> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Modulo_Borrado/Inst_Retenedor_Borrado/q_bus_10> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Modulo_Borrado/Inst_Retenedor_Borrado/q_bus_11> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Modulo_Borrado/Inst_Retenedor_Borrado/q_bus_12> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
@@ -892,17 +1024,20 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Modulo_Borrado
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Modulo_Borrado/Inst_Retenedor_Borrado/q_bus_22> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Modulo_Borrado/Inst_Retenedor_Borrado/q_bus_23> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Modulo_Borrado/Inst_Retenedor_Borrado/q_bus_24> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Modulo_Borrado/Inst_Retenedor_Borrado/q_bus_25> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Modulo_Borrado/Inst_Retenedor_Borrado/q_bus_26> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_Modulo_Borrado/Inst_Retenedor_Borrado/q_bus_27> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_DIV_FREQ/q_bus_1> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_DIV_FREQ/q_bus_2> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_DIV_FREQ/q_bus_3> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_DIV_FREQ/q_bus_4> has a constant value of 0 in block <RACIMOStorm>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block RACIMOStorm, actual ratio is 7.
-FlipFlop Inst_Modulo_Escritura/Inst_MaquinaEstados_Escritura/q_bus_FSM_FFd4 has been replicated 1 time(s)
 FlipFlop Inst_Modulo_Lectura/i2cSlave/bits_processed_reg_0 has been replicated 1 time(s)
 FlipFlop Inst_Modulo_Lectura/i2cSlave/bits_processed_reg_1 has been replicated 1 time(s)
 FlipFlop Inst_Modulo_Lectura/i2cSlave/bits_processed_reg_2 has been replicated 1 time(s)
-FlipFlop Inst_SM_CTRL/q_bus_FSM_FFd2 has been replicated 1 time(s)
-FlipFlop Inst_SM_CTRL/q_bus_FSM_FFd3 has been replicated 1 time(s)
-FlipFlop Inst_SM_CTRL/q_bus_FSM_FFd4 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -910,8 +1045,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 172
- Flip-Flops                                            : 172
+# Registers                                            : 189
+ Flip-Flops                                            : 189
 
 =========================================================================
 
@@ -934,24 +1069,27 @@ Top Level Output File Name         : RACIMOStorm.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 465
+# BELS                             : 507
 #      GND                         : 1
 #      INV                         : 7
-#      LUT1                        : 29
-#      LUT2                        : 26
-#      LUT3                        : 43
-#      LUT4                        : 44
-#      LUT5                        : 94
-#      LUT6                        : 79
-#      MUXCY                       : 72
-#      MUXF7                       : 3
+#      LUT1                        : 31
+#      LUT2                        : 33
+#      LUT3                        : 46
+#      LUT4                        : 46
+#      LUT5                        : 77
+#      LUT6                        : 118
+#      MUXCY                       : 74
+#      MUXF7                       : 5
 #      VCC                         : 1
-#      XORCY                       : 66
-# FlipFlops/Latches                : 172
-#      FD                          : 66
-#      FDE                         : 38
+#      XORCY                       : 68
+# FlipFlops/Latches                : 193
+#      FD                          : 65
+#      FDE                         : 50
 #      FDR                         : 20
-#      FDRE                        : 48
+#      FDRE                        : 54
+#      LD                          : 4
+# RAMS                             : 12
+#      RAM16X1S                    : 12
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 63
@@ -966,16 +1104,18 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             172  out of  11440     1%  
- Number of Slice LUTs:                  322  out of   5720     5%  
-    Number used as Logic:               322  out of   5720     5%  
+ Number of Slice Registers:             193  out of  11440     1%  
+ Number of Slice LUTs:                  370  out of   5720     6%  
+    Number used as Logic:               358  out of   5720     6%  
+    Number used as Memory:               12  out of   1440     0%  
+       Number used as RAM:               12
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    337
-   Number with an unused Flip Flop:     165  out of    337    48%  
-   Number with an unused LUT:            15  out of    337     4%  
-   Number of fully used LUT-FF pairs:   157  out of    337    46%  
-   Number of unique control sets:        14
+ Number of LUT Flip Flop pairs used:    386
+   Number with an unused Flip Flop:     193  out of    386    50%  
+   Number with an unused LUT:            16  out of    386     4%  
+   Number of fully used LUT-FF pairs:   177  out of    386    45%  
+   Number of unique control sets:        17
 
 IO Utilization: 
  Number of IOs:                          64
@@ -1002,11 +1142,16 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-CLK                                | BUFGP                  | 172   |
------------------------------------+------------------------+-------+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------+-------+
+Clock Signal                                                                                                                                               | Clock buffer(FF name)                                              | Load  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------+-------+
+CLK                                                                                                                                                        | BUFGP                                                              | 201   |
+Inst_TOP_Memoria_RAM/Inst_Maquina_Memoria_RAM/q_bus[3]_PWR_10_o_Mux_16_o(Inst_TOP_Memoria_RAM/Inst_Maquina_Memoria_RAM/Mmux_q_bus[3]_PWR_10_o_Mux_16_o11:O)| NONE(*)(Inst_TOP_Memoria_RAM/Inst_Maquina_Memoria_RAM/numero_ter_1)| 4     |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -1016,10 +1161,10 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 4.973ns (Maximum Frequency: 201.086MHz)
-   Minimum input arrival time before clock: 5.873ns
-   Maximum output required time after clock: 9.520ns
-   Maximum combinational path delay: 7.002ns
+   Minimum period: 5.380ns (Maximum Frequency: 185.887MHz)
+   Minimum input arrival time before clock: 7.393ns
+   Maximum output required time after clock: 9.562ns
+   Maximum combinational path delay: 7.085ns
 
 Timing Details:
 ---------------
@@ -1027,79 +1172,80 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 4.973ns (frequency: 201.086MHz)
-  Total number of paths / destination ports: 6417 / 313
+  Clock period: 5.380ns (frequency: 185.887MHz)
+  Total number of paths / destination ports: 6329 / 414
 -------------------------------------------------------------------------
-Delay:               4.973ns (Levels of Logic = 4)
-  Source:            Inst_Modulo_Lectura/i2cSlave/bits_processed_reg_2_1 (FF)
-  Destination:       Inst_Modulo_Lectura/i2cSlave/data_to_master_reg_7 (FF)
+Delay:               5.380ns (Levels of Logic = 4)
+  Source:            Inst_TOP_Memoria_RAM/Inst_cnt_memoria/q_bus_0 (FF)
+  Destination:       Inst_TOP_Memoria_RAM/Inst_Maquina_Memoria_RAM/q_bus_FSM_FFd2 (FF)
   Source Clock:      CLK rising
   Destination Clock: CLK rising
 
-  Data Path: Inst_Modulo_Lectura/i2cSlave/bits_processed_reg_2_1 to Inst_Modulo_Lectura/i2cSlave/data_to_master_reg_7
+  Data Path: Inst_TOP_Memoria_RAM/Inst_cnt_memoria/q_bus_0 to Inst_TOP_Memoria_RAM/Inst_Maquina_Memoria_RAM/q_bus_FSM_FFd2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             1   0.525   0.910  Inst_Modulo_Lectura/i2cSlave/bits_processed_reg_2_1 (Inst_Modulo_Lectura/i2cSlave/bits_processed_reg_2_1)
-     LUT3:I0->O            5   0.235   0.841  Inst_Modulo_Lectura/i2cSlave/PWR_23_o_bits_processed_reg[3]_equal_14_o<3>11 (Inst_Modulo_Lectura/i2cSlave/PWR_23_o_bits_processed_reg[3]_equal_14_o<3>1)
-     LUT5:I4->O            1   0.254   0.682  Inst_Modulo_Lectura/i2cSlave/state_reg[2]_GND_41_o_Mux_56_o2 (Inst_Modulo_Lectura/i2cSlave/state_reg[2]_GND_41_o_Mux_56_o2)
-     LUT5:I4->O            8   0.254   0.944  Inst_Modulo_Lectura/i2cSlave/state_reg[2]_GND_41_o_Mux_56_o3_rstpot (Inst_Modulo_Lectura/i2cSlave/state_reg[2]_GND_41_o_Mux_56_o3_rstpot)
-     LUT3:I2->O            1   0.254   0.000  Inst_Modulo_Lectura/i2cSlave/data_to_master_reg_0_dpot (Inst_Modulo_Lectura/i2cSlave/data_to_master_reg_0_dpot)
-     FDE:D                     0.074          Inst_Modulo_Lectura/i2cSlave/data_to_master_reg_0
+     FDRE:C->Q            30   0.525   1.595  Inst_TOP_Memoria_RAM/Inst_cnt_memoria/q_bus_0 (Inst_TOP_Memoria_RAM/Inst_cnt_memoria/q_bus_0)
+     LUT4:I2->O            2   0.250   0.726  Inst_TOP_Memoria_RAM/Inst_Maquina_Memoria_RAM/numero[3]_numero_ter[3]_equal_11_o4_SW0 (N63)
+     LUT5:I4->O            3   0.254   0.766  Inst_TOP_Memoria_RAM/Inst_Maquina_Memoria_RAM/numero[3]_numero_ter[3]_equal_11_o4 (Inst_TOP_Memoria_RAM/Inst_Maquina_Memoria_RAM/numero[3]_numero_ter[3]_equal_11_o)
+     LUT3:I2->O            1   0.254   0.682  Inst_TOP_Memoria_RAM/Inst_Maquina_Memoria_RAM/q_bus_FSM_FFd2-In_SW0 (N65)
+     LUT6:I5->O            1   0.254   0.000  Inst_TOP_Memoria_RAM/Inst_Maquina_Memoria_RAM/q_bus_FSM_FFd2-In (Inst_TOP_Memoria_RAM/Inst_Maquina_Memoria_RAM/q_bus_FSM_FFd2-In)
+     FDR:D                     0.074          Inst_TOP_Memoria_RAM/Inst_Maquina_Memoria_RAM/q_bus_FSM_FFd2
     ----------------------------------------
-    Total                      4.973ns (1.596ns logic, 3.377ns route)
-                                       (32.1% logic, 67.9% route)
+    Total                      5.380ns (1.611ns logic, 3.769ns route)
+                                       (29.9% logic, 70.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 44 / 25
+  Total number of paths / destination ports: 91 / 40
 -------------------------------------------------------------------------
-Offset:              5.873ns (Levels of Logic = 5)
+Offset:              7.393ns (Levels of Logic = 6)
   Source:            D<6> (PAD)
-  Destination:       Inst_Event_Detect/q_bus_FSM_FFd4 (FF)
+  Destination:       Inst_TOP_Memoria_RAM/Inst_Maquina_Memoria_RAM/q_bus_FSM_FFd4 (FF)
   Destination Clock: CLK rising
 
-  Data Path: D<6> to Inst_Event_Detect/q_bus_FSM_FFd4
+  Data Path: D<6> to Inst_TOP_Memoria_RAM/Inst_Maquina_Memoria_RAM/q_bus_FSM_FFd4
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   1.328   0.954  D_6_IBUF (D_6_IBUF)
-     LUT3:I0->O            1   0.235   0.682  Inst_Event_Detect/n00011_SW0 (N11)
-     LUT6:I5->O            2   0.254   1.156  Inst_Event_Detect/n00011 (Inst_Event_Detect/n0001)
-     LUT5:I0->O            1   0.254   0.682  Inst_Event_Detect/q_bus_FSM_FFd4-In2 (Inst_Event_Detect/q_bus_FSM_FFd4-In2)
-     LUT6:I5->O            1   0.254   0.000  Inst_Event_Detect/q_bus_FSM_FFd4-In3 (Inst_Event_Detect/q_bus_FSM_FFd4-In)
-     FDR:D                     0.074          Inst_Event_Detect/q_bus_FSM_FFd4
+     IBUF:I->O             3   1.328   1.196  D_6_IBUF (D_6_IBUF)
+     LUT5:I0->O            1   0.254   0.682  Inst_Event_Detect/n00011_SW0 (N17)
+     LUT6:I5->O            5   0.254   1.271  Inst_Event_Detect/n00011 (Inst_Event_Detect/n0001)
+     LUT5:I0->O            1   0.254   0.790  Inst_TOP_Memoria_RAM/Inst_Maquina_Memoria_RAM/q_bus_FSM_FFd4-In2 (Inst_TOP_Memoria_RAM/Inst_Maquina_Memoria_RAM/q_bus_FSM_FFd4-In2)
+     LUT6:I4->O            1   0.250   0.790  Inst_TOP_Memoria_RAM/Inst_Maquina_Memoria_RAM/q_bus_FSM_FFd4-In3 (Inst_TOP_Memoria_RAM/Inst_Maquina_Memoria_RAM/q_bus_FSM_FFd4-In3)
+     LUT5:I3->O            1   0.250   0.000  Inst_TOP_Memoria_RAM/Inst_Maquina_Memoria_RAM/q_bus_FSM_FFd4-In6 (Inst_TOP_Memoria_RAM/Inst_Maquina_Memoria_RAM/q_bus_FSM_FFd4-In)
+     FDR:D                     0.074          Inst_TOP_Memoria_RAM/Inst_Maquina_Memoria_RAM/q_bus_FSM_FFd4
     ----------------------------------------
-    Total                      5.873ns (2.399ns logic, 3.474ns route)
-                                       (40.8% logic, 59.2% route)
+    Total                      7.393ns (2.664ns logic, 4.729ns route)
+                                       (36.0% logic, 64.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 747 / 43
+  Total number of paths / destination ports: 803 / 43
 -------------------------------------------------------------------------
-Offset:              9.520ns (Levels of Logic = 4)
-  Source:            Inst_SM_CTRL/q_bus_FSM_FFd4 (FF)
+Offset:              9.562ns (Levels of Logic = 4)
+  Source:            Inst_SM_CTRL/q_bus_FSM_FFd3 (FF)
   Destination:       A<14> (PAD)
   Source Clock:      CLK rising
 
-  Data Path: Inst_SM_CTRL/q_bus_FSM_FFd4 to A<14>
+  Data Path: Inst_SM_CTRL/q_bus_FSM_FFd3 to A<14>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             25   0.525   1.679  Inst_SM_CTRL/q_bus_FSM_FFd4 (Inst_SM_CTRL/q_bus_FSM_FFd4)
-     LUT4:I0->O           36   0.254   2.017  Inst_SM_CTRL/q_bus_selector<1>1 (bus_selector<1>)
-     LUT6:I1->O            8   0.254   0.944  Mmux_A1011 (Mmux_A101)
+     FDR:C->Q             32   0.525   1.796  Inst_SM_CTRL/q_bus_FSM_FFd3 (Inst_SM_CTRL/q_bus_FSM_FFd3)
+     LUT4:I0->O           30   0.254   1.942  Inst_SM_CTRL/q_bus_selector<0>1 (bus_selector<0>)
+     LUT6:I0->O            8   0.254   0.944  Mmux_A1011 (Mmux_A101)
      LUT6:I5->O            1   0.254   0.681  Mmux_A6 (A_14_OBUF)
      OBUF:I->O                 2.912          A_14_OBUF (A<14>)
     ----------------------------------------
-    Total                      9.520ns (4.199ns logic, 5.321ns route)
-                                       (44.1% logic, 55.9% route)
+    Total                      9.562ns (4.199ns logic, 5.363ns route)
+                                       (43.9% logic, 56.1% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 12 / 12
 -------------------------------------------------------------------------
-Delay:               7.002ns (Levels of Logic = 4)
+Delay:               7.085ns (Levels of Logic = 4)
   Source:            D<3> (PAD)
   Destination:       DQ_BIDIR<3> (PAD)
 
@@ -1107,13 +1253,13 @@ Delay:               7.002ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.328   0.910  D_3_IBUF (D_3_IBUF)
-     LUT4:I1->O            1   0.235   0.682  Mmux_BUS_DQ_BIDIR9_SW0 (N65)
-     LUT6:I5->O            1   0.254   0.681  Mmux_BUS_DQ_BIDIR9 (BUS_DQ_BIDIR<3>)
+     IBUF:I->O             3   1.328   0.874  D_3_IBUF (D_3_IBUF)
+     LUT5:I3->O            1   0.250   0.790  Mmux_BUS_DQ_BIDIR91 (Mmux_BUS_DQ_BIDIR9)
+     LUT6:I4->O            1   0.250   0.681  Mmux_BUS_DQ_BIDIR93 (BUS_DQ_BIDIR<3>)
      IOBUF:I->IO               2.912          DQ_BIDIR_3_IOBUF (DQ_BIDIR<3>)
     ----------------------------------------
-    Total                      7.002ns (4.729ns logic, 2.273ns route)
-                                       (67.5% logic, 32.5% route)
+    Total                      7.085ns (4.740ns logic, 2.345ns route)
+                                       (66.9% logic, 33.1% route)
 
 =========================================================================
 
@@ -1121,25 +1267,34 @@ Cross Clock Domains Report:
 --------------------------
 
 Clock to Setup on destination clock CLK
+------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------------------------------------+---------+---------+---------+---------+
+CLK                                                                     |    5.380|         |         |         |
+Inst_TOP_Memoria_RAM/Inst_Maquina_Memoria_RAM/q_bus[3]_PWR_10_o_Mux_16_o|         |    4.803|         |         |
+------------------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Inst_TOP_Memoria_RAM/Inst_Maquina_Memoria_RAM/q_bus[3]_PWR_10_o_Mux_16_o
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    4.973|         |         |         |
+CLK            |         |         |    2.047|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 30.00 secs
-Total CPU time to Xst completion: 28.48 secs
+Total REAL time to Xst completion: 33.00 secs
+Total CPU time to Xst completion: 30.18 secs
  
 --> 
 
 
-Total memory usage is 412860 kilobytes
+Total memory usage is 414164 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   86 (   0 filtered)
-Number of infos    :    7 (   0 filtered)
+Number of warnings :   79 (   0 filtered)
+Number of infos    :   13 (   0 filtered)
 
