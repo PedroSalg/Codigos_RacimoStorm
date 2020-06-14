@@ -60,6 +60,6 @@ while True:
             os.system(Line)
             break
         
-    elif timeF-timeS > 60.0:
+    elif timeF-timeS > 7200.0:
         print("Señal de GPS invalida, no se actualizo dateGPS.txt")
         break
