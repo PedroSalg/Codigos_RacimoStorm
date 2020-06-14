@@ -130,7 +130,7 @@ while True:
     ##################
     Data_File2 = newTxt(Data_File,hora)
     ut = time.time()
-    Datos = str(ut) ' ' + str(campoE) + ' ' + str(temp) + ' ' + str(pres) + ' ' + str(hum) + '\n'
+    Datos = str(ut) + ' ' + str(campoE) + ' ' + str(temp) + ' ' + str(pres) + ' ' + str(hum) + '\n'
     archivo = open(Data_File2,'a')
     print (Datos)
     archivo.write(Datos)
