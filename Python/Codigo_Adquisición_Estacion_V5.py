@@ -135,4 +135,5 @@ while True:
     print (Datos)
     archivo.write(Datos)
     archivo.close()
+    time.sleep(1)
 
