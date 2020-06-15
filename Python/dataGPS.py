@@ -23,7 +23,7 @@ while True:
     print("Esperando GPS: " + venusGPS.available(dgps))
     #TIEMPO TRANSCURRIDO
     timeF = time.time()
-    if venusGPS.available(dgps) == "A":
+    if venusGPS.available(dgps) == "V":
         #UNIX TIME
         ut= float(venusGPS.unixTime(data))
         #LATITUDE
@@ -42,25 +42,16 @@ while True:
         Datos = str(ut) + ' ' +str(lat) + ' ' + str(dirlat) + ' ' + str(lon) + ' ' + str(dirlon) + ' ' + str(alt) + ' \n'
         #LINEA DE BASH PARA ACTUALIZAR FECHA
         Line = "sudo date --set @" + str(ut)
+        #CREAR EL ARCHIVO
+        archivo = open(dataGPS,'w')
+        archivo.write("# unixTime Latitud N/S Longitud E/W Altitud \n")
+        archivo.write(Datos)
+        archivo.close()
+        #ACTUALIZAR HORA RASPBERRY
+        os.system(Line)
         
-        if os.path.isfile(dataGPS):
-            bool = True
-            archivo = open(dataGPS,'a')
-            archivo.write("# unixTime Latitud N/S Longitud E/W Altitud \n")
-            archivo.write(Datos)
-            archivo.close()
-            os.system(Line)
-            print("datosGPS.txt ACTUALIZADO")
-            break
-        else:
-            bool = False
-            archivo = open(dataGPS,'w')
-            archivo.write("# unixTime Latitud N/S Longitud E/W Altitud \n")
-            archivo.write(Datos)
-            archivo.close()
-            os.system(Line)
-            print("datosGPS.txt ACTUALIZADO")
-            break
+        print("datosGPS.txt y fecha de la RP ACTUALIZADO")
+        break
         
     elif timeF-timeS > 7200.0:
         print("Señal de GPS invalida, no se actualizo dateGPS.txt")

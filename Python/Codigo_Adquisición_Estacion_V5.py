@@ -84,13 +84,13 @@ if bool == False:
     F2.close()
 
 #VARIABLE DE CONTEO
-def timeS():
+def getTime():
     tiempo = datetime.datetime.now()
     t = tiempo.timetuple()
     hora = t.tm_hour
     return hora
 #INICIAR VARIABLE DE CONTEO
-timeS = timeS()
+timeS = getTime()
 
 def newTxt(Data_File,timeS): #ESTAMPA OBTENIDA CON EL GPS
     tiempo = datetime.datetime.now()
@@ -110,8 +110,7 @@ def newTxt(Data_File,timeS): #ESTAMPA OBTENIDA CON EL GPS
         Hora = '0' + Hora
 
     timeF = t.tm_hour
-    print(timeF-timeS)
-    if timeF-timeS == 1:
+    if timeF != timeS:
         Data_File = Folder + 'Datos_' + Anho + '_' + Mes + '_' + Dia + '_' +  Hora + '.txt'
         with open(Metadata, 'r') as F1:
             with open(Data_File, 'a') as F2:
@@ -119,7 +118,7 @@ def newTxt(Data_File,timeS): #ESTAMPA OBTENIDA CON EL GPS
                     F2.write(line)
             F1.close()
             F2.close()
-            timeS = timeS() 
+            timeS = getTime() 
     return Data_File
 
 print("INICIANDO ADQUISICION")
