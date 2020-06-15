@@ -110,7 +110,8 @@ def newTxt(Data_File,timeS): #ESTAMPA OBTENIDA CON EL GPS
         Hora = '0' + Hora
 
     timeF = t.tm_hour
-    if timeF-timeS > 3600.0:
+    print(timeF-timeS)
+    if timeF-timeS == 1:
         Data_File = Folder + 'Datos_' + Anho + '_' + Mes + '_' + Dia + '_' +  Hora + '.txt'
         with open(Metadata, 'r') as F1:
             with open(Data_File, 'a') as F2:
