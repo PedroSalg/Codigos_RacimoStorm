@@ -35,20 +35,21 @@ Folder = "Datos/"
 tiempo = datetime.datetime.now()
 t = tiempo.timetuple()
 Anho = str(t.tm_year)
-Mes = t.tm_mon
-Dia = t.tm_mday
-Hora = t.tm_hour
+Mes = str(t.tm_mon)
+Dia = str(t.tm_mday)
+Hora = str(t.tm_hour)
 
-if (Mes < 10):
-    Mes = '0' + str(Mes)
+if (int(Mes) < 10):
+    Mes = '0' + Mes
 
-if (Dia < 10):
-    Dia = '0' + str(Dia)
+if (int(Dia) < 10):
+    Dia = '0' + Dia
 
-if (Hora < 10):
-    Hora = '0' + str(Hora)
+if (int(Hora) < 10):
+    Hora = '0' + Hora
 
 Data_File = Folder + 'Datos_' + Anho + '_' + str(Mes) + '_' + str(Dia) + '_' + str(Hora) + '.txt'
+print(Data_File)
 
 # CREACION DE ARCHIVO DE DATOS Y METADATA
 
@@ -144,7 +145,7 @@ while True:
     ut = time.time()
     Datos = str(ut) + ' ' + str(campoE) + ' ' + str(temp) + ' ' + str(pres) + ' ' + str(hum) + '\n'
     archivo = open(Data_File2,'a')
-    print (Datos)
+    #print (Datos)
     archivo.write(Datos)
     archivo.close()
     time.sleep(1)
