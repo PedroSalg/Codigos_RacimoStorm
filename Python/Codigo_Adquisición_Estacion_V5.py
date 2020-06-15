@@ -46,7 +46,6 @@ if (Hora < 10):
     Hora = '0' + str(Hora)
 
 Data_File = Folder + 'Datos_' + Anho + '_' + str(Mes) + '_' + str(Dia) + '_' + str(Hora) + '.txt'
-hora = t.tm_hour
 
 # CREACION DE ARCHIVO DE DATOS Y METADATA
 
@@ -81,7 +80,10 @@ if bool == False:
     F1.close()
     F2.close()
 
-def newTxt(Data_File,hora): #ESTAMPA OBTENIDA CON EL GPS
+#INICIO VARIABLE DE CONTEO
+timeS = time.time()
+
+def newTxt(Data_File): #ESTAMPA OBTENIDA CON EL GPS
     tiempo = datetime.datetime.now()
     t = tiempo.timetuple()
     Anho = str(t.tm_year)
@@ -98,7 +100,8 @@ def newTxt(Data_File,hora): #ESTAMPA OBTENIDA CON EL GPS
     if (int(Hora) < 10):
         Hora = '0' + Hora
 
-    if int(Hora) != hora:
+    timeF = time.time()
+    if timeF-timeS > 3600.0:
         Data_File = Folder + 'Datos_' + Anho + '_' + Mes + '_' + Dia + '_' +  Hora + '.txt'
         with open(Metadata, 'r') as F1:
             with open(Data_File, 'a') as F2:
@@ -106,7 +109,7 @@ def newTxt(Data_File,hora): #ESTAMPA OBTENIDA CON EL GPS
                     F2.write(line)
             F1.close()
             F2.close()
-            hora = t.tm_hour 
+            timeS = time.time() 
     return Data_File
 
 print("INICIANDO ADQUISICION")
