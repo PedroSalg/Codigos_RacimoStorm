@@ -50,6 +50,7 @@ while True:
             archivo.write(Datos)
             archivo.close()
             os.system(Line)
+            print("datosGPS.txt ACTUALIZADO")
             break
         else:
             bool = False
@@ -58,6 +59,7 @@ while True:
             archivo.write(Datos)
             archivo.close()
             os.system(Line)
+            print("datosGPS.txt ACTUALIZADO")
             break
         
     elif timeF-timeS > 7200.0:

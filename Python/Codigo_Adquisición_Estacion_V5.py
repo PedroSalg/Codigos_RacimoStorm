@@ -24,6 +24,9 @@ calibration_params = bme280.load_calibration_params(bus, address)
 #-------EMILL---------
 adress2 = 0x60
 
+#ACTUALIZAR FECHAS
+exec(compile(open("dataGPS.py").read(),"dataGPS.py",'exec'))
+
 #######################
 #CREAR ARCHIVOS DE TEXTO
 
