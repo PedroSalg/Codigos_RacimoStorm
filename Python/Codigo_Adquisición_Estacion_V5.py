@@ -83,10 +83,16 @@ if bool == False:
     F1.close()
     F2.close()
 
-#INICIO VARIABLE DE CONTEO
-timeS = time.time()
+#VARIABLE DE CONTEO
+def timeS():
+    tiempo = datetime.datetime.now()
+    t = tiempo.timetuple()
+    hora = t.tm_hour
+    return hora
+#INICIAR VARIABLE DE CONTEO
+timeS = timeS()
 
-def newTxt(Data_File): #ESTAMPA OBTENIDA CON EL GPS
+def newTxt(Data_File,timeS): #ESTAMPA OBTENIDA CON EL GPS
     tiempo = datetime.datetime.now()
     t = tiempo.timetuple()
     Anho = str(t.tm_year)
@@ -103,7 +109,7 @@ def newTxt(Data_File): #ESTAMPA OBTENIDA CON EL GPS
     if (int(Hora) < 10):
         Hora = '0' + Hora
 
-    timeF = time.time()
+    timeF = t.tm_hour
     if timeF-timeS > 3600.0:
         Data_File = Folder + 'Datos_' + Anho + '_' + Mes + '_' + Dia + '_' +  Hora + '.txt'
         with open(Metadata, 'r') as F1:
@@ -112,7 +118,7 @@ def newTxt(Data_File): #ESTAMPA OBTENIDA CON EL GPS
                     F2.write(line)
             F1.close()
             F2.close()
-            timeS = time.time() 
+            timeS = timeS() 
     return Data_File
 
 print("INICIANDO ADQUISICION")
@@ -134,7 +140,7 @@ while True:
 
     #ENVIO DE DATOS
     ##################
-    Data_File2 = newTxt(Data_File,hora)
+    Data_File2 = newTxt(Data_File,timeS)
     ut = time.time()
     Datos = str(ut) + ' ' + str(campoE) + ' ' + str(temp) + ' ' + str(pres) + ' ' + str(hum) + '\n'
     archivo = open(Data_File2,'a')
