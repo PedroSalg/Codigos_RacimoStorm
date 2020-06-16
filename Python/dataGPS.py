@@ -10,7 +10,7 @@ import os.path
 import venusGPS
 
 
-# INICIALIZACIODA   N
+# INICIALIZACION
 portgps = "/dev/serial0"
 baudrategps = 9600
 timeoutgps = 0.5
@@ -23,9 +23,9 @@ while True:
     print("Esperando GPS: " + venusGPS.available(dgps))
     #TIEMPO TRANSCURRIDO
     timeF = time.time()
-    if venusGPS.available(dgps) == "V":
+    if venusGPS.available(dgps) == "A":
         #UNIX TIME
-        ut= float(venusGPS.unixTime(data))
+        ut= float(venusGPS.unixTime(dgps))
         #LATITUDE
         lat = venusGPS.latitud(dgps)
         #DIR LATITUDE
@@ -53,6 +53,6 @@ while True:
         print("datosGPS.txt y fecha de la RP ACTUALIZADO")
         break
         
-    elif timeF-timeS > 7200.0:
-        print("Señal de GPS invalida, no se actualizo dateGPS.txt")
+    elif timeF-timeS > 3600.0:
+        print("Senal de GPS invalida, no se actualizo dateGPS.txt")
         break
