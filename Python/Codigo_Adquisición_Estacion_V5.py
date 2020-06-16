@@ -25,7 +25,7 @@ calibration_params = bme280.load_calibration_params(bus, address)
 adress2 = 0x60
 
 #ACTUALIZAR FECHAS
-exec(compile(open("dataGPS.py").read(),"dataGPS.py",'exec'))
+#exec(compile(open("dataGPS.py").read(),"dataGPS.py",'exec'))
 
 #######################
 #CREAR ARCHIVOS DE TEXTO
@@ -53,36 +53,28 @@ print(Data_File)
 
 # CREACION DE ARCHIVO DE DATOS Y METADATA
 
-if os.path.isfile(Metadata):
-    bool = True
-    archivo = open(Data_File,'a')
-    archivo.close()
-else:
-    bool = False
-    archivo = open(Data_File,'w')
-    archivo.close()
+archivo = open(Data_File,'w')
+archivo.close()
 
-if bool == False:
-
-    name = "RACIMO STORM"
-    version = '2.0'
-    ubicacion = readGPS.latitude() + ' ' + readGPS.dirLat() + ' ' + readGPS.longitude() + ' ' + readGPS.dirLon()
-    altitud = readGPS.altitude()
-    columns = "UNIXTIME, LATITUD (dddmm.mmmm), N/S, LONGITUD (dddmm.mmmm), E/W, ALTITUD (m), STATIC E_FIELD (V/m), TEMPERATURE (C), PRESSURE (hPa), HUMIDITY (%)"
-    resolution = "E_FIELD  (JP1-> 20 V/m, JP2-> 70 V/m, JP3-> 150 V/m), TEMPERATURE (0.5 C), PRESSURE (0.18 Pa), HUMIDITY (0.008 %RH)"
+name = "RACIMO STORM"
+version = '2.0'
+ubicacion = readGPS.latitude() + ' ' + readGPS.dirLat() + ' ' + readGPS.longitude() + ' ' + readGPS.dirLon()
+altitud = readGPS.altitude()
+columns = "UNIXTIME, LATITUD (dddmm.mmmm), N/S, LONGITUD (dddmm.mmmm), E/W, ALTITUD (m), STATIC E_FIELD (V/m), TEMPERATURE (C), PRESSURE (hPa), HUMIDITY (%)"
+resolution = "E_FIELD  (JP1-> 20 V/m, JP2-> 70 V/m, JP3-> 150 V/m), TEMPERATURE (0.5 C), PRESSURE (0.18 Pa), HUMIDITY (0.008 %RH)"
     
 
-    file = open('Metadata.txt','a')
-    file.write( '# RACIMO STORM' + '\n' '# Name = ' + name + '\n' + '# Version = ' + version + '\n' + '# Ubication = ' + ubicacion + '\n' + '# Altitude = ' + altitud + '\n' + '# Columns = ' + columns + '\n'+ '# Resolution = ' + resolution + '\n')
-    file.write('# UNIXTIME CampoE Temperatura Presion Humedad \n')
-    file.close()
+file = open('Metadata.txt','a')
+file.write( '# RACIMO STORM' + '\n' '# Name = ' + name + '\n' + '# Version = ' + version + '\n' + '# Ubication = ' + ubicacion + '\n' + '# Altitude = ' + altitud + '\n' + '# Columns = ' + columns + '\n'+ '# Resolution = ' + resolution + '\n')
+file.write('# UNIXTIME CampoE Temperatura Presion Humedad \n')
+file.close()
         
-    with open(Metadata, 'r') as F1:
-        with open(Data_File, 'a') as F2:
-            for line in F1:
-                F2.write(line)  
-    F1.close()
-    F2.close()
+with open(Metadata, 'r') as F1:
+    with open(Data_File, 'a') as F2:
+        for line in F1:
+            F2.write(line)  
+F1.close()
+F2.close()
 
 #VARIABLE DE CONTEO
 def getTime():
@@ -145,7 +137,7 @@ while True:
     ut = time.time()
     Datos = str(ut) + ' ' + str(campoE) + ' ' + str(temp) + ' ' + str(pres) + ' ' + str(hum) + '\n'
     archivo = open(Data_File2,'a')
-    #print (Datos)
+    print (Datos)
     archivo.write(Datos)
     archivo.close()
     time.sleep(1)
