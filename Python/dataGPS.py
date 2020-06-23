@@ -44,6 +44,7 @@ while True:
         Line = "sudo date --set @" + str(ut)
         #CREAR EL ARCHIVO
         archivo = open(dataGPS,'w')
+        archivo.write("# C = UNIXTIME, LATITUD (dddmm.mmmm), N/S, LONGITUD (dddmm.mmmm), E/W, ALTITUD (m)")
         archivo.write("# unixTime Latitud N/S Longitud E/W Altitud \n")
         archivo.write(Datos)
         archivo.close()
