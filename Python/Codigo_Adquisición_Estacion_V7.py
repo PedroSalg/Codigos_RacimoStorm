@@ -45,7 +45,8 @@ def Encabezado(Datafile):
 	file.write('# UNIXTIME CampoE Temperatura Presion Humedad \n')
 	file.close()
 
-def nuevoArchivo(Data_File): 
+def nuevoArchivo(Data_File):
+        global Hrs
 	Folder = "Datos/"
 	tiempo = datetime.datetime.now()
 	t = tiempo.timetuple()
@@ -61,10 +62,12 @@ def nuevoArchivo(Data_File):
 		Hora = '0' + Hora
 	Min = t.tm_min
 	Sec = t.tm_sec
+	Hfr = t.tm_hour
 	print("min= "+str(Min)+" sec= "+str(Sec))
-	if Min == 0 and Sec == 0:
+	if Hrf != Hrs:
 		Data_File = Folder + 'Datos_' + Anho + '_' + Mes + '_' + Dia + '_' +  Hora + '.txt'
 		Encabezado(Data_File)
+		Hrs = Hrf
 	return Data_File
 	
 	
@@ -77,6 +80,7 @@ Anho = str(t.tm_year)
 Mes = str(t.tm_mon)
 Dia = str(t.tm_mday)
 Hora = str(t.tm_hour)
+Hrs = int(Hora)
 
 if (int(Mes) < 10):
     Mes = '0' + Mes
