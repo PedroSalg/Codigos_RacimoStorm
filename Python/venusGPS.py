@@ -45,7 +45,12 @@ def dataVec(port,baudRate,timeOut):
     vecData=[]
     ser = serial.Serial(port,baudrate = baudRate,timeout =timeOut)
     while True:
-        data = ser.readline()
+        data = None
+        while data is None:
+            try:
+                data = ser.readline()
+            except:
+                pass
         if len(vecData) != 7:
             vecData = parceGPS(data,vecData)
 
