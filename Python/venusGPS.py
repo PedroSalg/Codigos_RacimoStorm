@@ -42,16 +42,26 @@ def toUnix(yr,mon,day,hr,min,sec):
     return unixtime # Convierte de UTC a UNIX
 
 def dataVec(port,baudRate,timeOut):
+    ts = time.time()
     vecData=[]
     ser = serial.Serial(port,baudrate = baudRate,timeout =timeOut)
     while True:
-        data = ser.readline()
+        data = None
+        while data is None:
+            try:
+                data = ser.readline()
+            except:
+                pass
         if len(vecData) != 7:
             vecData = parceGPS(data,vecData)
 
         else:
             if len(vecData[0]) < 7:
                 vecData += [vecData.pop(0)]
+            while True:
+                tf = time.time()
+                if tf-ts > 1:
+                    break
             break
     return vecData
 
