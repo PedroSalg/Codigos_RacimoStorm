@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/RACIMOStorm/Event_Detect.xst" -ofn "/home/pedro/Documents/ISE/RACIMOStorm/Event_Detect.syr" 
+vhdtdtfi -prj RACIMOStorm -o /home/pedro/Documents/ISE/RACIMOStorm/Event_Detect.vhi -module Event_Detect -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Event_Detect.vhd 

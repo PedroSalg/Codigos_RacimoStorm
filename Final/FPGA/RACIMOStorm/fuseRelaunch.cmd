@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Simulacion_V9_isim_beh.exe" -prj "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Simulacion_V9_beh.prj" "work.Simulacion_V9" 

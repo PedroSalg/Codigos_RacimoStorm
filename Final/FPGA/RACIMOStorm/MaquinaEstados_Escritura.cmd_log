@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/MaquinaEstados_Escritura.xst" -ofn "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/MaquinaEstados_Escritura.syr" 

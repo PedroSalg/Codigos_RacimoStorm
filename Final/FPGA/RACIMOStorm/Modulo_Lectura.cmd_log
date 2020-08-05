@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/RACIMOStorm/Modulo_Lectura.xst" -ofn "/home/pedro/Documents/ISE/RACIMOStorm/Modulo_Lectura.syr" 
+vhdtdtfi -prj RACIMOStorm -o /home/pedro/Documents/ISE/RACIMOStorm/Modulo_Lectura.vhi -module Modulo_Lectura -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work SCL.vhd -lib work Maquina_Estados.vhd -lib work I2C_slave.vhd -lib work div_frec_lectura.vhd -lib work Contador_Lectura.vhd -lib work Modulo_Lectura.vhd 

@@ -1,0 +1,1 @@
+vhdtdtfi -prj RACIMOStorm -o /home/pedro/Documents/ISE/RACIMOStorm/Modulo_Escritura.vhi -module Modulo_Escritura -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Retenedor_Lectura.vhd -lib work MaquinaEstados_Escritura.vhd -lib work Contador_Dir_Esc.vhd -lib work Modulo_Escritura.vhd 

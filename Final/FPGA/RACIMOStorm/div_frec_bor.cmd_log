@@ -1,0 +1,1 @@
+vhdtdtfi -prj RACIMOStorm -o /home/pedro/Documents/ISE/RACIMOStorm/div_frec_bor.vhi -module div_frec_bor -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work div_frec_bor.vhd 

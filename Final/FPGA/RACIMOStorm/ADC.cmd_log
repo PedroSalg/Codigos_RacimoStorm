@@ -1,0 +1,1 @@
+vhdtdtfi -prj RACIMOStorm -o /home/pedro/Documents/ISE/RACIMOStorm/ADC.vhi -module ADC -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work PWM.vhd -lib work Div_Fre_Var.vhd -lib work PWM_SIGNAL.vhd 

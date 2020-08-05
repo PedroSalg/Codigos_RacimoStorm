@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/modulo_gps.xst" -ofn "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/modulo_gps.syr" 
+vhdtdtfi -prj RACIMOStorm -o /home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/modulo_gps.vhi -module modulo_gps -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work maq_en_cnt_gps.vhd -lib work maquina_rst_gps.vhd -lib work contador_gps.vhd -lib work modulo_gps.vhd 

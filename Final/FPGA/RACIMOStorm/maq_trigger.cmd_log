@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/maq_trigger.xst" -ofn "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/maq_trigger.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/maq_trigger.xst" -ofn "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/maq_trigger.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/maq_trigger.xst" -ofn "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/maq_trigger.syr" 
+vhdtdtfi -prj RACIMOStorm -o /home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/maq_trigger.vhi -module maq_trigger -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work maq_trigger.vhd 
+vhdtdtfi -prj RACIMOStorm -o /home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/maq_trigger.vhi -module maq_trigger -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work maq_trigger.vhd 

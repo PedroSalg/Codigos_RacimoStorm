@@ -1,0 +1,6 @@
+vhdl work "SCL.vhd"
+vhdl work "Maquina_Estados.vhd"
+vhdl work "I2C_slave.vhd"
+vhdl work "div_frec_lectura.vhd"
+vhdl work "Contador_Lectura.vhd"
+vhdl work "Modulo_Lectura.vhd"

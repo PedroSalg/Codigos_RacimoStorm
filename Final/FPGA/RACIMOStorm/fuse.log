@@ -1,0 +1,88 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Simulacion_V9_isim_beh.exe -prj /home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Simulacion_V9_beh.prj work.Simulacion_V9 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/SCL.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Retenedo_Memoria.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Retenedor_Lectura.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Retenedor_Borrado.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/PWM.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Memoria_RAM.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/maq_en_cnt_gps.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/maquina_rst_gps.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Maquina_Memoria_RAM.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Maquina_Estados.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/MaquinaEstados_Escritura.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/MaquinaEstados_Borrado.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/I2C_slave.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Div_Fre_Var.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/div_frec_lectura.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Contador_Lectura.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/contador_gps.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Contador_Dir_Esc.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Contador_Dir_Bor.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/cnt_memoria.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/TOP_Memoria_RAM.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/SM_CTRL.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/PWM_SIGNAL.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Modulo_Lectura.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/modulo_gps.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Modulo_Escritura.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Modulo_Borrado.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/maq_trigger.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Event_Detect.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/DIV_FREQ.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Contador_Inicial.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/RACIMOStorm.vhd" into library work
+Parsing VHDL file "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Simulacion_V9.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 114728 KB
+Fuse CPU Usage: 2400 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity contador_gps [contador_gps_default]
+Compiling architecture behavioral of entity maq_en_cnt_gps [maq_en_cnt_gps_default]
+Compiling architecture behavioral of entity maquina_rst_cnt_gps [maquina_rst_cnt_gps_default]
+Compiling architecture behavioral of entity modulo_gps [modulo_gps_default]
+Compiling architecture behavioral of entity Contador_Inicial [contador_inicial_default]
+Compiling architecture behavioral of entity maq_trigger [maq_trigger_default]
+Compiling architecture behavioral of entity Retenedo_Memoria [retenedo_memoria_default]
+Compiling architecture behavioral of entity Maquina_Memoria_RAM [maquina_memoria_ram_default]
+Compiling architecture behavioral of entity cnt_memoria [cnt_memoria_default]
+Compiling architecture behavioral of entity Memoria_RAM [memoria_ram_default]
+Compiling architecture behavioral of entity TOP_Memoria_RAM [top_memoria_ram_default]
+Compiling architecture behavioral of entity Event_Detect [event_detect_default]
+Compiling architecture behavioral of entity SM_CTRL [sm_ctrl_default]
+Compiling architecture behavioral of entity MaquinaEstados_Escritura [maquinaestados_escritura_default]
+Compiling architecture behavioral of entity Contador_Dir_Esc [contador_dir_esc_default]
+Compiling architecture behavioral of entity Retenedor_Lectura [retenedor_lectura_default]
+Compiling architecture behavioral of entity Modulo_Escritura [modulo_escritura_default]
+Compiling architecture behavioral of entity MaquinaEstados_Borrado [maquinaestados_borrado_default]
+Compiling architecture behavioral of entity Retenedor_Borrado [retenedor_borrado_default]
+Compiling architecture behavioral of entity Contador_Dir_Bor [contador_dir_bor_default]
+Compiling architecture behavioral of entity Modulo_Borrado [modulo_borrado_default]
+Compiling package vcomponents
+Compiling architecture behavioral of entity Maquina_Estados [maquina_estados_default]
+Compiling architecture behavioral of entity Contador_Lectura [contador_lectura_default]
+Compiling architecture behavioral of entity div_frec_lectura [div_frec_lectura_default]
+Compiling architecture arch of entity debounce [\debounce(4)\]
+Compiling architecture arch of entity I2C_slave [\I2C_slave(('0','0','0','1','0',...]
+Compiling architecture behavioral of entity Modulo_Lectura [modulo_lectura_default]
+Compiling architecture behavioral of entity DIV_FREQ [div_freq_default]
+Compiling architecture behavioral of entity Div_Fre_Var [div_fre_var_default]
+Compiling architecture behavioral of entity PWM [pwm_default]
+Compiling architecture behavioral of entity ADC [adc_default]
+Compiling architecture behavioral of entity RACIMOStorm [racimostorm_default]
+Compiling architecture behavior of entity simulacion_v9
+Time Resolution for simulation is 1ps.
+Waiting for 31 sub-compilation(s) to finish...
+Compiled 71 VHDL Units
+Built simulation executable /home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Simulacion_V9_isim_beh.exe
+Fuse Memory Usage: 430456 KB
+Fuse CPU Usage: 3100 ms
+GCC CPU Usage: 6010 ms

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Contador_Dir_Bor.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Contador_Dir_Esc.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Contador_Inicial.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Contador_Lectura.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/DIV_FREQ.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Div_Fre_Var.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Event_Detect.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/I2C_slave.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/MaquinaEstados_Borrado.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/MaquinaEstados_Escritura.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Maquina_Estados.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Maquina_Memoria_RAM.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Memoria_RAM.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Modulo_Borrado.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Modulo_Escritura.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Modulo_Lectura.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/PWM.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/PWM_SIGNAL.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/RACIMOStorm.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Retenedo_Memoria.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Retenedor_Borrado.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Retenedor_Lectura.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/SCL.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/SM_CTRL.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/TOP_Memoria_RAM.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/cnt_memoria.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/contador_gps.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/div_frec_lectura.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/maq_en_cnt_gps.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/maq_trigger.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/maquina_rst_gps.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/modulo_gps.vhd&quot; into library work</arg>
+</msg>
+
+</messages>
+

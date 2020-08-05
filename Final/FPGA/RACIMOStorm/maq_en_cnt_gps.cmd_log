@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/maq_en_cnt_gps.xst" -ofn "/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/maq_en_cnt_gps.syr" 
+vhdtdtfi -prj RACIMOStorm -o /home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/maq_en_cnt_gps.vhi -module maq_en_cnt_gps -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work maq_en_cnt_gps.vhd 

@@ -1,0 +1,4 @@
+vhdl work "maq_en_cnt_gps.vhd"
+vhdl work "maquina_rst_gps.vhd"
+vhdl work "contador_gps.vhd"
+vhdl work "modulo_gps.vhd"

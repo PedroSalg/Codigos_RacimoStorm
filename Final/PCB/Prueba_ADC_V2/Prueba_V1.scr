@@ -1,0 +1,150 @@
+# NetScript
+# 
+# Exported from ADC_PRUEBA_V2.sch at 27/01/2020 17:27
+# 
+# EAGLE Version 9.5.2 Copyright (c) 1988-2019 Autodesk, Inc.
+# 
+Change Class 0;
+Signal '3.3V'     'JP3'      '1' \
+                  'RP'       '1' \
+                  ;
+Change Class 0;
+Signal 'AVDD'     'C10'      '1' \
+                  'C9'       '1' \
+                  'IC1'      '12' \
+                  'IC1'      '24' \
+                  'JP3'      '2' \
+                  ;
+Change Class 0;
+Signal 'CLK'      'C8'       '1' \
+                  'IC1'      '13' \
+                  'SV1'      '13' \
+                  ;
+Change Class 0;
+Signal 'D0'       'IC1'      '15' \
+                  'SV1'      '37' \
+                  ;
+Change Class 0;
+Signal 'D1'       'IC1'      '16' \
+                  'SV1'      '35' \
+                  ;
+Change Class 0;
+Signal 'D2'       'IC1'      '17' \
+                  'SV1'      '33' \
+                  ;
+Change Class 0;
+Signal 'D3'       'IC1'      '18' \
+                  'SV1'      '31' \
+                  ;
+Change Class 0;
+Signal 'D4'       'IC1'      '19' \
+                  'SV1'      '29' \
+                  ;
+Change Class 0;
+Signal 'D5'       'IC1'      '20' \
+                  'SV1'      '27' \
+                  ;
+Change Class 0;
+Signal 'D6'       'IC1'      '21' \
+                  'SV1'      '25' \
+                  ;
+Change Class 0;
+Signal 'D7'       'IC1'      '22' \
+                  'SV1'      '23' \
+                  ;
+Change Class 0;
+Signal 'D8'       'IC1'      '25' \
+                  'SV1'      '21' \
+                  ;
+Change Class 0;
+Signal 'D9'       'IC1'      '26' \
+                  'SV1'      '19' \
+                  ;
+Change Class 0;
+Signal 'D10'      'IC1'      '27' \
+                  'SV1'      '17' \
+                  ;
+Change Class 0;
+Signal 'D11'      'IC1'      '28' \
+                  'SV1'      '15' \
+                  ;
+Change Class 0;
+Signal 'DGND'     'IC1'      '23' \
+                  'L1'       '1' \
+                  ;
+Change Class 0;
+Signal 'GND'      'C1'       '2' \
+                  'C10'      '2' \
+                  'C2'       '2' \
+                  'C3'       '2' \
+                  'C6'       '2' \
+                  'C7'       '2' \
+                  'C8'       '2' \
+                  'C9'       '2' \
+                  'IC1'      '11' \
+                  'IN'       'GND' \
+                  'IN'       'P$2' \
+                  'IN'       'P$3' \
+                  'IN'       'P$4' \
+                  'JP1'      '1' \
+                  'JP2'      '3' \
+                  'L1'       '2' \
+                  'R1'       '1' \
+                  'RP'       '6' \
+                  'SV1'      '2' \
+                  'SV1'      '40' \
+                  ;
+Change Class 0;
+Signal 'MODE'     'C1'       '1' \
+                  'IC1'      '2' \
+                  'JP1'      '2' \
+                  ;
+Change Class 0;
+Signal 'N$1'      'IC1'      '8' \
+                  ;
+Change Class 0;
+Signal 'N$2'      'IC1'      '7' \
+                  ;
+Change Class 0;
+Signal 'N$13'     'IC1'      '14' \
+                  'R1'       '2' \
+                  ;
+Change Class 0;
+Signal 'REFB'     'C4'       '2' \
+                  'C5'       '2' \
+                  'C6'       '1' \
+                  'IC1'      '5' \
+                  ;
+Change Class 0;
+Signal 'REFT'     'C4'       '1' \
+                  'C5'       '1' \
+                  'C7'       '1' \
+                  'IC1'      '6' \
+                  ;
+Change Class 0;
+Signal 'SCL'      'RP'       '5' \
+                  'SV1'      '3' \
+                  ;
+Change Class 0;
+Signal 'SDA'      'RP'       '3' \
+                  'SV1'      '5' \
+                  ;
+Change Class 0;
+Signal 'SENSE'    'IC1'      '3' \
+                  'JP2'      '2' \
+                  ;
+Change Class 0;
+Signal 'VDD_FPGA' 'JP3'      '3' \
+                  'SV1'      '39' \
+                  ;
+Change Class 0;
+Signal 'VIN'      'IC1'      '9' \
+                  'IN'       'IN' \
+                  ;
+Change Class 0;
+Signal 'VREF'     'C2'       '1' \
+                  'C3'       '1' \
+                  'IC1'      '10' \
+                  'IC1'      '4' \
+                  'JP2'      '1' \
+                  ;

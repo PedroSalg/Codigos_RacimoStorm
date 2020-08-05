@@ -1,0 +1,60 @@
+* SpiceNetList
+* 
+* Exported from ADC_PRUEBA_V2.sch at 27/01/2020 17:38
+* 
+* EAGLE Version 9.5.2 Copyright (c) 1988-2019 Autodesk, Inc.
+* 
+.TEMP=25.000000
+* --------- .OPTIONS ---------
+* --------- .PARAMS ---------
+
+* --------- devices ---------
+C_C3 VREF GND 0.1uF 
+L_L1 DGND GND 1uH 
+_SUPPLY2 GND 
+_SUPPLY11 GND 
+R_R1 GND N_13 5k 
+C_C7 REFT GND 0.1uF 
+C_C8 CLK GND 15pF 
+_SUPPLY7 GND 
+_SUPPLY10 GND 
+_SUPPLY16 GND 
+_JP3 3.3V 
+_SV1 SCL 
+_C9 GND 10uF 
+_SUPPLY9 GND 
+_SUPPLY6 GND 
+C_C10 AVDD GND 0.1uF 
+_C2 GND 10uF 
+_SUPPLY1 GND 
+_SUPPLY4 GND 
+_RP SCL Raspberry 
+_IC1 N_2 AD9235 
+_SUPPLY5 GND 
+_JP1 GND 
+_SUPPLY12 GND 
+C_C6 REFB GND 0.1uF 
+_SUPPLY14 GND 
+_JP2 GND 
+_SUPPLY8 GND 
+C_C5 REFT REFB 
+_C4 REFB 10uF 
+C_C1 MODE GND 0.1uF 
+_SUPPLY3 GND 
+_X1 VIN 
+
+* --------- simulation ---------
+.print DC V(CLK) V(REFT) V(AVDD) V(MODE) V(DGND) V(D9) V(GND) V(REFB) V(3.3V) V(SCL) V(VREF) V(VIN)
+.print AC V(CLK) V(REFT) V(AVDD) V(MODE) V(DGND) V(D9) V(GND) V(REFB) V(3.3V) V(SCL) V(VREF) V(VIN)
+.print TRAN V(CLK) V(REFT) V(AVDD) V(MODE) V(DGND) V(D9) V(GND) V(REFB) V(3.3V) V(SCL) V(VREF) V(VIN)
+.END
+
+
+
+
+
+
+
+
+
+

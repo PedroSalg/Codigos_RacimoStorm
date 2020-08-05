@@ -1,0 +1,4 @@
+vhdl work "Memoria_RAM.vhd"
+vhdl work "Maquina_Memoria_RAM.vhd"
+vhdl work "cnt_memoria.vhd"
+vhdl work "TOP_Memoria_RAM.vhd"

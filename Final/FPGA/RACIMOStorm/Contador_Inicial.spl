@@ -1,0 +1,7 @@
+[Inputs]
+en_cnt_ini
+rst_cnt_ini
+clk
+[Outputs]
+end_cnt_ini
+[BiDir]

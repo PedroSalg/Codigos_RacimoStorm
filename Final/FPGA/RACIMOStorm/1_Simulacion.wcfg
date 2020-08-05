@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/pedro/Documents/ISE/Proyecto_grado/RACIMOStorm/Simulacion_v6_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="simulacion_v6" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="41" />
+   <wvobject fp_name="/simulacion_v6/from_rp" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">from_rp</obj_property>
+      <obj_property name="ObjectShortName">from_rp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/uut/Inst_Contador_Inicial/q_bus" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">q_bus[21:0]</obj_property>
+      <obj_property name="ObjectShortName">q_bus[21:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/uut/Inst_Event_Detect/q_bus" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">q_bus</obj_property>
+      <obj_property name="ObjectShortName">q_bus</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/uut/Inst_TOP_Memoria_RAM/Inst_Memoria_RAM/memoria_temporal" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">memoria_temporal[15:0]</obj_property>
+      <obj_property name="ObjectShortName">memoria_temporal[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <wvobject fp_name="/simulacion_v6/uut/Inst_TOP_Memoria_RAM/Inst_Memoria_RAM/memoria_temporal[15]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">memoria_temporal[15]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simulacion_v6/uut/Inst_TOP_Memoria_RAM/Inst_Memoria_RAM/memoria_temporal[14]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">memoria_temporal[14]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simulacion_v6/uut/Inst_TOP_Memoria_RAM/Inst_Memoria_RAM/memoria_temporal[13]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">memoria_temporal[13]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simulacion_v6/uut/Inst_TOP_Memoria_RAM/Inst_Memoria_RAM/memoria_temporal[12]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">memoria_temporal[12]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simulacion_v6/uut/Inst_TOP_Memoria_RAM/Inst_Memoria_RAM/memoria_temporal[11]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">memoria_temporal[11]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simulacion_v6/uut/Inst_TOP_Memoria_RAM/Inst_Memoria_RAM/memoria_temporal[10]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">memoria_temporal[10]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simulacion_v6/uut/Inst_TOP_Memoria_RAM/Inst_Memoria_RAM/memoria_temporal[9]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">memoria_temporal[9]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simulacion_v6/uut/Inst_TOP_Memoria_RAM/Inst_Memoria_RAM/memoria_temporal[8]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">memoria_temporal[8]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simulacion_v6/uut/Inst_TOP_Memoria_RAM/Inst_Memoria_RAM/memoria_temporal[7]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">memoria_temporal[7]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simulacion_v6/uut/Inst_TOP_Memoria_RAM/Inst_Memoria_RAM/memoria_temporal[6]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">memoria_temporal[6]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simulacion_v6/uut/Inst_TOP_Memoria_RAM/Inst_Memoria_RAM/memoria_temporal[5]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">memoria_temporal[5]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simulacion_v6/uut/Inst_TOP_Memoria_RAM/Inst_Memoria_RAM/memoria_temporal[4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">memoria_temporal[4]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simulacion_v6/uut/Inst_TOP_Memoria_RAM/Inst_Memoria_RAM/memoria_temporal[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">memoria_temporal[3]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simulacion_v6/uut/Inst_TOP_Memoria_RAM/Inst_Memoria_RAM/memoria_temporal[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">memoria_temporal[2]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simulacion_v6/uut/Inst_TOP_Memoria_RAM/Inst_Memoria_RAM/memoria_temporal[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">memoria_temporal[1]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/simulacion_v6/uut/Inst_TOP_Memoria_RAM/Inst_Memoria_RAM/memoria_temporal[0]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">memoria_temporal[0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/led" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">led[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/uut/Inst_Modulo_Escritura/Inst_Contador_Dir_Esc/rst_cnt_dir" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst_cnt_dir</obj_property>
+      <obj_property name="ObjectShortName">rst_cnt_dir</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">a[19:0]</obj_property>
+      <obj_property name="ObjectShortName">a[19:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/d" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">d[11:0]</obj_property>
+      <obj_property name="ObjectShortName">d[11:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#008000</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/uut/Inst_TOP_Memoria_RAM/adc_reloj" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">adc_reloj</obj_property>
+      <obj_property name="ObjectShortName">adc_reloj</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/uut/Inst_TOP_Memoria_RAM/en_maq" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">en_maq</obj_property>
+      <obj_property name="ObjectShortName">en_maq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/uut/trigger_event" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">trigger_event</obj_property>
+      <obj_property name="ObjectShortName">trigger_event</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/uut/Inst_TOP_Memoria_RAM/evento" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">evento</obj_property>
+      <obj_property name="ObjectShortName">evento</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/uut/Inst_TOP_Memoria_RAM/Inst_Maquina_Memoria_RAM/q_bus" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">q_bus</obj_property>
+      <obj_property name="ObjectShortName">q_bus</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/uut/bus_sel_qd_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bus_sel_qd_out</obj_property>
+      <obj_property name="ObjectShortName">bus_sel_qd_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/uut/Inst_Modulo_Escritura/Inst_Contador_Dir_Esc/bande1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bande1</obj_property>
+      <obj_property name="ObjectShortName">bande1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/uut/Inst_Modulo_Escritura/Inst_Contador_Dir_Esc/bande2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bande2</obj_property>
+      <obj_property name="ObjectShortName">bande2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/uut/Inst_Modulo_Escritura/Inst_Contador_Dir_Esc/bande3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bande3</obj_property>
+      <obj_property name="ObjectShortName">bande3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/uut/data_esc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_esc[11:0]</obj_property>
+      <obj_property name="ObjectShortName">data_esc[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/dq_bidir" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dq_bidir[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dq_bidir[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/reloj_adc" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">reloj_adc</obj_property>
+      <obj_property name="ObjectShortName">reloj_adc</obj_property>
+      <obj_property name="label">reloj_adc</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#800000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/uut/Inst_Modulo_Escritura/Inst_Contador_Dir_Esc/cnt_dir" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cnt_dir[19:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_dir[19:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/uut/Inst_Modulo_Escritura/Inst_Contador_Dir_Esc/q_bus" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">q_bus[19:0]</obj_property>
+      <obj_property name="ObjectShortName">q_bus[19:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/uut/Inst_Modulo_Escritura/Inst_Contador_Dir_Esc/d_bus" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">d_bus[19:0]</obj_property>
+      <obj_property name="ObjectShortName">d_bus[19:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/sda" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sda</obj_property>
+      <obj_property name="ObjectShortName">sda</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/scl" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">scl</obj_property>
+      <obj_property name="ObjectShortName">scl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/oe" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">oe</obj_property>
+      <obj_property name="ObjectShortName">oe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/ce" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/we" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/uut/Inst_SM_CTRL/q_bus" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">q_bus</obj_property>
+      <obj_property name="ObjectShortName">q_bus</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/uut/Inst_Modulo_Escritura/Inst_MaquinaEstados_Escritura/q_bus" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">q_bus</obj_property>
+      <obj_property name="ObjectShortName">q_bus</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/uut/Inst_TOP_Memoria_RAM/escritura_memoria" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">escritura_memoria</obj_property>
+      <obj_property name="ObjectShortName">escritura_memoria</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/uut/Inst_TOP_Memoria_RAM/Inst_cnt_memoria/cnt_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cnt_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_out[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/uut/Inst_TOP_Memoria_RAM/Inst_Maquina_Memoria_RAM/numero" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">numero[3:0]</obj_property>
+      <obj_property name="ObjectShortName">numero[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/uut/Inst_TOP_Memoria_RAM/Inst_Maquina_Memoria_RAM/numero_ter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">numero_ter[3:0]</obj_property>
+      <obj_property name="ObjectShortName">numero_ter[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/uut/Inst_TOP_Memoria_RAM/sel_qd_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sel_qd_out</obj_property>
+      <obj_property name="ObjectShortName">sel_qd_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/uut/Inst_TOP_Memoria_RAM/Inst_Maquina_Memoria_RAM/en_mem" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">en_mem</obj_property>
+      <obj_property name="ObjectShortName">en_mem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/uut/Inst_TOP_Memoria_RAM/Inst_Maquina_Memoria_RAM/out_wr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">out_wr</obj_property>
+      <obj_property name="ObjectShortName">out_wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/to_rp" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">to_rp</obj_property>
+      <obj_property name="ObjectShortName">to_rp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/rst_mem" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst_mem</obj_property>
+      <obj_property name="ObjectShortName">rst_mem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/simulacion_v6/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+</wave_config>

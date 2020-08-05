@@ -1,0 +1,1 @@
+vhdtdtfi -prj RACIMOStorm -o /home/pedro/Documents/ISE/RACIMOStorm/Memoria_RAM.vhi -module Memoria_RAM -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Memoria_RAM.vhd 
